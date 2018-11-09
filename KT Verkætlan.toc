@@ -1,7 +1,9 @@
-\select@language {english}
+\babel@toc {english}{}
 \contentsline {section}{Abstract}{}
 \contentsline {section}{Acknowledgments}{}
 \contentsline {section}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {2}Materials}{1}
 \contentsline {section}{\numberline {3}Code}{2}
-\contentsline {section}{\numberline {4}Attachments}{2}
+\contentsline {subsection}{\numberline {3.1}Method}{2}
+\contentsline {subsection}{\numberline {3.2}}{3}
+\contentsline {section}{\numberline {4}Attachments}{3}
