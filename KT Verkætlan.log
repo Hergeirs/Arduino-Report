@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  9 NOV 2018 13:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  14 NOV 2018 16:29
 entering extended mode
 **"./KT Verkætlan.tex"
 ("KT Verkætlan.tex"
@@ -522,8 +522,8 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ) [1
 
-{C:/Users/Krist/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("KT Verkæ
-tlan.toc")
+{C:/Users/Krist/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+("KT Verkætlan.toc")
 \tf@toc=\write3
 \openout3 = `"KT Verkætlan.toc"'.
 
@@ -536,26 +536,26 @@ tlan.toc")
 \openout5 = `"KT Verkætlan.lot"'.
 
  [1] [1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 56.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 72.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 72.
 
-<./images/FC-28-Diagram.PNG, id=15, 596.98032pt x 505.89pt>
+<./images/FC-28-Diagram.PNG, id=21, 596.98032pt x 505.89pt>
 File: ./images/FC-28-Diagram.PNG Graphic file (type png)
 
 <use ./images/FC-28-Diagram.PNG>
-Package pdftex.def Info: ./images/FC-28-Diagram.PNG used on input line 64.
+Package pdftex.def Info: ./images/FC-28-Diagram.PNG used on input line 80.
 (pdftex.def)             Requested size: 298.48943pt x 252.94437pt.
  [1]
-<./images/fc-28-corrosion.png, id=24, 339.51843pt x 148.30406pt>
+<./images/fc-28-corrosion.png, id=27, 339.51843pt x 148.30406pt>
 File: ./images/fc-28-corrosion.png Graphic file (type png)
 
 <use ./images/fc-28-corrosion.png>
-Package pdftex.def Info: ./images/fc-28-corrosion.png used on input line 82.
+Package pdftex.def Info: ./images/fc-28-corrosion.png used on input line 97.
 (pdftex.def)             Requested size: 339.5176pt x 148.30368pt.
  [2 <./images/FC-28-Diagram.PNG>] [1 <./images/fc-28-corrosion.png>] ("KT Verk�
 �tlan.aux") ) 
@@ -566,7 +566,7 @@ Here is how much of TeX's memory you used:
  6329 multiletter control sequences out of 15000+200000
  9097 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,8n,25p,713b,220s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,8n,25p,812b,220s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program 
@@ -575,9 +575,9 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmsy8.pfb>
-Output written on "KT Verkætlan.pdf" (6 pages, 326779 bytes).
+Output written on "KT Verkætlan.pdf" (7 pages, 328621 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
