@@ -5,9 +5,18 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
+\usepackage{color}
 \usepackage{textcomp}
+\usepackage{etoolbox}    
 \usepackage{listings}
-
+\newcount\mymark
+\makeatletter
+\def\mycoderef#1{%
+  \global\advance\mymark by 1%
+  \protected@write \@auxout {}{\string \newlabel {#1}{{\the\mymark}{}}}%
+  \makebox[0pt][r]{{\scriptsize\bfseries \the\mymark~}}%
+}
+\input{arduinoLanguage.tex}
 
 \begin{document}
 
@@ -80,9 +89,8 @@ The resistor in the circuit helps increase the amount of current entering the an
 \subsection{TMP Sensor}
 
 The TMP36 temperature is fairly simple. It can measure degrees from -50\textdegree{}C to \textdegree{250}C, where it has a precision of 0.1\textdegree{}C\footnote{https://www.bc-robotics.com/tutorials/using-a-tmp36-temperature-sensor-with-arduino/}. It works as a diode so when it changes temperature, it then its voltage changes accordingly. The sensor measures the small change and outputs an analog output based on it, so its possible to calculate the temperature according to that output. We use a readCelcius() method from the Temperature Class, and it can be seen below.
-
 \pagebreak
-\begin{verbatim}
+\begin{lstlisting}[language=Arduino]
 const int8_t TemperatureSensor::readCelsius()
 {
     digitalWrite(triggerPin, HIGH);
@@ -94,7 +102,8 @@ const int8_t TemperatureSensor::readCelsius()
     voltage /= 1024.0;
     return round((voltage - 0.5) * 100);
 }
-\end{verbatim}
+
+\end{lstlisting}
 
 reading = analogRead(readPind) reads the output from the sensor, then it's converted to voltage by multiplying with five. That is then divided by 1024 to find the percentage of the analog read, because the arduino outputs between 0 and 1023, where 0 is not voltage and 1023 is 5V. Five is then subtracted from that, and then that result is multiplied with 100 to convert it ffrom mV to degrees. Five is subtracted from the reading, because we want it so that 0V corresponds to -50\textdegree{}C
 \pagebreak
