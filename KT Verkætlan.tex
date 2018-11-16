@@ -5,6 +5,10 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
+\usepackage{textcomp}
+\usepackage{listings}
+
+
 \begin{document}
 
 \begin{titlepage}
@@ -25,32 +29,24 @@ IT-project with regard to our B.Sc in Software Engineering at the University of 
 \vspace{.5cm}
 \Large
 \vspace{.5cm}
+\vfill
+\begin{center}
+Faculty of Science and Technology
+
+Benadikt Joensen, Gunnar Restorff
+
+University of the Faroe Islands
+
+January 2019
+
 \pagebreak
 \Large
 \textbf{Abstract}
+
 \end{center}
 We were asked to do an it project using an Arduino Uno. We chose to to do an automated gardening system with it, because that is relevent for some work projects that are currently in progress on Sandoy, where we are from. Our ardunio project entails an automated system that waters, measures moisture, heat and light exposure. That is done by customizing an Arduino Uno which has a moisture-, heat and light sensor that does all our measurements. All the the data is then collected by the Arduino, and then sent to a Web Service via. a esp-05 wifi module. The Web Service receives the data, and presents it to the user. The user is registered with the Web Service, and can track his plant data through his registered user account, where he also can customize water input for the plant/s.
 
-The service was devoloped in ASP.Net, which was a class we had prior to this one and we thought it would be a practical platform for developing a service centered around our E-gardening data.
 
-The code uses a design pattern called Observer Pattern. It's function is to solve text\footnote{\url}
-
-\begin{quote}
-"one-to-many dependency between objects should be defined without making the objects tightly coupled.
-
-It should be ensured that when one object changes state an open-ended number of dependent objects are updated automatically.
-
-It should be possible that one object can notify an open-ended number of other objects."
-\end{quote}
-
-This means 
-
-\vfill
-\begin{center}
-Náttúruvísindadeildin\\
-Benadikt Joensen, Gunnar Restorff\\
-University of the Faroe Islands\\
-January 2019\\
 \end{center}
 \end{titlepage}
 \pagenumbering{gobble}
@@ -66,30 +62,42 @@ January 2019\\
 \pagenumbering{arabic}
 \section{Introduction}
 
-As said our project is about a system that automates taking care of some vegetation of some kind, be it house plants, garden plants or even vegetative food. We have seen that the interest for growing vegetables in the Faroe Islands has been increased with initiatives such as "Eplafestivalurin", and "Veltan" which has received government funding. Veltan's goal is to grow and sell Faroese vegetables and fruits, and give everyone a place with resources, so that they are able to grow their own things.
+We have chosen to work with automatic a gardening system because it has some tasks, what we believe, are tedious and easy to forget. There has been an increasing interest on Sandoy in trying to grow more vegetables on the islands, and to sell them. That grown interest in thanks to initiatives such as "Veltan" and "Eplafestivalurin". Trying to be self-sufficient with regards to food produce is, according us, a good idea, and that's were we think that our modest electronic gardening project fits well with that philosophy, and will be an interest for those, who want to try to be more self-sufficient.
+ 
+\section{Setup}
+The Arduino Uno, TMP36GZ heat sensor, resistors and the cables which we use in this project, was provided by the one responsible by the course. We used at the start a FC28 moisture sensor, but it generally uses DC current which means that it corrodes quickly because of electrolysis in the soil and alters the soil composition which could potentially damage the plant, which would eventually lead to tainted readings. We changed it to use an AC pulse that can be seen in figure, but we decided to opt for Capacitive Soil Moisture Sensor V1.2 that is Corrosion Resistant. The FC28 sensor can be seen in figure 1.
 
+\subsection{FC28}
 
-Veltan's coincides well with UN's campaign "Goal 2:Zero Targets" which is trying to change and optimize the world's agriculture in hopes to feed the 815 people that are undernourished today and the additional 2 billions people expected to be malnourished in 2050\footnote{https://www.un.org/sustainabledevelopment/hunger/}. Agriculture derived foot is more energy efficient than meat farming\footnote{•} and contributes less pollution, because energy consumption is wasted the higher up we go through the food chain, so optimizing our production in agricultural farming would be the best way to achieve UN's goal.
-
-Taking care of vegetation is task that is easy to forget which is why we thought that it was a process that was convenient to automate, and a cheap automated gardening system for the everyday household might also help with UN's goals, as it would mean that everyone had easy and cheap tool to help them with growing their crops.
-
-\section{Materials}
-The Arduino Uno, TMP36GZ heat sensor, resistors and the cables which we use in this project, was provided by the one responsible by the course. We used at the start a FC28 moisture sensor, but it generally uses DC current which means that because of electrolysis in the soil it corrodes fairly quickly and alters the soil composition, which could potentially damage the plant and lead to tainted readings. We changed it to use an AC pulse, but we decided to opt for Capacitive Soil Moisture Sensor V1.2 that is Corrosion Resistant.
-
-
+Our intention was to use the Arduino to induce an alternating current through the sensor. To simplify things, we circumvented the circuit of FC-28 such that we connected directly to the pins on the sensor. To alternate the current, we first emit 5V from pin 12 and set pin 13 to low (0V) for 1 ms then we take a reading through the analog pin A0. Then we flip the pin 12 and 13 ( 5V from pin 13 ) for the same amount of time. This should somewhat remedy the problems of electrolysis by shifting the ions back and forth between the moisture sensor pins, instead of just letting them congest at one pin. The chip had to be removed so that it could use AC.
+The setup can be seen above.
 \includegraphics[scale = 0.50]{FC-28-Diagram.PNG}
 
 
-We started testing the project with the FC28 moisture until we received the new sensor.
+The resistor in the circuit helps increase the amount of current entering the analog sensor. Without it about half the current would go in the pin 13 when the measurement occurs. We are therefor able to steer the range of current entering the analog input. The left left leg is connected to 8 digital pin, the middle leg is connected to A1 pin, and the third leg is connected to -18 on the breadboard which is then connected to the ground pin on the Arduino.  
 
-\section{Code}
 
-\subsection{Method}
+\subsection{TMP Sensor}
 
-Our intention was to use the arduino to induce an alternating current through the sensor. To simplify things, we cirqumvented the cirquit of FC-28 such that we connected directly to the pins on the sensor. To alternate the current, we first emmit 5v from pin 12 and set pin 13 to low (0v) for 1 ms then we take a reading through the analog pin A0. Then we flip the pin 12 and 13 ( 5v from pin 13 ) for the same amount of time. This should somewhat remidy the problems of electrolysis by shifting the ions back and forth between the pins instead of just one way.
+The TMP36 temperature is fairly simple. It can measure degrees from -50\textdegree{}C to \textdegree{250}C, where it has a precision of 0.1\textdegree{}C\footnote{https://www.bc-robotics.com/tutorials/using-a-tmp36-temperature-sensor-with-arduino/}. It works as a diode so when it changes temperature, it then its voltage changes accordingly. The sensor measures the small change and outputs an analog output based on it, so its possible to calculate the temperature according to that output. We use a readCelcius() method from the Temperature Class, and it can be seen below.
 
-The resistor in the cirquit helps increase the amount of current entering the analog sensor. Without it about half the current would go in the pin 13 when the measurement occurst. By changing the resistor we are thereby able to steer the range of current entering the analog input.
+\pagebreak
+\begin{verbatim}
+const int8_t TemperatureSensor::readCelsius()
+{
+    digitalWrite(triggerPin, HIGH);
+    delayMicroseconds(200);
+    uint16_t reading = analogRead(readPin);
+    digitalWrite(triggerPin, LOW);
+    // converting that reading to voltage, for 3.3v arduino use 3.3
+    double voltage = reading * 5.0; // * 0.0009775171;
+    voltage /= 1024.0;
+    return round((voltage - 0.5) * 100);
+}
+\end{verbatim}
 
+reading = analogRead(readPind) reads the output from the sensor, then it's converted to voltage by multiplying with five. That is then divided by 1024 to find the percentage of the analog read, because the arduino outputs between 0 and 1023, where 0 is not voltage and 1023 is 5V. Five is then subtracted from that, and then that result is multiplied with 100 to convert it ffrom mV to degrees. Five is subtracted from the reading, because we want it so that 0V corresponds to -50\textdegree{}C
+\pagebreak
 
 \section{Attachments}
 \begin{figure}
