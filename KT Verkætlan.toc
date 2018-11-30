@@ -1,8 +1,13 @@
 \babel@toc {english}{}
-\contentsline {section}{Abstract}{}
-\contentsline {section}{Acknowledgments}{}
-\contentsline {section}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {2}Setup}{1}
-\contentsline {subsection}{\numberline {2.1}FC28}{1}
-\contentsline {subsection}{\numberline {2.2}TMP Sensor}{2}
-\contentsline {section}{\numberline {3}Attachments}{4}
+\contentsline {chapter}{Dedication}{i}{Doc-Start}
+\contentsline {chapter}{Abstract}{iii}{Doc-Start}
+\contentsline {chapter}{Contents}{v}{Doc-Start}
+\contentsline {chapter}{Foreword}{vii}{chapter*.2}
+\contentsline {section}{Acknowledgement}{vii}{section*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{Introduction}{1}{section*.4}
+\contentsline {chapter}{\numberline {2}Setup}{3}{chapter.2}
+\contentsline {subsection}{\numberline {2.0.1}FC28}{3}{subsection.2.0.1}
+\contentsline {subsection}{\numberline {2.0.2}Capacitive Sensor}{4}{subsection.2.0.2}
+\contentsline {subsection}{\numberline {2.0.3}TMP Sensor}{4}{subsection.2.0.3}
+\contentsline {chapter}{\numberline {A}This is an appendix}{7}{appendix.A}
