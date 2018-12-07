@@ -1,0 +1,64 @@
+\usepackage{courier, color, listings}
+
+\definecolor{Green}{rgb}{0, 0.3, 0}
+\definecolor{DarkCyan}{rgb}{0, 0.545, 0.545}
+\definecolor{Navy}{rgb}{0, 0, 0.5}
+\definecolor{Teal}{rgb}{0, 0.5, 0.5}
+\definecolor{DarkGray}{gray}{0.66}
+\definecolor{Olive}{rgb}{0.5, 0.5, 0}
+\definecolor{Pink}{rgb}{1.0, 0.75, 0.8}
+\definecolor{DeepPink}{rgb}{1, 0.08, 0.58}
+\definecolor{Brown}{rgb}{0.65, 0.165, 0.165}
+\definecolor{DarkViolet}{rgb}{0.58, 0, 0.83}
+\definecolor{SaddleBrown}{rgb}{0.55, 0.27, 0.07}
+\lstdefinelanguage{CSharp}
+{
+ morecomment = [l]{//}, 
+ morecomment = [l]{///},
+ morecomment = [s]{/*}{*/},
+ morestring=[b]", 
+ morestring=[b]',
+ basicstyle=\footnotesize\ttfamily,
+ commentstyle=\color{Green}\textit,
+ stringstyle=\color{blue},
+ sensitive = true,
+  morekeywords=[1]{this, base},
+  keywordstyle=[1]\bfseries,
+  morekeywords=[2]{as, is, new, sizeof, typeof, true, false, stackalloc, ArduinoData, Key},
+  keywordstyle=[2]\color{DarkCyan}\bfseries,
+  morekeywords=[3]{else, if, switch, case, default,
+  do, for, foreach, while, in},
+  keywordstyle=[3]\color{blue}\bfseries ,
+  morekeywords=[4]{break, continue, goto, return,
+  yield, partial, global, where},
+  keywordstyle=[4]\color{Navy},
+  morekeywords=[5]{try, throw, catch, finally},
+  keywordstyle=[5]\color{Teal}\bfseries,
+  morekeywords=[6]{checked, unchecked},
+  keywordstyle=[6]\color{DarkGray}\bfseries,
+  morekeywords=[7]{fixed, unsafe},
+  keywordstyle=[7]\color{Olive},
+  morekeywords=[8]{bool, byte, sbyte, char, short, ushort, int, uint, long, ulong, float,
+  double, decimal, enum, struct},
+  keywordstyle=[8]\bfseries\color{blue},
+  morekeywords=[9]{class, interface, delegate, object, string,
+  void},
+  keywordstyle=[9]\color{red},
+  morekeywords=[10]{explicit, implicit, operator},
+  keywordstyle=[10]\color{Pink}\bfseries,
+  morekeywords=[11]{params, ref, out},
+  keywordstyle=[11]\bfseries\color{DeepPink},
+  morekeywords=[12]{private, protected, internal, public},
+  keywordstyle=[12]\bfseries\color{blue},
+  morekeywords=[13]{abstract, const, event, var, override, virtual, volatile, extern, readonly, sealed, static},
+  keywordstyle=[13]\color{Brown},
+  morekeywords=[14]{namespace, using},
+  keywordstyle=[14]\bfseries\color{Green},
+  morekeywords=[15]{lock},
+  keywordstyle=[15]\color{DarkViolet},
+  morekeywords=[16]{get, set, add, remove},
+  keywordstyle=[16]\color{SaddleBrown},
+  morekeywords=[17]{null, value},
+  keywordstyle=[17]\bfseries,
+}
+\lstset{tabsize=4,showstringspaces=false, numberstyle=\tiny, stepnumber=2, numbersep=5pt}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  30 NOV 2018 10:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  6 DEC 2018 21:29
 entering extended mode
 **"./KT Verkætlan.tex"
 ("KT Verkætlan.tex"
@@ -813,30 +813,30 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\courier.sty
 "
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
-)) ("KT Verkætlan.aux")
+)) (CSharp.tex) ("KT Verkætlan.aux")
 \openout1 = `"KT Verkætlan.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 34.
 
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 (C:\Users\Krist\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -869,7 +869,7 @@ G,.JBIG2,.JB2,.eps]
 )
 \c@lstlisting=\count127
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 33.
+Package hyperref Info: Link coloring OFF on input line 34.
 
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -881,23 +881,23 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Info: Redefining \pageref on input line 33.
-LaTeX Info: Redefining \nameref on input line 33.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
  ("KT Verkætlan.out") ("KT Verkætlan.out")
 \@outlinefile=\write3
 \openout3 = `"KT Verkætlan.out"'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+LaTeX Font Info:    Try loading font information for U+msa on input line 37.
 
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+LaTeX Font Info:    Try loading font information for U+msb on input line 37.
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 36.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 37.
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
@@ -911,33 +911,32 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 \begin{abstract}
-                      [1
+l.45 \cleardoublepage
+                     \addcontentsline{toc}{chapter}{Contents} [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 \begin{abstract}
-                      [2
+l.45 \cleardoublepage
+                     \addcontentsline{toc}{chapter}{Contents} [2
 
-] [3] [4
-
-] ("KT Verkætlan.toc")
+]
+("KT Verkætlan.toc")
 \tf@toc=\write4
 \openout4 = `"KT Verkætlan.toc"'.
 
- [5
+ [3
 
-] [6
+] [4
 
-] [7] [8
+] [5] [6
 
 ]
 Chapter 1.
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 66.
+(hyperref)                be the same. Added a new anchor on input line 63.
 
 [1
 
@@ -947,29 +946,20 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 Chapter 2.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 71.
+(hyperref)                than one, level fixed on input line 68.
 
-
-Overfull \hbox (0.71858pt too wide) in paragraph at lines 72--74
+[3]
+Overfull \hbox (0.71858pt too wide) in paragraph at lines 75--77
 \T1/cmr/m/n/12 Our in-ten-tion was to use the Ar-duino to in-duce an al-ter-nat
 -ing cur-rent through
  []
 
-<./images/FC-28-Diagram.PNG, id=118, 596.98032pt x 505.89pt>
+<./images/FC-28-Diagram.PNG, id=164, 596.98032pt x 505.89pt>
 File: ./images/FC-28-Diagram.PNG Graphic file (type png)
 <use ./images/FC-28-Diagram.PNG>
-Package pdftex.def Info: ./images/FC-28-Diagram.PNG  used on input line 76.
+Package pdftex.def Info: ./images/FC-28-Diagram.PNG  used on input line 79.
 (pdftex.def)             Requested size: 298.48943pt x 252.94437pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-[][][]\T1/cmr/m/n/10 https://www.bc-robotics.com/tutorials/using-a-tmp36-temper
-ature-sensor-with-
- []
-
-
+[4 <./images/FC-28-Diagram.PNG>]
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
 sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
@@ -981,71 +971,152 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
 ty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-) [4 <./images/FC-28-Diagram.PNG>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 90.
+)
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 87.
 
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (11.99986pt too wide) in paragraph at lines 114--115
+[]\T1/cmr/m/n/12 This method reads the out-put from the ca-pac-i-tive sen-sor. 
+dig-i-tal-Write(dPin,
+ []
 
- [6]
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+[][][]\T1/cmr/m/n/10 https://www.bc-robotics.com/tutorials/using-a-tmp36-temper
+ature-sensor-with-
+ []
+
+[6] [7] [8
+
+]
+Chapter 3.
+[9] [10]
 Appendix A.
-<./images/fc-28-corrosion.png, id=162, 339.51843pt x 148.30406pt>
+<./images/fc-28-corrosion.png, id=241, 339.51843pt x 148.30406pt>
 File: ./images/fc-28-corrosion.png Graphic file (type png)
 <use ./images/fc-28-corrosion.png>
-Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 114.
+Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 163.
 (pdftex.def)             Requested size: 339.5176pt x 148.30368pt.
-<./images/capacitive-sensor.jpg, id=163, 1255.69125pt x 941.5175pt>
+<./images/capacitive-sensor.jpg, id=242, 1255.69125pt x 941.5175pt>
 File: ./images/capacitive-sensor.jpg Graphic file (type jpg)
 <use ./images/capacitive-sensor.jpg>
-Package pdftex.def Info: ./images/capacitive-sensor.jpg  used on input line 120
+Package pdftex.def Info: ./images/capacitive-sensor.jpg  used on input line 170
 .
 (pdftex.def)             Requested size: 251.1338pt x 188.30016pt.
-[7
+<./images/ESP8266.png, id=243, 445.665pt x 379.4175pt>
+File: ./images/ESP8266.png Graphic file (type png)
+<use ./images/ESP8266.png>
+Package pdftex.def Info: ./images/ESP8266.png  used on input line 177.
+(pdftex.def)             Requested size: 445.66391pt x 379.41656pt.
 
- <./images/fc-28-corrosion.png>] [8 <./images/capacitive-sensor.jpg>]
-No file "KT Verkætlan".bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
-("KT Verkætlan.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
-Package rerunfilecheck Info: File `"KT Verkætlan".out' has not changed.
-(rerunfilecheck)             Checksum: 489FED20E3AAFDF99CD3FB26AB5B9FA5;648.
+Overfull \hbox (55.66391pt too wide) in paragraph at lines 177--178
+ [][] 
+ []
+
+[11
+
+ <./images/fc-28-corrosion.png>]
+Overfull \hbox (7.75327pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 12 \T1/cmr/m/sl/12 APPENDIX A.  GRAPHICS OF SENSORS AND OTHER CO
+MPONENTS
+ []
+
+[12 <./images/capacitive-sensor.jpg>] [13 <./images/ESP8266.png>]
+Overfull \hbox (7.75327pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 14 \T1/cmr/m/sl/12 APPENDIX A.  GRAPHICS OF SENSORS AND OTHER CO
+MPONENTS
+ []
+
+[14
+
+]
+Appendix B.
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 186.
+[15] [16
+
+] ("KT Verkætlan.bbl"
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
+ [17
+
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
+ ("KT Verkætlan.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
+
+
+Package rerunfilecheck Warning: File `"KT Verkætlan".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"KT Verkætlan".out':
+(rerunfilecheck)             Before: ADABE9888AFAAF6246B2348262D196C6;1196
+(rerunfilecheck)             After:  8BC56CE1FE065BB50B73BAF006F4F0EF;1164.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 9991 strings out of 493334
- 139816 string characters out of 3139251
- 448703 words of memory out of 3000000
- 13305 multiletter control sequences out of 15000+200000
- 23291 words of font info for 69 fonts, out of 3000000 for 9000
+ 10295 strings out of 493334
+ 144204 string characters out of 3139251
+ 468004 words of memory out of 3000000
+ 13541 multiletter control sequences out of 15000+200000
+ 25217 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,8n,69p,1599b,1486s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
-} <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-crm1000.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
-c\dpi600\ecrm0700.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
-jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\
-pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk> <C:\Users\Krist\AppData\Local\MiKTeX\
-2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Krist\AppData\Loc
-al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Krist\A
-ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1200.pk> <C:\Use
-rs\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.p
-k> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecbx1200.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecrm1200.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk><C:/Users/Krist/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Krist/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Kr
-ist/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on "KT Verkætlan.pdf" (18 pages, 434042 bytes).
+ 40i,8n,69p,1599b,1530s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{lstlisting.Alph0.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.Alph0.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.Alph0.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.Alph0.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{lstnumber.Alph0.1.11} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.Alph0.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.Alph0.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+{C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} 
+<C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcr
+m1200.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
+dpi600\ecrm1000.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\ecrm0700.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk
+\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.
+9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\Krist\AppData\Local
+\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Krist\App
+Data\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users
+\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1200.pk>
+ <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
+bx2488.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\ecbx1200.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
+knappen\ec\dpi600\ecrm1200.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\p
+k\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk><C:/Users/Krist/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Krist/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
+Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pf
+b><C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucr
+r8a.pfb>
+Output written on "KT Verkætlan.pdf" (25 pages, 778443 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 112 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 685 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 

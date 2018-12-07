@@ -1,12 +1,20 @@
-\BOOKMARK [0][-]{Doc-Start}{Dedication}{}% 1
-\BOOKMARK [0][-]{Doc-Start}{Abstract}{}% 2
-\BOOKMARK [0][-]{Doc-Start}{Contents}{}% 3
-\BOOKMARK [0][-]{chapter*.2}{Foreword}{}% 4
-\BOOKMARK [1][-]{section*.3}{Acknowledgement}{chapter*.2}% 5
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
-\BOOKMARK [1][-]{section*.4}{Introduction}{chapter.1}% 7
-\BOOKMARK [0][-]{chapter.2}{Setup}{}% 8
-\BOOKMARK [1][-]{subsection.2.0.1}{FC28}{chapter.2}% 9
-\BOOKMARK [2][-]{subsection.2.0.2}{Capacitive Sensor}{subsection.2.0.1}% 10
-\BOOKMARK [2][-]{subsection.2.0.3}{TMP Sensor}{subsection.2.0.1}% 11
-\BOOKMARK [0][-]{appendix.A}{This is an appendix}{}% 12
+\BOOKMARK [0][-]{Doc-Start}{Abstract}{}% 1
+\BOOKMARK [0][-]{Doc-Start}{Contents}{}% 2
+\BOOKMARK [0][-]{chapter*.2}{Foreword}{}% 3
+\BOOKMARK [1][-]{section*.3}{Acknowledgement}{chapter*.2}% 4
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 5
+\BOOKMARK [1][-]{section*.4}{Introduction}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Setup}{}% 7
+\BOOKMARK [1][-]{subsection.2.0.1}{Arduino}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.1}{Moisture Sensors}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.1.1}{FC28}{section.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.1.2}{Capacitive Soil Moisture Sensor v1.2}{section.2.1}% 11
+\BOOKMARK [1][-]{section.2.2}{Temperature Sensor}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.1}{TMP Sensor}{section.2.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Wifi Module}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{Webserver}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Webserver}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.1.1}{Observer Pattern}{section.3.1}% 17
+\BOOKMARK [0][-]{appendix.A}{Graphics of sensors and other components}{}% 18
+\BOOKMARK [0][-]{appendix.B}{Latex Listings}{}% 19
+\BOOKMARK [0][-]{lstnumber.B.1.11}{Bibliography}{}% 20
