@@ -134,24 +134,44 @@ const int8_t TemperatureSensor::readCelsius()
 digitalWrite(triggerPin, HIGH) sends a pulse to the sensor which starts it, then delayMicroseconds() delays the program, so that the sensor waits while the sensor is activated. Then reading = analogRead(readPind) reads the output from the sensor. The output from it, is converted to voltage by multiplying it with five. That is then divided by 1024 to find the percentage of the analog read, because the Arduino outputs between 0 and 1023, where 0 is not voltage and 1023 is 5V. Five is then subtracted from that, and then that result is multiplied with 100 to convert it from mV to degrees. Five is subtracted from the reading because we want it so that 0V corresponds to -50\textdegree{}C. 
 
 \section{Wifi Module}
-The ESP8266-05 wifi module was the hardest to work with. We initially bought an ESP8266-01, but that was even tougher to work with, because it had 8 pins, and the distance between each pin on the module was so small that we couldn't properly solder each part without connecting it to the next one. We then bought the 05 version which was much easier to solder. A picture is attached of the module in \ref{fig:ESP}. We don't use the antennae nor the upper GND pin. We have a problem with the module in that the Arduino UNO 3V supply has inadequate current capabilities to power it. It still works but we get occasional garbage data from the packages sent sent from the module. Garbage transmissions seem to increase the longer the module is in use. It's possible to use an alternate 3.3V supply rather than the one from the Arduino, but we haven't looked into it.
+The ESP8266-05 wifi module was the hardest to work with. We initially bought an ESP8266-01, but that was even tougher to work with, because it had 8 pins, and the distance between each pin on the module was so small that we couldn't properly solder each part without connecting it to the next one. We then bought the 05 version which was much easier to solder. A picture is attached of the module in \ref{fig:ESP}. We don't use the antennae nor the upper GND pin. We have a problem with the module in that the Arduino UNO 3V supply has inadequate current capabilities to power it. It still works but we get occasional garbage data from the packages sent sent from the module. Garbage transmissions seem to increase the longer the module is in use. It's possible to use an alternate 3.3V supply rather than the one from the Arduino but we haven't looked into it.
 
 \chapter{Webserver}
-\section{Webserver}
-We chose to work with Microsoft's ASP.NET Core which is an open-source cross-platform framework for building cloud-based and internet-connected applications. We chose this framework because we familiar with it through the course 5022.16 Web Applications: ASP.NET with C\# which had right before this course, and that it something both collaborators in this project like to use.
+\section*{Webserver}
+We chose to work with Microsoft's ASP.NET Core which is an open-source cross-platform framework for building cloud-based and internet-connected applications. We chose this framework because we familiar with it through the course 5022.16 Web Applications: ASP.NET with C\# which we had right before this course, and that it is something both collaborators in this project like to use.
 
+\subsection{Login}
+We found out that .Net Core has something called Identity Core\href{https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-2.2&tabs=visual-studio} which handles the login for an ASP.NET Core application. The user can create a membership for the application by using his or she's  Facebook, Twitter, Microsoft, or Google login credentials.
+
+\begin{lstlisting}, language=CSharp] 
+services.AddAuthentication().AddFacebook(facebookOptions =>
+{
+	facebookOptions.AppId =
+			 Configuration["Authentication:Facebook:AppId"];
+	facebookOptions.AppSecret =
+			 Configuration["Authentication:Facebook:AppSecret"];
+});
+\end{lstlisting}
+This code block adds Facebook authentication to our login service. facebookOptions.AppId and facebookOptions.AppSecret are plugins from chrome, which had to be created in Chrome to support facebook login for our project. We found the tutorial for it on \href{https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/facebook-logins?view=aspnetcore-2.2}{Microsoft's support page for identity on}
 
 \subsection{Observer Pattern}
 We decided to use \href{https://en.wikipedia.org/wiki/Observer_pattern}{Gang Of Four's observer pattern}. We think that it fit well in our implementation of the communication between the Arduino and our Webserver. Microsoft have their own implementation of the pattern\href{https://docs.microsoft.com/en-us/dotnet/standard/events/observer-design-pattern}{pattern}
  
-In short, the pattern is about having one subject that has a list of dependencies which it notifies when there's a change. Our subject is called Observer and implements the IObserver with ArduinoData in the template brackets. That it implements the interface means that the class implements its own version of the methods
+In short, the pattern is about having one subject that has a list of dependencies which it notifies when there's a change.
+
+\subsubsection{Observer}
+Our provider is called Observer and implements the IObserver with ArduinoData in the template brackets. That it implements the interface means that the class implements its own version of the methods
 \begin{itemize}
 \item OnCompletet()
 \item OnError(Exception Error)
 \item OnNext(T Value)
 \end{itemize}
 
-These can be called event handlers as they get called, when those events happen. The class has one member variable called \_unsubscriber, which is an IDisposable object, and it has one property of type ArduinoData called Data. IDisposable is a C\# interface that provides a mechanism for releasing unmanaged resources by its method Dispose(). ArduinoData is one we made which we made, and it is the container for the data that the arduino transfers to the webserver. It's properties can be seen in listings \ref{lst:ArduinoData}
+These can be called event handlers as they get called, when those events happen. The first method indicates that the provider is finished with transferring data. Second method informs the observer that an error occurred. The third method supplies the observer with current or new data. 
+The class has one member variable called \_unsubscriber, which is an IDisposable object, and it has two properties of type ArduinoData called Data and type String which is the Observer's name. IDisposable is a C\# interface that provides a mechanism for releasing unmanaged resources by its method Dispose(). ArduinoData is one we made, and it is the container for the data in which the arduino transfers to the webserver. It's properties can be seen in listings \ref{lst:ArduinoData}
+
+\subsubsection{Observrable}
+
 
 \appendix
 
@@ -181,6 +201,44 @@ The following are pictures of our sensors and other components.
 
 \chapter{Latex Listings}
 The code highlighting in this tex document was taken from \href{https://github.com/trihedral/ArduinoLatexListing/blob/master/arduinoLanguage.tex}{trihedral's ArduinoLatexListing Github repository}
+
+\begin{lstlisting}[caption={Observer Class}\label{list:Observer}, language=CSharp]
+public class Observer : IObserver<ArduinoData>
+{
+	private IDisposable _unsubscriber;
+    public EFArduinoDataRepository ArduinoDataRepository { get; set; }
+
+      
+	public void Subscribe(IObservable<ArduinoData> provider)
+    {
+		if (provider != null)
+        _unsubscriber = provider.Subscribe(this);
+	}
+
+	public virtual void OnCompleted()
+	{
+	Console.WriteLine($"connection to observer closed.");
+	this.Unsubscribe();
+	}
+
+	public virtual void OnError(Exception e)
+	{
+	Console.WriteLine($"Observer: Error in connection or transmission of data.");
+	}
+
+	// This runs when data from arduino is received.
+	public virtual void OnNext(ArduinoData value)
+	{
+		ArduinoDataRepository.SaveData(value); // save the read data into the data 				repository
+	}
+
+	public virtual void Unsubscribe()
+	{
+		_unsubscriber.Dispose();
+	}
+}
+
+\end{lstlisting}
 \begin{lstlisting}[caption={Struct of ArduinoData}\label{lst:ArduinoData},language=CSharp]
 
 public struct ArduinoData

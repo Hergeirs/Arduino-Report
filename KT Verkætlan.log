@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  6 DEC 2018 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  18 DEC 2018 14:57
 entering extended mode
 **"./KT Verkætlan.tex"
 ("KT Verkætlan.tex"
@@ -954,7 +954,7 @@ Overfull \hbox (0.71858pt too wide) in paragraph at lines 75--77
 -ing cur-rent through
  []
 
-<./images/FC-28-Diagram.PNG, id=164, 596.98032pt x 505.89pt>
+<./images/FC-28-Diagram.PNG, id=169, 596.98032pt x 505.89pt>
 File: ./images/FC-28-Diagram.PNG Graphic file (type png)
 <use ./images/FC-28-Diagram.PNG>
 Package pdftex.def Info: ./images/FC-28-Diagram.PNG  used on input line 79.
@@ -992,26 +992,55 @@ ature-sensor-with-
 
 ]
 Chapter 3.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 143.
+
+
+Package Listings Warning: Text dropped after begin of listing on input line 146
+.
+
+
+Overfull \hbox (25.85205pt too wide) in paragraph at lines 147--148
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (32.90039pt too wide) in paragraph at lines 150--151
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (61.09375pt too wide) in paragraph at lines 152--153
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (4.36464pt too wide) in paragraph at lines 155--156
+\T1/cmr/m/n/12 bookOp-tions.AppId and face-bookOp-tions.AppSecret are plu-g-ins
+ from chrome,
+ []
+
 [9] [10]
 Appendix A.
-<./images/fc-28-corrosion.png, id=241, 339.51843pt x 148.30406pt>
+<./images/fc-28-corrosion.png, id=261, 339.51843pt x 148.30406pt>
 File: ./images/fc-28-corrosion.png Graphic file (type png)
 <use ./images/fc-28-corrosion.png>
-Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 163.
+Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 183.
 (pdftex.def)             Requested size: 339.5176pt x 148.30368pt.
-<./images/capacitive-sensor.jpg, id=242, 1255.69125pt x 941.5175pt>
+<./images/capacitive-sensor.jpg, id=262, 1255.69125pt x 941.5175pt>
 File: ./images/capacitive-sensor.jpg Graphic file (type jpg)
 <use ./images/capacitive-sensor.jpg>
-Package pdftex.def Info: ./images/capacitive-sensor.jpg  used on input line 170
+Package pdftex.def Info: ./images/capacitive-sensor.jpg  used on input line 190
 .
 (pdftex.def)             Requested size: 251.1338pt x 188.30016pt.
-<./images/ESP8266.png, id=243, 445.665pt x 379.4175pt>
+<./images/ESP8266.png, id=263, 445.665pt x 379.4175pt>
 File: ./images/ESP8266.png Graphic file (type png)
 <use ./images/ESP8266.png>
-Package pdftex.def Info: ./images/ESP8266.png  used on input line 177.
+Package pdftex.def Info: ./images/ESP8266.png  used on input line 197.
 (pdftex.def)             Requested size: 445.66391pt x 379.41656pt.
 
-Overfull \hbox (55.66391pt too wide) in paragraph at lines 177--178
+Overfull \hbox (55.66391pt too wide) in paragraph at lines 197--198
  [][] 
  []
 
@@ -1034,23 +1063,41 @@ MPONENTS
 ]
 Appendix B.
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 186.
-[15] [16
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 206.
 
-] ("KT Verkætlan.bbl"
+Overfull \hbox (30.00427pt too wide) in paragraph at lines 209--212
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (96.00494pt too wide) in paragraph at lines 226--227
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 229.
+
+Overfull \hbox (246.00647pt too wide) in paragraph at lines 232--233
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[15] [16] ("KT Verkætlan.bbl"
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
  [17
 
 
+
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
  ("KT Verkætlan.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
 
 
 Package rerunfilecheck Warning: File `"KT Verkætlan".out' has changed.
@@ -1058,40 +1105,25 @@ Package rerunfilecheck Warning: File `"KT Verkætlan".out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `"KT Verkætlan".out':
-(rerunfilecheck)             Before: ADABE9888AFAAF6246B2348262D196C6;1196
-(rerunfilecheck)             After:  8BC56CE1FE065BB50B73BAF006F4F0EF;1164.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Before: 63111A63EE591A91D497C74CC0BE4DE9;1224
+(rerunfilecheck)             After:  30030EB31BCB17BD39AC88D780380461;1170.
  ) 
 Here is how much of TeX's memory you used:
- 10295 strings out of 493334
- 144204 string characters out of 3139251
- 468004 words of memory out of 3000000
- 13541 multiletter control sequences out of 15000+200000
- 25217 words of font info for 74 fonts, out of 3000000 for 9000
+ 10409 strings out of 493334
+ 145843 string characters out of 3139251
+ 468041 words of memory out of 3000000
+ 13611 multiletter control sequences out of 15000+200000
+ 25954 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,8n,69p,1599b,1530s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{lstlisting.Alph0.1} has been referenced but does 
-not exist, replaced by a fixed one
+ 40i,8n,69p,1599b,2100s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{subsection.3.1.2} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.Alph0.3} has been referenced but does not ex
-ist, replaced by a fixed one
+pdfTeX warning (dest): name{subsection.3.1.1} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.Alph0.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.Alph0.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{lstnumber.Alph0.1.11} has been referenced but does 
-not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.Alph0.2} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.Alph0.1} has been referenced but does not e
-xist, replaced by a fixed one
+pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
+, replaced by a fixed one
 
 {C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} 
 <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcr
@@ -1113,10 +1145,11 @@ k\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2
 ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pf
 b><C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucr
-r8a.pfb>
-Output written on "KT Verkætlan.pdf" (25 pages, 778443 bytes).
+r8a.pfb><C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/couri
+er/ucrro8a.pfb>
+Output written on "KT Verkætlan.pdf" (25 pages, 803348 bytes).
 PDF statistics:
- 685 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 760 PDF objects out of 1000 (max. 8388607)
+ 142 named destinations out of 1000 (max. 500000)
+ 189 words of extra memory for PDF output out of 10000 (max. 10000000)
 
