@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  23 DEC 2018 17:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  23 DEC 2018 17:32
 entering extended mode
 **"./KT Verkætlan.tex"
 ("KT Verkætlan.tex"
@@ -946,18 +946,34 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 
 ]
 Chapter 2.
+
+LaTeX Warning: Reference `fig:capacitive' on page 3 undefined on input line 68.
+
+
 [3]
 Overfull \hbox (0.71858pt too wide) in paragraph at lines 77--79
 \T1/cmr/m/n/12 Our in-ten-tion was to use the Ar-duino to in-duce an al-ter-nat
 -ing cur-rent through
  []
 
-<./images/FC-28-Diagram.PNG, id=188, 596.98032pt x 505.89pt>
+<./images/FC-28-Diagram.PNG, id=186, 596.98032pt x 505.89pt>
 File: ./images/FC-28-Diagram.PNG Graphic file (type png)
 <use ./images/FC-28-Diagram.PNG>
 Package pdftex.def Info: ./images/FC-28-Diagram.PNG  used on input line 81.
 (pdftex.def)             Requested size: 298.48943pt x 252.94437pt.
 [4 <./images/FC-28-Diagram.PNG>]
+<./images/capacitive-sensor.jpg, id=194, 1003.75pt x 1003.75pt>
+File: ./images/capacitive-sensor.jpg Graphic file (type jpg)
+<use ./images/capacitive-sensor.jpg>
+Package pdftex.def Info: ./images/capacitive-sensor.jpg  used on input line 86.
+
+(pdftex.def)             Requested size: 401.49289pt x 401.49289pt.
+
+Overfull \hbox (11.49289pt too wide) in paragraph at lines 86--87
+[] 
+ []
+
+
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
 sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
@@ -970,154 +986,147 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 ty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 89.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 90.
 
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-[5]
-Overfull \hbox (11.99986pt too wide) in paragraph at lines 116--117
+[5 <./images/capacitive-sensor.jpg>]
+Overfull \hbox (11.99986pt too wide) in paragraph at lines 117--118
 []\T1/cmr/m/n/12 This method reads the out-put from the ca-pac-i-tive sen-sor. 
 dig-i-tal-Write(dPin,
  []
 
-<./images/TMP-36.png, id=222, 287.57437pt x 335.00156pt>
+<./images/TMP-36.png, id=200, 287.57437pt x 335.00156pt>
 File: ./images/TMP-36.png Graphic file (type png)
 <use ./images/TMP-36.png>
-Package pdftex.def Info: ./images/TMP-36.png  used on input line 120.
+Package pdftex.def Info: ./images/TMP-36.png  used on input line 121.
 (pdftex.def)             Requested size: 287.57367pt x 335.00073pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
 [][][]\T1/cmr/m/n/10 https://www.bc-robotics.com/tutorials/using-a-tmp36-temper
 ature-sensor-with-
  []
 
-[6 <./images/TMP-36.png>]
-<./images/LDR-Resistor.png, id=231, 401.5pt x 217.81375pt>
+[7 <./images/TMP-36.png>]
+<./images/LDR-Resistor.png, id=239, 401.5pt x 217.81375pt>
 File: ./images/LDR-Resistor.png Graphic file (type png)
 <use ./images/LDR-Resistor.png>
-Package pdftex.def Info: ./images/LDR-Resistor.png  used on input line 142.
+Package pdftex.def Info: ./images/LDR-Resistor.png  used on input line 143.
 (pdftex.def)             Requested size: 321.20042pt x 174.25122pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-<./images/Water-Pump.jpg, id=251, 803.0pt x 803.0pt>
+ [8 <./images/LDR-Resistor.png>]
+<./images/Water-Pump.jpg, id=255, 803.0pt x 803.0pt>
 File: ./images/Water-Pump.jpg Graphic file (type jpg)
 <use ./images/Water-Pump.jpg>
-Package pdftex.def Info: ./images/Water-Pump.jpg  used on input line 147.
+Package pdftex.def Info: ./images/Water-Pump.jpg  used on input line 149.
 (pdftex.def)             Requested size: 240.90186pt x 240.90186pt.
+<./images/ESP8266.png, id=257, 445.665pt x 379.4175pt>
+File: ./images/ESP8266.png Graphic file (type png)
+<use ./images/ESP8266.png>
+Package pdftex.def Info: ./images/ESP8266.png  used on input line 156.
+(pdftex.def)             Requested size: 133.70053pt x 113.82613pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./images/LDR-Resistor.png>] [9 <./images/Water-Pump.jpg>] [10
+ [9 <./images/Water-Pump.jpg>] [10 <./images/ESP8266.png>]
+Chapter 3.
+[11
 
 ]
-Chapter 3.
-[11]
 
-Package Listings Warning: Text dropped after begin of listing on input line 165
+Package Listings Warning: Text dropped after begin of listing on input line 172
 .
 
 
-Overfull \hbox (25.85205pt too wide) in paragraph at lines 166--167
+Overfull \hbox (25.85205pt too wide) in paragraph at lines 173--174
 [][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (32.90039pt too wide) in paragraph at lines 169--170
+Overfull \hbox (32.90039pt too wide) in paragraph at lines 176--177
 [][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (61.09375pt too wide) in paragraph at lines 171--172
+Overfull \hbox (61.09375pt too wide) in paragraph at lines 178--179
 [][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (4.36464pt too wide) in paragraph at lines 174--175
+Overfull \hbox (4.36464pt too wide) in paragraph at lines 181--182
 \T1/cmr/m/n/12 bookOp-tions.AppId and face-bookOp-tions.AppSecret are plu-g-ins
  from chrome,
  []
 
 
-Overfull \hbox (66.00464pt too wide) in paragraph at lines 182--183
+Overfull \hbox (66.00464pt too wide) in paragraph at lines 189--190
 [][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (54.00452pt too wide) in paragraph at lines 184--185
+Overfull \hbox (54.00452pt too wide) in paragraph at lines 191--192
 [][][][][][][][][][][][][] 
  []
 
 
 LaTeX Warning: Reference `list:Interface Repositories' on page 12 undefined on 
-input line 187.
+input line 194.
 
 [12]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 190.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 197.
 
-Overfull \hbox (6.00403pt too wide) in paragraph at lines 202--203
+Overfull \hbox (6.00403pt too wide) in paragraph at lines 209--210
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[13] [14]
+[13]
+Overfull \hbox (12.00409pt too wide) in paragraph at lines 241--243
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[14] [15] [16
+
+]
 Appendix A.
-<./images/fc-28-corrosion.png, id=329, 339.51843pt x 148.30406pt>
+<./images/fc-28-corrosion.png, id=379, 339.51843pt x 148.30406pt>
 File: ./images/fc-28-corrosion.png Graphic file (type png)
 <use ./images/fc-28-corrosion.png>
-Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 239.
+Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 289.
 (pdftex.def)             Requested size: 339.5176pt x 148.30368pt.
-<./images/capacitive-sensor.jpg, id=330, 1255.69125pt x 941.5175pt>
-File: ./images/capacitive-sensor.jpg Graphic file (type jpg)
-<use ./images/capacitive-sensor.jpg>
-Package pdftex.def Info: ./images/capacitive-sensor.jpg  used on input line 246
-.
-(pdftex.def)             Requested size: 251.1338pt x 188.30016pt.
-<./images/ESP8266.png, id=331, 445.665pt x 379.4175pt>
-File: ./images/ESP8266.png Graphic file (type png)
-<use ./images/ESP8266.png>
-Package pdftex.def Info: ./images/ESP8266.png  used on input line 277.
-(pdftex.def)             Requested size: 445.66391pt x 379.41656pt.
-
-Overfull \hbox (55.66391pt too wide) in paragraph at lines 277--278
- [][] 
- []
-
-[15
-
- <./images/fc-28-corrosion.png>]
-Overfull \hbox (7.75327pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 16 \T1/cmr/m/sl/12 APPENDIX A.  GRAPHICS OF SENSORS AND OTHER CO
-MPONENTS
- []
-
-[16 <./images/capacitive-sensor.jpg>] [17 <./images/ESP8266.png>]
+<./images/ESP-01.jpg, id=380, 1606.0pt x 1204.5pt>
+File: ./images/ESP-01.jpg Graphic file (type jpg)
+<use ./images/ESP-01.jpg>
+Package pdftex.def Info: ./images/ESP-01.jpg  used on input line 320.
+(pdftex.def)             Requested size: 321.19432pt x 240.89574pt.
+[17 <./images/fc-28-corrosion.png>]
 Overfull \hbox (7.75327pt too wide) has occurred while \output is active
 \T1/cmr/m/n/12 18 \T1/cmr/m/sl/12 APPENDIX A.  GRAPHICS OF SENSORS AND OTHER CO
 MPONENTS
  []
 
-[18
-
-]
+[18 <./images/ESP-01.jpg>]
 Appendix B.
 
-Overfull \hbox (30.00427pt too wide) in paragraph at lines 310--313
+Overfull \hbox (30.00427pt too wide) in paragraph at lines 353--356
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[19]
-Overfull \hbox (96.00494pt too wide) in paragraph at lines 327--328
+[19
+
+]
+Overfull \hbox (96.00494pt too wide) in paragraph at lines 370--371
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 330.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 373.
 
-Overfull \hbox (246.00647pt too wide) in paragraph at lines 333--334
+Overfull \hbox (246.00647pt too wide) in paragraph at lines 376--377
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1127,16 +1136,16 @@ Overfull \hbox (246.00647pt too wide) in paragraph at lines 333--334
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 360.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 403.
  [21
 
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 360.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
  ("KT Verkætlan.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 360.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 360.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 403.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 403.
 Package rerunfilecheck Info: File `"KT Verkætlan".out' has not changed.
 (rerunfilecheck)             Checksum: 1E3A693FDEB89A6E6A6E602202691770;1474.
 
@@ -1148,13 +1157,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10537 strings out of 493334
- 147913 string characters out of 3139251
- 467289 words of memory out of 3000000
- 13690 multiletter control sequences out of 15000+200000
+ 10611 strings out of 493334
+ 149086 string characters out of 3139251
+ 467284 words of memory out of 3000000
+ 13724 multiletter control sequences out of 15000+200000
  25954 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,8n,69p,1599b,1967s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,8n,69p,1599b,2222s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 } <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\t
 crm1200.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
@@ -1177,9 +1186,9 @@ al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Krist
 pfb><C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/u
 crr8a.pfb><C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/cou
 rier/ucrro8a.pfb>
-Output written on "KT Verkætlan.pdf" (29 pages, 894150 bytes).
+Output written on "KT Verkætlan.pdf" (29 pages, 1110437 bytes).
 PDF statistics:
- 862 PDF objects out of 1000 (max. 8388607)
- 188 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 910 PDF objects out of 1000 (max. 8388607)
+ 227 named destinations out of 1000 (max. 500000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 
