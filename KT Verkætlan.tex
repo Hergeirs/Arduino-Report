@@ -15,6 +15,8 @@
 \usepackage{etoolbox}    
 \usepackage{listings}
 \usepackage[pdftex]{hyperref}
+
+
 \input{arduinoLanguage.tex}
 \input{CSharp.tex}
 \newenvironment{dedication}%
@@ -65,7 +67,7 @@ We have chosen to work with automatic a gardening system because it has some tas
 \chapter{Setup}
 The Arduino Uno, TMP36GZ heat sensor, resistors and the cables which we use in this project, was provided by the one responsible by the course. We used at the start a FC28 moisture sensor, but it generally uses DC current which means that it corrodes quickly because of electrolysis in the soil and alters the soil composition which could potentially damage the plant. That would also eventually lead to tainted readings. We changed it to use an AC pulse that can be seen in figure, but we decided to opt for Capacitive Soil Moisture Sensor V1.2 that is Corrosion Resistant. The FC28 sensor can be seen in \ref{fig:resistive} and the Capacitive sensor can be seen in figure \ref{fig:capacitive}.
 
-\subsection{Arduino}
+\section{Arduino}
 Arduino is an open-source electronics platforms which is based on user-friendly software and hardware components.\footnote{https://www.arduino.cc/en/Guide/Introduction} It can read outputs from these components e.g. readings from sensors, and it can input these sensors to that start.
 
 We worked on an Arduino Uno. It is a microcontroller board. It has 14 digital i/o pins. they can be located on the board right next to the text \textit{DIGITAL}. Six of those pins can be used as Power Width Modulation, shortened as PWM, outputs. Those pins are the ones who have a ~ next to their ascribed numbers. It has six analog pins. It then has five different kinds of power pins. We only use the GND and the 5V and 3.3V pins. The 5V and 3.3 pins output a 5V and 3.3V from the regulator on the board which can be used to power different hardware components. The 3.3V pins has a maximum current draw of 50mA. GND stands for ground, and serves as the common return path for current from the different hardware components in our Arduino system. 
@@ -115,6 +117,8 @@ This method reads the output from the capacitive sensor. digitalWrite(dPin, HIGH
 
 \section{Temperature Sensor}
 \subsection{TMP Sensor}
+\includegraphics[scale=1]{TMP-36}
+
 We used the TMP36 temperature sensor, as it was supplied to use by the course administrators and that it suits our purpose. The TMP36 is fairly simple. It can measure degrees from -40\textdegree{}C to \textdegree{125}C, where it has a precision of $\pm2$\textdegree{}C\footnote{https://www.bc-robotics.com/tutorials/using-a-tmp36-temperature-sensor-with-arduino/}. It works as a diode so when it changes temperature, it then its voltage changes accordingly. The sensor measures the small change and outputs an analog output based on it, so its possible to calculate the temperature according to that output. 
 The sensor's collector pin is attached to the 8 digital pin, the gate to the analog input A1 and the third leg is 
 We use a readCelcius() method from the Temperature Class, and it can be seen below.
@@ -133,15 +137,30 @@ const int8_t TemperatureSensor::readCelsius()
 \end{lstlisting}
 digitalWrite(triggerPin, HIGH) sends a pulse to the sensor which starts it, then delayMicroseconds() delays the program, so that the sensor waits while the sensor is activated. Then reading = analogRead(readPind) reads the output from the sensor. The output from it, is converted to voltage by multiplying it with five. That is then divided by 1024 to find the percentage of the analog read, because the Arduino outputs between 0 and 1023, where 0 is not voltage and 1023 is 5V. Five is then subtracted from that, and then that result is multiplied with 100 to convert it from mV to degrees. Five is subtracted from the reading because we want it so that 0V corresponds to -50\textdegree{}C. 
 
+\section{Light Sensor}
+\subsection{LDR Resistor}
+\includegraphics[scale=0.80]{LDR-Resistor}
+
+We use a LDR Resistor to detects the level of light in the room. The resistor changes its resistance based on how much light is in the room. If the room is unlit then the resistor will have a resistance of a few ohms, but will decrease if the room gets lighter. It's not ideal for our purpose because it's not very sensitive, and that it needed to be calibrated. We chose it because it was available and that we wanted to focus on the webserver and other areas of the project.
+
+\section{Water Pump}
+\includegraphics[scale=0.3]{Water-Pump}
+
+Our water pump is said to have a flow rate of 80-120L\\H. We haven't tested that, but our tests deem that it is strong enough for our purpose- maybe even too strong. It uses a DC current 2.5-6V. The rest of the product description is in \ref{fig:pump description}. Its tube was bought in the local Pet store, and was glued on the facing  left in the picture.
+
 \section{Wifi Module}
-The ESP8266-05 wifi module was the hardest to work with. We initially bought an ESP8266-01, but that was even tougher to work with, because it had 8 pins, and the distance between each pin on the module was so small that we couldn't properly solder each part without connecting it to the next one. We then bought the 05 version which was much easier to solder. A picture is attached of the module in \ref{fig:ESP}. We don't use the antennae nor the upper GND pin. We have a problem with the module in that the Arduino UNO 3V supply has inadequate current capabilities to power it. It still works but we get occasional garbage data from the packages sent sent from the module. Garbage transmissions seem to increase the longer the module is in use. It's possible to use an alternate 3.3V supply rather than the one from the Arduino but we haven't looked into it.
+The ESP8266-05 wifi module was the hardest to work with. We initially bought an ESP8266-01, but that was even tougher to work with, because it had 8 pins, and the distance between each pin on the module was so small that we couldn't properly solder each part without connecting it to the next one. We then bought the 05 version which was much easier to solder. A picture is attached of the module in \ref{fig:ESP}. We don't use the antennae nor the upper GND pin. We have a problem with the module in that the Arduino UNO 3V supply has inadequate current capabilities to power it. It still works but we get occasional garbage data from the packages sent sent from the module. Garbage transmissions seem to increase the longer the module is in use. It's possible to use an alternate 3.3V supply rather than the one from the Arduino but we didn't look into it, as it would take focus from some of the other work needed in the development.
 
-\chapter{Webserver}
+\chapter{Website}
 \section*{Webserver}
-We chose to work with Microsoft's ASP.NET Core which is an open-source cross-platform framework for building cloud-based and internet-connected applications. We chose this framework because we familiar with it through the course 5022.16 Web Applications: ASP.NET with C\# which we had right before this course, and that it is something both collaborators in this project like to use.
+We chose to work with Microsoft's ASP.NET Core which is an open-source cross-platform framework for building cloud-based and internet-connected applications. We chose this framework because we familiar with it through the course 5022.16 Web Applications: ASP.NET with C\# which we had right before this course. It is something both collaborators in this project like to use. 
 
-\subsection{Login}
-We found out that .Net Core has something called Identity Core\href{https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-2.2&tabs=visual-studio} which handles the login for an ASP.NET Core application. The user can create a membership for the application by using his or she's  Facebook, Twitter, Microsoft, or Google login credentials.
+
+\section{Hosting}
+We initially chose to host the webserver on Microsoft's Azure, which all university students get access to through Microsoft's student offer. We quickly found out that it didn't work for us, because it only allows port 8080 and port 443 to be open. We needed other ports to use for communicating between the Arduino and the webserver.
+
+\section{Login}
+We found out that .Net Core has something called Identity Core\href{https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-2.2&tabs=visual-studio} which handles the login for an ASP.NET Core application. The user can create a membership for the application by using his or she's  Facebook, Twitter, Microsoft, or Google login credentials. We could have added the other options, but we deemed it unnecessary as most faroese that would be willing to use a system such ours will most likely have a Facebook account. It's also possible to login with a regular email.
 
 \begin{lstlisting}, language=CSharp] 
 services.AddAuthentication().AddFacebook(facebookOptions =>
@@ -152,7 +171,44 @@ services.AddAuthentication().AddFacebook(facebookOptions =>
 			 Configuration["Authentication:Facebook:AppSecret"];
 });
 \end{lstlisting}
-This code block adds Facebook authentication to our login service. facebookOptions.AppId and facebookOptions.AppSecret are plugins from chrome, which had to be created in Chrome to support facebook login for our project. We found the tutorial for it on \href{https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/facebook-logins?view=aspnetcore-2.2}{Microsoft's support page for identity on}
+This code block adds Facebook authentication to our login service. facebookOptions.AppId and facebookOptions.AppSecret are plugins from chrome, which had to be created in Chrome to support facebook login for our project. We found the tutorial for it on \href{https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/facebook-logins?view=aspnetcore-2.2}{Microsoft's support page for identity on}. The idea with the login functionality is that plants can be attached to users in our system, and that he is able to view data about his plants on the website.
+
+
+\subsection{Project E.Garden Structure}
+Our .Net Core project is divided into three parts. It's good practice to have all business logic i.e. models that represents plants, users, and Arduino Data in a separate class library from the main program. It's done so the project is decoupled, and so that the classes can be included in a separate project. This class library is called Repository in our project, and the models in it are also divided into three parts. First part is the Model folder, where the classes are. One part is a folder that contains the skeleton i.e. interfaces for our business handler, then the implementation of those interfaces is located in the Concrete folder. This means that the EFPlantRepository model inherits from IPlantRepository, and then specifies what the methods UserPlants() and SavePlants() should do. These repositories are then initialized in the file Startup.cs, specifically the ConfigureServices(IServiceCollection services) method. It's initialized with something called Dependency Injection\href{https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2}, and that can be seen in \ref{list:Dependency Injection}
+
+
+\begin{lstlisting}[caption={Observer Class}\label{list:Dependency Injection}, language=CSharp]
+	services.AddScoped<IApplicationUserAccessor, ApplicationUserAccessor>();
+	services.AddScoped<IPlantRepository, EFPlantRepository>();
+    services.AddScoped<IArduinoDataRepository, EFArduinoDataRepository>();
+\end{lstlisting}
+
+This looks the interfaces, and what they should be implemented as, when the project gets build. AddScoped or AddTransient establishes the lifetime of the services, and scoped means that it is created once per request. The code for the interfaces can be seen in \ref{list:Interface Repositories}. The implementations and the explanations for the interfaces can be seen below.
+
+\begin{lstlisting}[caption={Observer Class}\label{list:Concrete EFArduinoDataRepository}, language=CSharp]
+public class EFArduinoDataRepository : IArduinoDataRepository
+{
+	private readonly EGardenerContext _context;
+        
+	public EFArduinoDataRepository(EGardenerContext context)
+	{
+        _context = context;
+	}
+	public void SaveData(ArduinoData data)
+	{
+		var context = _context;
+		var plants = context.Plants.Include(x => x.Datas);
+	    var plant = plants.Single(x => x.PlantId == data.PlantId);
+        var datas = plant.Datas;
+        datas.Add(data);
+		context.SaveChanges();
+	}
+
+}
+\end{lstlisting}
+
+It has one private datamember called \_context of type EGardenerContext, which gets initialized in the EFArduinoDataRepository. This context is the context between the models and their corresponding database entities. All the EFRepositories have this EGardenerContext. The SaveData(Arduino Data) is the actual implementation of the IArduinoDataReposistory. It takes an ArduinoData object as a parameter. First a new context variable is initializied, then a plant gets initialized by dotting into the context, and choosing a plant in the database that has a PlantId that corresponds to plantId the data parameter has. A list of data gets initialized by assigning it to the data list in the newly created plant, and then the data parameter is added to that list. context.SaveChanges(); saves all the changes made.  
 
 \subsection{Observer Pattern}
 We decided to use \href{https://en.wikipedia.org/wiki/Observer_pattern}{Gang Of Four's observer pattern}. We think that it fit well in our implementation of the communication between the Arduino and our Webserver. Microsoft have their own implementation of the pattern\href{https://docs.microsoft.com/en-us/dotnet/standard/events/observer-design-pattern}{pattern}
@@ -170,7 +226,7 @@ Our provider is called Observer and implements the IObserver with ArduinoData in
 These can be called event handlers as they get called, when those events happen. The first method indicates that the provider is finished with transferring data. Second method informs the observer that an error occurred. The third method supplies the observer with current or new data. 
 The class has one member variable called \_unsubscriber, which is an IDisposable object, and it has two properties of type ArduinoData called Data and type String which is the Observer's name. IDisposable is a C\# interface that provides a mechanism for releasing unmanaged resources by its method Dispose(). ArduinoData is one we made, and it is the container for the data in which the arduino transfers to the webserver. It's properties can be seen in listings \ref{lst:ArduinoData}
 
-\subsubsection{Observrable}
+\subsubsection{Observable}
 
 
 \appendix
@@ -192,6 +248,30 @@ The following are pictures of our sensors and other components.
   \label{fig:capacitive}
 \end{figure}
 
+\begin{figure}[ht!]
+	\begin{itemize}
+	\item 100\% brand new and high quality
+	\item DC Voltage:2.5-6V
+	\item Maximum lift:40-110cm / 15.75"-43.4"
+	\item Flow rate:80-120L/H
+	\item Outside diameter of water outlet: 7.5mm / 0.3"
+	\item Inside diameter of water outlet: 4.7mm / 0.18"
+	\item Diameter:Approx. 24mm / 0.95"
+	\item Length:Approx. 45mm / 1.8"
+	\item Height:Approx. 33mm / 1.30"
+	\item Material:engineering plastic
+	\item Driving mode: brushless dc design, magnetic driving
+	\item Continuous working life of 500 hours
+	\end{itemize}
+	\label{fig:pump description}
+\end{figure}
+
+
+
+
+
+
+
 \begin{figure}[!ht]
 	\centering
 		\includegraphics{ESP8266}
@@ -201,6 +281,27 @@ The following are pictures of our sensors and other components.
 
 \chapter{Latex Listings}
 The code highlighting in this tex document was taken from \href{https://github.com/trihedral/ArduinoLatexListing/blob/master/arduinoLanguage.tex}{trihedral's ArduinoLatexListing Github repository}
+
+
+
+\begin{lstlisting}[caption={ArduinoDataRepository}\label{list:Observer},language=CSharp]
+public interface IArduinoDataRepository
+{
+	void SaveData(ArduinoData data);
+}
+
+public interface IPlantRepository
+{
+	Task<IEnumerable<Plant>> UserPlants();
+    Task SavePlant(Plant plant);
+} 
+
+public interface IUserRepository
+{
+	ApplicationUser GetCurrentUser();
+}
+
+\end{lstlisting}
 
 \begin{lstlisting}[caption={Observer Class}\label{list:Observer}, language=CSharp]
 public class Observer : IObserver<ArduinoData>
