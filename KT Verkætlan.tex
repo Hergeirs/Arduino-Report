@@ -182,10 +182,11 @@ This code block adds Facebook authentication to our login service. facebookOptio
 
 
 \subsection{Project E.Garden Structure}
-Our .Net Core project is divided into three parts. It's good practice to have all business logic i.e. models that represents plants, users, and Arduino Data in a separate class library from the main program. It's done so the project is decoupled, and so that the classes can be included in a separate project. This class library is called Repository in our project, and the models in it are also divided into three parts. First part is the Model folder, where the classes are. One part is a folder that contains the skeleton i.e. interfaces for our business handler, then the implementation of those interfaces is located in the Concrete folder. This means that the EFPlantRepository model inherits from IPlantRepository, and then specifies what the methods UserPlants() and SavePlants() should do. These repositories are then initialized in the file Startup.cs, specifically the ConfigureServices(IServiceCollection services) method. It's initialized with something called Dependency Injection\href{https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2}, and that can be seen in \ref{list:Dependency Injection}
+Our .Net Core project is divided into three parts. It's good practice to have all business logic i.e. models that represents plants, users, and Arduino Data in a separate class library from the main program. It's done so the project is decoupled, and so that the classes can be included in a separate project. This class library is called Repository in our project, and structure of it is also divided into three parts. First part is the Model folder where the classes are and can be seen in \ref{list:Models}. ApplicationUser inherits from User, because that makes it so that the properties from ApplicationUser gets added to AspNetUsers in the database. That is a functionality of the previously mentioned Identity. 
 
+One part of the library is a folder that contains the skeleton i.e. interfaces for our business handling, then the implementation of those interfaces is located in the Concrete folder. This means that the EFPlantRepository model inherits from IPlantRepository, and then specifies what the methods UserPlants() and SavePlants() should do. These repositories are then initialized in the file Startup.cs, specifically the ConfigureServices(IServiceCollection services) method. It's initialized with something called Dependency Injection\href{https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2}, and that can be seen in \ref{list:Dependency Injection}
 
-\begin{lstlisting}[caption={Observer Class}\label{list:Dependency Injection}, language=CSharp]
+\begin{lstlisting}\label{list:Dependency Injection}, language=CSharp]
 	services.AddScoped<IApplicationUserAccessor, ApplicationUserAccessor>();
 	services.AddScoped<IPlantRepository, EFPlantRepository>();
     services.AddScoped<IArduinoDataRepository, EFArduinoDataRepository>();
@@ -323,6 +324,35 @@ The following are pictures of our sensors and other components.
 The code highlighting in this tex document was taken from \href{https://github.com/trihedral/ArduinoLatexListing/blob/master/arduinoLanguage.tex}{trihedral's ArduinoLatexListing Github repository}
 
 
+\begin{lstlisting}[caption={models}\label{list:Models}, language=CSharp]
+public class ArduinoData
+{
+	public int Temperature { get; set; }
+	public uint Moisture { get; set; }
+	public Plant Plant { get; set; }
+	public uint PlantId { get; set; }
+	[Key]
+    public long DataId { get; set; }
+	public int Light { get;  set; }
+	public int Water { get;  set; }
+}
+
+public class Plant
+{
+	public long PlantId { get; set; }
+    public string Name { get; set; }
+	public DateTime DateAdded { get; set; }
+	public ApplicationUser ApplicationUser { get; set; }
+	public IList<ArduinoData> Datas { get; set; }
+}
+
+public class ApplicationUser : IdentityUser
+{
+	public string Name { get; set; }
+	public virtual List<Plant> Plants { get; set; }  
+}
+\end{lstlisting}
+\end{lstlisting}
 
 \begin{lstlisting}[caption={ArduinoDataRepository}\label{list:Observer},language=CSharp]
 public interface IArduinoDataRepository
@@ -377,20 +407,6 @@ public class Observer : IObserver<ArduinoData>
 	{
 		_unsubscriber.Dispose();
 	}
-}
-
-\end{lstlisting}
-\begin{lstlisting}[caption={Struct of ArduinoData}\label{lst:ArduinoData},language=CSharp]
-
-public struct ArduinoData
-{
-	public int Temperature { get; set; }
-	public uint Moisture { get; set; }
-	public User User { get; set; }
-	[Key]
-	public uint PlantId { get; set; }
-	public int Light { get;  set; }
-	public int Water { get;  set; }
 }
 \end{lstlisting}
 \backmatter 
