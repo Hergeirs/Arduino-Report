@@ -15,7 +15,8 @@
 \usepackage{etoolbox}    
 \usepackage{listings}
 \usepackage[pdftex]{hyperref}
-
+\usepackage{url}
+\usepackage[numbers]{natbib}
 
 \input{arduinoLanguage.tex}
 \input{CSharp.tex}
@@ -264,7 +265,7 @@ This class has a private field of type IApplicationUserAccessor called userAcces
 
 SavePlant(Plant pltant) is an asynchronous method that stores a plant in the database.  It also initializes a user with the HttpContext, but it also creates one dbUser with one from the database. The dbUser is initialized similarly with how the user in UserPlants() got reassigned, and that is by locating it by user Id. The method suspends when it initialized those variables. The parameter, plant, then initializes its own user property to the user in this method. If db.User has an uninitalized plants property, then it gets initalized with a new empty one. The plant parameter then gets added to that plants property, and the \_context asynchronously saves the changes.  
 \subsection{Observer Pattern}
-We decided to use \href{https://en.wikipedia.org/wiki/Observer_pattern}{Gang Of Four's observer pattern}. We think that it fit well in our implementation of the communication between the Arduino and our Webserver. Microsoft have their own implementation of the pattern\href{https://docs.microsoft.com/en-us/dotnet/standard/events/observer-design-pattern}{pattern}
+We decided to use Gang Of Four's observer pattern\cite{GoF}. We think that it fit well in our implementation of the communication between the Arduino and our Webserver. Microsoft have their own implementation of the pattern\cite{MicrosoftObserver}.
  
 In short, the pattern is about having one subject that has a list of dependencies which it notifies when there's a change.
 
@@ -277,7 +278,7 @@ Our provider is called Observer and implements the IObserver with ArduinoData in
 \end{itemize}
 
 These can be called event handlers as they get called, when those events happen. The first method indicates that the provider is finished with transferring data. Second method informs the observer that an error occurred. The third method supplies the observer with current or new data. 
-The class has one member variable called \_unsubscriber, which is an IDisposable object, and it has two properties of type ArduinoData called Data and type String which is the Observer's name. IDisposable is a C\# interface that provides a mechanism for releasing unmanaged resources by its method Dispose(). ArduinoData is one we made, and it is the container for the data in which the arduino transfers to the webserver. It's properties can be seen in listings \ref{lst:ArduinoDataRepository}
+The class has one member variable called \_unsubscriber, which is an IDisposable object, and it has two properties of type ArduinoData called Data and type String which is the Observer's name. IDisposable is a C\# interface that provides a mechanism for releasing unmanaged resources by its method Dispose(). ArduinoData is one we made, and it is the container for the data in which the Arduino transfers to the webserver. It's properties can be seen in listings \ref{lst:ArduinoDataRepository}
 
 \subsubsection{Observable}
 
@@ -293,6 +294,7 @@ The following are pictures of our sensors and other components.
   \label{fig:resistive}
 \end{figure}
 
+\section{Pump Description}
 \begin{figure}[ht!]
 	\begin{itemize}
 	\item 100\% brand new and high quality
@@ -322,7 +324,7 @@ The following are pictures of our sensors and other components.
 \chapter{Latex Listings}
 The code highlighting in this tex document was taken from \href{https://github.com/trihedral/ArduinoLatexListing/blob/master/arduinoLanguage.tex}{trihedral's ArduinoLatexListing Github repository}
 
-
+\section{Models}
 \begin{lstlisting}[caption={models}\label{list:Models}, language=CSharp]
 public class ArduinoData
 {
@@ -352,6 +354,7 @@ public class ApplicationUser : IdentityUser
 }
 \end{lstlisting}
 
+\section{ArduinoDataRepository}
 \begin{lstlisting}[caption={ArduinoDataRepository}\label{list:Observer},language=CSharp]
 public interface IArduinoDataRepository
 {
@@ -410,6 +413,6 @@ public class Observer : IObserver<ArduinoData>
 
 \backmatter 
 \cleardoublepage\addcontentsline{toc}{chapter}{Bibliography}
-\bibliographystyle{plain}
+\bibliographystyle{plainnat}
 \bibliography{bibliography}
 \end{document}

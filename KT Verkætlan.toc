@@ -24,5 +24,8 @@
 \contentsline {subsubsection}{Observer}{15}{section*.6}
 \contentsline {subsubsection}{Observable}{16}{section*.7}
 \contentsline {chapter}{\numberline {A}Graphics of sensors and other components}{17}{appendix.A}
+\contentsline {section}{\numberline {A.1}Pump Description}{17}{section.A.1}
 \contentsline {chapter}{\numberline {B}Latex Listings}{19}{appendix.B}
+\contentsline {section}{\numberline {B.1}Models}{19}{section.B.1}
+\contentsline {section}{\numberline {B.2}ArduinoDataRepository}{20}{section.B.2}
 \contentsline {chapter}{Bibliography}{23}{lstnumber.B.3.34}

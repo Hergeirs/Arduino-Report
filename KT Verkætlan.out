@@ -21,5 +21,8 @@
 \BOOKMARK [2][-]{subsection.3.2.1}{Project E.Garden Structure}{section.3.2}% 21
 \BOOKMARK [2][-]{subsection.3.2.2}{Observer Pattern}{section.3.2}% 22
 \BOOKMARK [0][-]{appendix.A}{Graphics of sensors and other components}{}% 23
-\BOOKMARK [0][-]{appendix.B}{Latex Listings}{}% 24
-\BOOKMARK [0][-]{lstnumber.B.3.34}{Bibliography}{}% 25
+\BOOKMARK [1][-]{section.A.1}{Pump Description}{appendix.A}% 24
+\BOOKMARK [0][-]{appendix.B}{Latex Listings}{}% 25
+\BOOKMARK [1][-]{section.B.1}{Models}{appendix.B}% 26
+\BOOKMARK [1][-]{section.B.2}{ArduinoDataRepository}{appendix.B}% 27
+\BOOKMARK [0][-]{lstnumber.B.3.34}{Bibliography}{}% 28
