@@ -1,3 +1,11 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{ArduinoIntroduction}
+Arduino.
+\newblock Introduction to arduino.
+
+\bibitem{tmpTutorial}
+BC~Robotics.
+\newblock Using a tmp36 temperature sensor with arduino.
 
 \end{thebibliography}

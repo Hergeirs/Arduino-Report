@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  23 DEC 2018 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  29 DEC 2018 17:01
 entering extended mode
 **"./KT Verkætlan.tex"
 ("KT Verkætlan.tex"
@@ -950,19 +950,19 @@ Chapter 2.
 LaTeX Warning: Reference `fig:capacitive' on page 3 undefined on input line 68.
 
 
-[3]
+
 Overfull \hbox (0.71858pt too wide) in paragraph at lines 77--79
 \T1/cmr/m/n/12 Our in-ten-tion was to use the Ar-duino to in-duce an al-ter-nat
 -ing cur-rent through
  []
 
-<./images/FC-28-Diagram.PNG, id=186, 596.98032pt x 505.89pt>
+[3]
+<./images/FC-28-Diagram.PNG, id=183, 596.98032pt x 505.89pt>
 File: ./images/FC-28-Diagram.PNG Graphic file (type png)
 <use ./images/FC-28-Diagram.PNG>
 Package pdftex.def Info: ./images/FC-28-Diagram.PNG  used on input line 81.
 (pdftex.def)             Requested size: 298.48943pt x 252.94437pt.
-[4 <./images/FC-28-Diagram.PNG>]
-<./images/capacitive-sensor.jpg, id=194, 1003.75pt x 1003.75pt>
+<./images/capacitive-sensor.jpg, id=185, 1003.75pt x 1003.75pt>
 File: ./images/capacitive-sensor.jpg Graphic file (type jpg)
 <use ./images/capacitive-sensor.jpg>
 Package pdftex.def Info: ./images/capacitive-sensor.jpg  used on input line 86.
@@ -974,6 +974,9 @@ Overfull \hbox (11.49289pt too wide) in paragraph at lines 86--87
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./images/FC-28-Diagram.PNG>]
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
 sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
@@ -1006,33 +1009,28 @@ Package pdftex.def Info: ./images/TMP-36.png  used on input line 121.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-Underfull \hbox (badness 10000) in paragraph at lines 123--123
-[][][]\T1/cmr/m/n/10 https://www.bc-robotics.com/tutorials/using-a-tmp36-temper
-ature-sensor-with-
- []
-
 [7 <./images/TMP-36.png>]
-<./images/LDR-Resistor.png, id=239, 401.5pt x 217.81375pt>
+<./images/LDR-Resistor.png, id=238, 401.5pt x 217.81375pt>
 File: ./images/LDR-Resistor.png Graphic file (type png)
 <use ./images/LDR-Resistor.png>
 Package pdftex.def Info: ./images/LDR-Resistor.png  used on input line 143.
 (pdftex.def)             Requested size: 321.20042pt x 174.25122pt.
  [8 <./images/LDR-Resistor.png>]
-<./images/Water-Pump.jpg, id=255, 803.0pt x 803.0pt>
+<./images/Water-Pump.jpg, id=252, 803.0pt x 803.0pt>
 File: ./images/Water-Pump.jpg Graphic file (type jpg)
 <use ./images/Water-Pump.jpg>
 Package pdftex.def Info: ./images/Water-Pump.jpg  used on input line 149.
 (pdftex.def)             Requested size: 240.90186pt x 240.90186pt.
-<./images/ESP8266.png, id=257, 445.665pt x 379.4175pt>
+<./images/ESP8266.png, id=254, 445.665pt x 379.4175pt>
 File: ./images/ESP8266.png Graphic file (type png)
 <use ./images/ESP8266.png>
 Package pdftex.def Info: ./images/ESP8266.png  used on input line 156.
 (pdftex.def)             Requested size: 133.70053pt x 113.82613pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9 <./images/Water-Pump.jpg>] [10 <./images/ESP8266.png>]
+ [9 <./images/Water-Pump.jpg> <./images/ESP8266.png>] [10]
 Chapter 3.
+
+LaTeX Warning: Citation `Identity' on page 11 undefined on input line 170.
+
 [11
 
 ]
@@ -1062,47 +1060,55 @@ Overfull \hbox (4.36464pt too wide) in paragraph at lines 181--182
  []
 
 
-Overfull \hbox (66.00464pt too wide) in paragraph at lines 189--190
+Overfull \hbox (66.00464pt too wide) in paragraph at lines 190--191
 [][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (54.00452pt too wide) in paragraph at lines 191--192
+Overfull \hbox (54.00452pt too wide) in paragraph at lines 192--193
 [][][][][][][][][][][][][] 
  []
 
 
 LaTeX Warning: Reference `list:Interface Repositories' on page 12 undefined on 
-input line 194.
+input line 195.
 
 [12]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 197.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 198.
 
-Overfull \hbox (6.00403pt too wide) in paragraph at lines 209--210
+Overfull \hbox (6.00403pt too wide) in paragraph at lines 210--211
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [13]
-Overfull \hbox (12.00409pt too wide) in paragraph at lines 241--243
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (18.00415pt too wide) in paragraph at lines 242--244
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[14] [15] [16
 
-]
+Underfull \vbox (badness 2698) has occurred while \output is active []
+
+ [14]
+
+LaTeX Warning: Reference `lst:ArduinoDataRepository' on page 15 undefined on in
+put line 280.
+
+[15] [16]
 Appendix A.
-<./images/fc-28-corrosion.png, id=379, 339.51843pt x 148.30406pt>
+<./images/fc-28-corrosion.png, id=374, 339.51843pt x 148.30406pt>
 File: ./images/fc-28-corrosion.png Graphic file (type png)
 <use ./images/fc-28-corrosion.png>
-Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 289.
+Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 291.
 (pdftex.def)             Requested size: 339.5176pt x 148.30368pt.
-<./images/ESP-01.jpg, id=380, 1606.0pt x 1204.5pt>
+<./images/ESP-01.jpg, id=375, 1606.0pt x 1204.5pt>
 File: ./images/ESP-01.jpg Graphic file (type jpg)
 <use ./images/ESP-01.jpg>
-Package pdftex.def Info: ./images/ESP-01.jpg  used on input line 320.
+Package pdftex.def Info: ./images/ESP-01.jpg  used on input line 317.
 (pdftex.def)             Requested size: 321.19432pt x 240.89574pt.
-[17 <./images/fc-28-corrosion.png>]
+[17
+
+ <./images/fc-28-corrosion.png>]
 Overfull \hbox (7.75327pt too wide) has occurred while \output is active
 \T1/cmr/m/n/12 18 \T1/cmr/m/sl/12 APPENDIX A.  GRAPHICS OF SENSORS AND OTHER CO
 MPONENTS
@@ -1110,44 +1116,41 @@ MPONENTS
 
 [18 <./images/ESP-01.jpg>]
 Appendix B.
-
-Overfull \hbox (30.00427pt too wide) in paragraph at lines 353--356
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
 [19
 
 ]
-Overfull \hbox (96.00494pt too wide) in paragraph at lines 370--371
+Overfull \hbox (30.00427pt too wide) in paragraph at lines 378--381
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (96.00494pt too wide) in paragraph at lines 395--396
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 373.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 398.
 
-Overfull \hbox (246.00647pt too wide) in paragraph at lines 376--377
+Overfull \hbox (378.00781pt too wide) in paragraph at lines 401--402
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+][][][][][][][][][][]
  []
 
-[20] ("KT Verkætlan.bbl"
+[20] [21] [22
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 403.
- [21
-
+] ("KT Verkætlan.bbl")
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 415.
+ [23
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 415.
  ("KT Verkætlan.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 403.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 403.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 415.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 415.
 Package rerunfilecheck Info: File `"KT Verkætlan".out' has not changed.
-(rerunfilecheck)             Checksum: 1E3A693FDEB89A6E6A6E602202691770;1474.
+(rerunfilecheck)             Checksum: 07A15BC3DC008DB0D3D2027C8B44B598;1474.
 
 
 LaTeX Warning: There were undefined references.
@@ -1157,38 +1160,34 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10611 strings out of 493334
- 149086 string characters out of 3139251
- 467284 words of memory out of 3000000
- 13724 multiletter control sequences out of 15000+200000
- 25954 words of font info for 76 fonts, out of 3000000 for 9000
+ 10634 strings out of 493334
+ 149470 string characters out of 3139251
+ 464441 words of memory out of 3000000
+ 13735 multiletter control sequences out of 15000+200000
+ 23671 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,8n,69p,1599b,2222s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,7n,69p,1599b,2224s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 } <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\t
 crm1200.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
 c\dpi600\ecbx1440.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
-jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\
-pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\Users\Krist\AppData\Local\MiKTeX\
-2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Krist\AppData\Loc
-al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\Krist\A
-ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Use
-rs\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1200.p
+jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\
+pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Krist\AppData\Local\MiKTeX\
+2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1200.pk> <C:\Users\Krist\AppData\Loc
+al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\Krist\A
+ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Use
+rs\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.p
 k> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecbx2488.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecbx1200.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\Krist\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk><C:/Users/Krist/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Krist
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
-:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.
-pfb><C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/u
-crr8a.pfb><C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/cou
-rier/ucrro8a.pfb>
-Output written on "KT Verkætlan.pdf" (29 pages, 1110437 bytes).
+ecrm1440.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecrm2074.pk><C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb><C:/Users/Krist/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Krist/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/Krist/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Krist/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb>
+Output written on "KT Verkætlan.pdf" (31 pages, 1114303 bytes).
 PDF statistics:
- 910 PDF objects out of 1000 (max. 8388607)
- 227 named destinations out of 1000 (max. 500000)
+ 896 PDF objects out of 1000 (max. 8388607)
+ 244 named destinations out of 1000 (max. 500000)
  241 words of extra memory for PDF output out of 10000 (max. 10000000)
 
