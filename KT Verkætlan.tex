@@ -50,6 +50,7 @@ We were asked to do an it project using an Arduino Uno. We chose to to do an aut
 
 \chapter{Foreword}
 
+
 The foreword often consists of the author's personal opinion, the history of how the work emerged, how the work is structured, how the reader can choose to read it etc. It might also contain dedications, acknowledgements and similar things. 
 
 \section*{Acknowledgement}
@@ -84,7 +85,9 @@ The setup can be seen below.
 The resistor in the circuit helps increase the amount of current entering the analog sensor. Without it about half the current would go in the pin 13 when the measurement occurs. We are therefor able to steer the range of current entering the analog input. The left left leg is connected to 8 digital pin, the middle leg is connected to A1 pin, and the third leg is connected to -18 on the breadboard which is then connected to the ground pin on the Arduino.  
 
 \subsection{Capacitive Soil Moisture Sensor v1.2}
+\begin{center}
 \includegraphics[scale=0.40]{capacitive-sensor}
+\end{center}
 
 We looked at reviews, and this one seemed to be the most corrosion resistant of the ones we looked at. It is made by corrosion resistant material, so it has a higher lifetime than the other sensor. It measures moisture, or rather the ions in the soil, by reading the capacitance between two plates in the sensor. It has lesser range than the other one, as it measures air values as 555 and completely submerges as 280. We thought the minimized range wouldn't worsen our readings, and the benefit from increased lifetime far outweighed it.
 
@@ -119,7 +122,10 @@ This method reads the output from the capacitive sensor. digitalWrite(dPin, HIGH
 
 \section{Temperature Sensor}
 \subsection{TMP Sensor}
-\includegraphics[scale=1]{TMP-36}
+\begin{center}
+\includegraphics[scale=0.8]{TMP-36}
+\end{center}
+
 
 We used the TMP36 temperature sensor, as it was supplied to use by the course administrators and that it suits our purpose. The TMP36 is fairly simple. It can measure degrees from -40\textdegree{}C to \textdegree{125}C, where it has a precision\cite{tmpTutorial} of $\pm2$\textdegree{}C. It works as a diode so when it changes temperature, it then its voltage changes accordingly. The sensor measures the small change and outputs an analog output based on it, so its possible to calculate the temperature according to that output. 
 The sensor's collector pin is attached to the 8 digital pin, the gate to the analog input A1 and the third leg is 
@@ -150,7 +156,7 @@ We use a LDR Resistor to detects the level of light in the room. The resistor ch
 	\includegraphics[scale=0.3]{Water-Pump}
 \end{center}
 
-Our water pump is said to have a flow rate of 80-120L\\H. We haven't tested that, but our tests deem that it is strong enough for our purpose- maybe even too strong. It uses a DC current 2.5-6V. The rest of the product description is in \ref{fig:pump description}. Its tube was bought in the local Pet store, and was glued on the facing  left in the picture.
+Our water pump is said to have a flow rate of 80-120L\\H. We haven't tested if that is correct, but our tests to see if it worked deemed that it's pumping flow rate is more than enough for our use. It uses a DC current 2.5-6V. The rest of the product description is in \ref{fig:pump description}. Its tube was bought in the local Pet store, and was glued on the facing  left in the picture.
 
 \section{Wifi Module}
 \begin{center}
@@ -195,7 +201,7 @@ One part of the library is a folder that contains the skeleton i.e. interfaces f
 
 This initializes at run time all instances of those three interfaces in the project as the EF implementation to the right of them. AddScoped or AddTransient establishes the lifetime of the services, and scoped means that it is created once per request. The code for the interfaces can be seen in \ref{list:Interface Repositories}. The implementations and the explanations for the interfaces can be seen below.
 
-\begin{lstlisting}[caption={Observer Class}\label{list:Concrete EFArduinoDataRepository}, language=CSharp]
+\begin{lstlisting}[caption={EFArduinoDataRepository Class}\label{list:Concrete EFArduinoDataRepository}, language=CSharp]
 public class EFArduinoDataRepository : IArduinoDataRepository
 {
 	private readonly EGardenerContext _context;
@@ -220,7 +226,7 @@ public class EFArduinoDataRepository : IArduinoDataRepository
 It has one private datamember called \_context of type EGardenerContext, which gets initialized in the EFArduinoDataRepository. This context is the context between the models and their corresponding database entities. All the EFRepositories have this EGardenerContext. The SaveData(Arduino Data) is the actual implementation of the IArduinoDataReposistory. It takes an ArduinoData object as a parameter. First a new context variable is initializied, then a plant gets initialized by dotting into the context, and choosing a plant in the database that has a PlantId that corresponds to plantId the data parameter has. A list of data gets initialized by assigning it to the data list in the newly created plant, and then the data parameter is added to that list. context.SaveChanges(); saves all the changes made.  
 
 
-\begin{lstlisting}[caption={Observer Class}\label{list:Concrete EFPlantRepository}, language=CSharp]
+\begin{lstlisting}[caption={EFPlantRepository Class}\label{list:Concrete EFPlantRepository}, language=CSharp]
 public class EFPlantRepository : IPlantRepository
 {
 	private readonly EGardenerContext _context;
@@ -263,26 +269,62 @@ public class EFPlantRepository : IPlantRepository
 \end{lstlisting}
 This class has a private field of type IApplicationUserAccessor called userAccessor which is used to access the users in the database. UserPlants() returns an asynchronous task that takes an IEnumerable<Plant>. IEnerumable is a C\#  build in interface which makes it easy to work with any kind of containers. var user = await userAccessor.User initializes the variable with user that is currently logged in. Await means that the method has to wait that initialization to finish in order to continue. User is then reassigned to the entity in the database that shares the same Id. Include(x => x.Plants) includes the plant list from the database user. ThenInclude then includes datas to each plant in the previous list. Single(x => x.Id == user.Id) finds the correct user. The method then either returns the user's plants or returns a new plant list. It returns the user plants when the user is not null and plants is also not null.
 
-SavePlant(Plant pltant) is an asynchronous method that stores a plant in the database.  It also initializes a user with the HttpContext, but it also creates one dbUser with one from the database. The dbUser is initialized similarly with how the user in UserPlants() got reassigned, and that is by locating it by user Id. The method suspends when it initialized those variables. The parameter, plant, then initializes its own user property to the user in this method. If db.User has an uninitalized plants property, then it gets initalized with a new empty one. The plant parameter then gets added to that plants property, and the \_context asynchronously saves the changes.  
+SavePlant(Plant plant) is an asynchronous method that stores a plant in the database.  It also initializes a user with the HttpContext, but it also creates one dbUser with one from the database. The dbUser is initialized similarly with how the user in UserPlants() got reassigned, and that is by locating it by user Id. The method suspends when it initialized those variables. The parameter, plant, then initializes its own user property to the user in this method. If db.User has an uninitalized plants property, then it gets initalized with a new empty one. The plant parameter then gets added to that plants property, and the \_context asynchronously saves the changes.
+  
 \subsection{Observer Pattern}
 We decided to use Gang Of Four's observer pattern\cite{GoF}. We think that it fit well in our implementation of the communication between the Arduino and our Webserver. Microsoft have their own implementation of the pattern\cite{MicrosoftObserver}.
  
 In short, the pattern is about having one subject that has a list of dependencies which it notifies when there's a change.
 
 \subsubsection{Observer}
-Our provider is called Observer and implements the IObserver with ArduinoData in the template brackets. That it implements the interface means that the class implements its own version of the methods
+Our provider is called Observer and implements the IObserver with ArduinoData in the template brackets. It can be seen in \ref{list:Observer}. That it implements the interface means that the class implements its own version of the methods
 \begin{itemize}
 \item OnCompletet()
 \item OnError(Exception Error)
 \item OnNext(T Value)
 \end{itemize}
 
-These can be called event handlers as they get called, when those events happen. The first method indicates that the provider is finished with transferring data. Second method informs the observer that an error occurred. The third method supplies the observer with current or new data. 
-The class has one member variable called \_unsubscriber, which is an IDisposable object, and it has two properties of type ArduinoData called Data and type String which is the Observer's name. IDisposable is a C\# interface that provides a mechanism for releasing unmanaged resources by its method Dispose(). ArduinoData is one we made, and it is the container for the data in which the Arduino transfers to the webserver. It's properties can be seen in listings \ref{lst:ArduinoDataRepository}
+These can be called event handlers as they get called, when those events happen. The first method indicates that the provider is finished with transferring data. Second method informs the observer that an error occurred. The third method supplies \_arduinoDataLoggerRepository for it to save.
+The class has two fields called \_unsubscriber of IDisposable and one EFDataoggerPlantRepository called \_arduinoDataRepository. IDisposable is a C\# interface that provides a mechanism for releasing unmanaged resources by its method Dispose(). ArduinoDataRepository is one we made, and it is the container for the data in which the Arduino transfers to the webserver. It's properties can be seen in listings \ref{lst:ArduinoDataLoggerRepository}. The Observer constructor initializes the field \_arduinoDataRepository with a database context. The parameters in UseSQLServer are the ones for a server running on the localhost. The Subscribe(IObservable<ArduinoData> provider) method lets the provider subscribe to the current instance of Observer. Unsubscribe() and Dispose() both dispose of the resources they hold. 
 
 \subsubsection{Observable}
+Our provides is the Observable class which can be seen in \ref{list:Observable}. It implements the IDisposable, IObservable, and IHostedService interfaces. The implementation of Dispose() closes the socket, calls onCompleted on each observer in the observers list. The implementation of Subscribe() adds the observer parameter to the observer list, if it doesn't contain observers, and then returns a new instance of Unsubscriber, which was initialized with the observer parameter and the observers list. The Observable class has three private fields called Port, _socket, and the previously mentioned observers. The port is a constant int that is assigned with 8080. _socket is a TCPListener which is a standard C\# class that belongs to the System.Net.Sockets namespace. It listens for connections from TCP clients. The public Observable(IServiceProvider serviceProvider) constructor initializes the list with a new list that contains IObserver<ArduinoData), and also initializes the \_sokcet with any IPaddress that connects to field port. The constructor parameter, serviceProvider, then subscribes the singleton instance of Observer to the current instance of obserable, and subscribes the singleton instance of DataPusherObserver to the same instance.
+
+Listen() listens for clients to connect to the observable class. \_socket.AcceptTcpClient() accepts the pending connection request, and that request is assigned to a variable client. A new thread is then created which calls the ListenToClient(TcpClient client) method where the previously created client is the parameter. That thread is started the same time it is called.
+
+ListenToClient() is run while a client is connected. The stream from the client is assigned to a variable reader, then the method enters a new while loop which is active as long as there's data to be received from the client. A byte array of size two and an ArduinoData object are then created. The reader then reads two bytes, then inserts those two bytes at index 0 in the array. data.PlantId = BitConverter.ToUInt16(buffer) takes the two bytes and converts it to an unsigned 16 bit intenger, and assigns data.PlantId to the converted value. data.Temperature = reader.ReadByte() reads the current byte in the stream, advances the stream by one, and assigns the temperature with the read value. The same happens to data.Moisture. Then a new buffer is created with a byte size of 4, and the reader reads the subsequent 4 bytes in the stream to buffer from index zero. That buffer is then converted to a 32 bit integer, and data.Light is assigned to that value. data.Water is at last assigned to the last byte in the stream. The method then calls Notify(ref data), where the newly created ArduinoData is passed by reference. The method then exists the inner loop and pauses for one second and then closes the connection to client and the clause for the outer loop.
+
+Unsubscriber is a private internal class for Observable. It also implements the IDisposable interface.  It has two private fields, one List of observers and one observer. Those are initialized in the parameterized constructor which gets called in Observable's Subscribe() method as previously mentioned. This class' Dispose checks to see whether the observer field is null and that the list contains observers. The Subscriper's \_observer is then removed from the list.
+
+Notify(ref ArduinoData) takes a reference to ArduinoData as a parameter. First it checks to see if the data has a plantId equal to 21569; if that is true, then it gives the console a message a makes a return call. We had some problems with this Id, because it didn't trigger our UpdateData in DataPusher which meant that our view didn't update asynchronously. This data's other properties e.g. temperature were also peculiar, so we believe that its package was corrupted by the underpowered WIFI chip, but we don't understand how the same id seemed to reappear so often. 
+The method then validates that data is not null. If it is then the observer at that time in the foreach loops calls OnError with an error message that says the data was corrupted. If data was valid, then the method tries to call the looped observer's OnNext(data) method with the data as a paremter, this time passed by value. If this triggers and InvalidOperationException, then the catch statement catches the exception and prints the exception message to the console.
+
+StartAsync and StopAsync are the two methods that are inherited from the IHostedService. Those two return a task and each take a CancellationToken as a parameter. StartAsync starts the TcpListener, \_socket, then starts a new thread that calls Listen and at last it returns a returns a Task that has completed successfully. StopAsync calls dispose and also returns a completed Task.
+
+
+\subsection{DataPusherObserver}
+
+DataPusherObserver is the class that connect the Arduino to the Webserver. It implements the IObserver<ArduinoData> interface. It has one field calledconnection which is of type HubConnection. This connection is initialized in the DataPusherObserver constructor, and it is the localhost/datahub. This class implements the IObserver interface similarly  as the Observer where it subscribes and notifies error the same.
+
+OnNext takes an object of ArduinoData as a parameter. Then it asynchronously starts the connection to the server, and invokes the method "UpdateData" on the server with value as the method parameter. It's cancellationToken is set to none as well. At last it stops the connection to the server. 
+
+\subsection{DataHub}
+DataHub is the class that gets triggered after the InvokeUpdateData call above. This is due to something called SignalR. This DataHub gets triggered because its name was mentioned in the url in the DataPusherClass's connection. When UpdateData gets called, it assigns a list of client to the clients assigned to the Hub. If there are no clients then the empty return statement breaks out of the method. Then it awaits for a SendAsync call for UpdateData to all clients where an ArduinoData object is the paramenter.
+
+\subsection{DataPusher}
+DataPusher.js is our javascript file that manages our plant updates on the server. It can be seen in listing \ref{fig:DataPusher}
 
 \appendix
+
+\chapter{Circuit Diagrams}
+The following are diagrams of our components and Arduino system.
+\begin{figure}[!ht]
+  \centering
+      \includegraphics[scale=0.8]{Circuit-Diagram-Wifi-8266}
+  \caption{Circuit diagram of the Wifi chip}
+  \label{fig:Wifi Circuit}
+\end{figure}
+
 
 \chapter{Graphics of sensors and other components}
 The following are pictures of our sensors and other components.
@@ -354,63 +396,256 @@ public class ApplicationUser : IdentityUser
 }
 \end{lstlisting}
 
-\section{ArduinoDataRepository}
-\begin{lstlisting}[caption={ArduinoDataRepository}\label{list:Observer},language=CSharp]
-public interface IArduinoDataRepository
+\section{ArduinoDataLoggerRepository}
+\begin{lstlisting}[caption={ArduinoDataLoggerRepository}\label{list:PlantLogger},language=CSharp]
+public class EFDataLoggerPlantRepository
 {
-	void SaveData(ArduinoData data);
+	private readonly EGardenerContext _context;
+
+	public	EFDataLoggerPlantRepository(
+	EGardenerContext context)
+	{
+       _context = context;
+	}
+
+
+	public void SavePlantData(ArduinoData data)
+	{
+		var plantQueryable = _context.Plants
+			.Include(x => x.Datas);
+             var plant = plantQueryable.Single(x=>
+             x.PlantId == data.PlantId);
+             
+		plant.Datas.Add(data);
+		_context.SaveChanges();
+	}
 }
-
-public interface IPlantRepository
-{
-	Task<IEnumerable<Plant>> UserPlants();
-    Task SavePlant(Plant plant);
-} 
-
-public interface IUserRepository
-{
-	ApplicationUser GetCurrentUser();
-}
-
 \end{lstlisting}
 
 \begin{lstlisting}[caption={Observer Class}\label{list:Observer}, language=CSharp]
-public class Observer : IObserver<ArduinoData>
+public class Observer : IObserver<ArduinoData>, IDisposable
 {
 	private IDisposable _unsubscriber;
-    public EFArduinoDataRepository ArduinoDataRepository { get; set; }
+    private readonly EFDataLoggerPlantRepository _arduinoDataRepository;
 
-      
+	  public Observer()//, IObservable<ArduinoData> observable)
+        {
+            _arduinoDataRepository = new EFDataLoggerPlantRepository(new
+            EGardenerContext(
+                new DbContextOptionsBuilder()
+                   .UseSqlServer("Server=127.0.0.1;Database=EGarden;
+                   User Id=SA;Password=Password0").Options)
+            );
+        }
+
 	public void Subscribe(IObservable<ArduinoData> provider)
     {
 		if (provider != null)
-        _unsubscriber = provider.Subscribe(this);
+		{	     
+	        _unsubscriber = provider.Subscribe(this);
+        }
+	}
+	public void OnCompleted()
+    {
+		Console.WriteLine($"connection to  closed.");
+	    this.Unsubscribe();
+    }
+
+	public void OnError(Exception e)
+	{
+        Console.WriteLine($": Error in connection or transmission of data.");
 	}
 
-	public virtual void OnCompleted()
+    // This runs when data from arduino is received.
+	public void OnNext(ArduinoData value)
+    {
+       _arduinoDataRepository.SavePlantData(value);
+    }
+
+    public void Unsubscribe()
 	{
-	Console.WriteLine($"connection to observer closed.");
-	this.Unsubscribe();
+        _unsubscriber.Dispose();
 	}
 
-	public virtual void OnError(Exception e)
-	{
-	Console.WriteLine($"Observer: Error in connection or transmission of data.");
-	}
-
-	// This runs when data from arduino is received.
-	public virtual void OnNext(ArduinoData value)
-	{
-		ArduinoDataRepository.SaveData(value); // save the read data 							                           		//into the data repository 
-	}
-
-	public virtual void Unsubscribe()
-	{
-		_unsubscriber.Dispose();
+	public void Dispose()
+    {
+		_unsubscriber?.Dispose();
 	}
 }
 \end{lstlisting}
 
+\begin{lstlisting}[caption={Observable Class}\label{list:Observable}, language=CSharp]
+public class Observable : IDisposable, IObservable<ArduinoData>, IHostedService
+{
+	private const int Port = 8080;
+    private readonly TcpListener _socket;
+    private List<IObserver<ArduinoData>> Observers { get; }
+
+	public Observable(IServiceProvider serviceProvider)
+	{
+	//prep
+		Observers = new List<IObserver<ArduinoData>>();
+		_socket = new TcpListener(IPAddress.Any, Port);
+                
+		// subscribing necessary observers
+		serviceProvider.GetService<Observer>().Subscribe(this);
+        serviceProvider.GetService<DataPusherObserver>().Subscribe(this);
+	}
+
+	private void Listen()
+	{
+		while(true)
+		{
+			var client = _socket.AcceptTcpClient();
+		    new Thread(() => ListenToClient(client)).Start();
+   		}
+	}
+
+	private void ListenToClient(TcpClient client) {
+        while(client.Connected)
+        {
+			var reader = client.GetStream();
+            while(client.Available > 0)
+            {
+			// while(reader.DataAvailable)\\
+			 {
+				byte[] buffer = new byte[2];
+                var data = new ArduinoData();
+
+                reader.Read(buffer,0,2);
+				data.PlantId = BitConverter.ToUInt16(buffer);
+				data.Temperature = reader.ReadByte();
+                    
+                data.Moisture = (uint) reader.ReadByte();
+                    
+				buffer = new byte[4];
+                    
+                reader.Read(buffer,0,4);
+                data.Light = BitConverter.ToInt32(buffer);
+                data.Water = reader.ReadByte();
+                   
+                Notify(ref data);
+              }
+                Thread.Sleep(1000);
+            }
+            client.Close();
+       }
+
+
+	public void Dispose()
+    {
+		 // closing 
+	    _socket.Stop();
+
+		foreach (var observer in Observers.ToArray())
+			if (Observers.Contains(observer))
+				observer.OnCompleted();
+
+            Observers.Clear();
+        }
+
+
+	public IDisposable Subscribe(IObserver<ArduinoData> observer)
+	{
+		if (!Observers.Contains(observer))
+				Observers.Add(observer);
+           
+            return new Unsubscriber(Observers, observer);
+    }
+
+	private class Unsubscriber : IDisposable
+	{
+		private readonly List<IObserver<ArduinoData>> _observers;
+	    private readonly IObserver<ArduinoData> _observer;
+
+        public Unsubscriber(List<IObserver<ArduinoData>> observers,
+        						 IObserver<ArduinoData> observer)
+		{
+			this._observers = observers;
+			this._observer = observer;
+		}
+		
+		public void Dispose()
+		{
+			if (_observer != null && _observers.Contains(_observer))
+					_observers.Remove(_observer);
+        }
+	}
+
+	public void Notify(ref ArduinoData data)
+	{
+		if (data.PlantId == 21569)
+		{
+			Console.WriteLine("something something id invalid..-");
+            return;
+		}
+            
+		foreach (var observer in Observers)
+		{
+			if (data == null)
+				observer.OnError(new Exception("Notifying corrupt data from arduino"));
+			else
+			{
+				try
+				{
+					observer.OnNext(data);
+				}catch (InvalidOperationException exception)
+				{
+                        // TODO: ...
+					Console.WriteLine(exception.Message);
+				}
+
+			}
+		}
+	}
+
+	public Task StartAsync(CancellationToken cancellationToken)
+	{
+		_socket.Start();
+	    new Thread(Listen).Start();
+        return Task.CompletedTask;
+	}
+
+	public Task StopAsync(CancellationToken cancellationToken)
+	{
+		Dispose();
+	    return Task.CompletedTask;
+    }
+}
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Observable Class}\label{list:Observable}, language=CSharp]
+const connection = new signalR.HubConnectionBuilder().withUrl("/dataHub").build();
+
+connection.on("UpdateData", function (data) {
+    console.log(data);
+    const plantDiv = document.getElementById(data.plantId);
+
+    plantDiv.getElementsByClassName("id")[0]
+        .getElementsByClassName("value")[0]
+        .textContent = data.dataId;
+ 
+    plantDiv.getElementsByClassName("temperature")[0]
+        .getElementsByClassName("value")[0]
+        .textContent = data.temperature;
+
+    plantDiv.getElementsByClassName("moisture")[0]
+        .getElementsByClassName("value")[0]
+        .textContent = data.moisture;
+
+    plantDiv.getElementsByClassName("light")[0]
+        .getElementsByClassName("value")[0]
+        .textContent = data.light;
+
+    plantDiv.getElementsByClassName("water")[0]
+        .getElementsByClassName("value")[0]
+        .textContent = data.water;
+});
+
+connection.start().catch(function (err) {
+    return console.error(err.toString());
+});
+\end{lstlisting}
 \backmatter 
 \cleardoublepage\addcontentsline{toc}{chapter}{Bibliography}
 \bibliographystyle{plainnat}

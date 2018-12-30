@@ -20,9 +20,10 @@
 \BOOKMARK [1][-]{section.3.2}{Login}{chapter.3}% 20
 \BOOKMARK [2][-]{subsection.3.2.1}{Project E.Garden Structure}{section.3.2}% 21
 \BOOKMARK [2][-]{subsection.3.2.2}{Observer Pattern}{section.3.2}% 22
-\BOOKMARK [0][-]{appendix.A}{Graphics of sensors and other components}{}% 23
-\BOOKMARK [1][-]{section.A.1}{Pump Description}{appendix.A}% 24
-\BOOKMARK [0][-]{appendix.B}{Latex Listings}{}% 25
-\BOOKMARK [1][-]{section.B.1}{Models}{appendix.B}% 26
-\BOOKMARK [1][-]{section.B.2}{ArduinoDataRepository}{appendix.B}% 27
-\BOOKMARK [0][-]{lstnumber.B.3.34}{Bibliography}{}% 28
+\BOOKMARK [0][-]{appendix.A}{Circuit Diagrams}{}% 23
+\BOOKMARK [0][-]{appendix.B}{Graphics of sensors and other components}{}% 24
+\BOOKMARK [1][-]{section.B.1}{Pump Description}{appendix.B}% 25
+\BOOKMARK [0][-]{appendix.C}{Latex Listings}{}% 26
+\BOOKMARK [1][-]{section.C.1}{Models}{appendix.C}% 27
+\BOOKMARK [1][-]{section.C.2}{ArduinoDataLoggerRepository}{appendix.C}% 28
+\BOOKMARK [0][-]{lstnumber.C.4.137}{Bibliography}{}% 29
