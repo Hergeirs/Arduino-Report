@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  31 DEC 2018 02:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  31 DEC 2018 03:33
 entering extended mode
 **"./KT Verkætlan.tex"
 ("KT Verkætlan.tex"
@@ -1051,44 +1051,48 @@ Overfull \hbox (61.09375pt too wide) in paragraph at lines 190--191
  []
 
 
-Overfull \hbox (4.36464pt too wide) in paragraph at lines 195--196
+Package natbib Warning: Citation `FacebookLogin' on page 12 undefined on input 
+line 194.
+
+
+Overfull \hbox (4.36464pt too wide) in paragraph at lines 194--195
 \T1/cmr/m/n/12 bookOp-tions.AppId and face-bookOp-tions.AppSecret are plu-g-ins
  from chrome,
  []
 
 
-Overfull \hbox (66.00464pt too wide) in paragraph at lines 204--205
+Overfull \hbox (66.00464pt too wide) in paragraph at lines 202--203
 [][][][][][][][][][][][][] 
  []
 
 [12]
-Overfull \hbox (54.00452pt too wide) in paragraph at lines 206--207
+Overfull \hbox (54.00452pt too wide) in paragraph at lines 204--205
 [][][][][][][][][][][][][] 
  []
 
 
 LaTeX Warning: Reference `list:Interface Repositories' on page 13 undefined on 
-input line 209.
+input line 207.
 
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 212.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 210.
 
-Overfull \hbox (6.00403pt too wide) in paragraph at lines 224--225
+Overfull \hbox (6.00403pt too wide) in paragraph at lines 222--223
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [13]
-Overfull \hbox (18.00415pt too wide) in paragraph at lines 256--258
+Overfull \hbox (18.00415pt too wide) in paragraph at lines 254--256
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [14]
 
 LaTeX Warning: Reference `lst:ArduinoDataLoggerRepository' on page 15 undefined
- on input line 295.
+ on input line 293.
 
 [15]
-Overfull \hbox (70.0175pt too wide) in paragraph at lines 302--303
+Overfull \hbox (70.0175pt too wide) in paragraph at lines 300--301
 []\T1/cmr/m/n/12 Listen() lis-tens for clients to con-nect to the ob-serv-able 
 class. _socket.AcceptTcpClient()
  []
@@ -1099,20 +1103,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [17]
 
 LaTeX Warning: Reference `fig:DataPusher' on page 18 undefined on input line 32
-4.
+2.
 
 [18] [19] [20
 
 ]
 Appendix A.
-<./images/Circuit-Diagram-Wifi-8266.png, id=468, 544.28343pt x 183.68625pt>
+<./images/Circuit-Diagram-Wifi-8266.png, id=467, 544.28343pt x 183.68625pt>
 File: ./images/Circuit-Diagram-Wifi-8266.png Graphic file (type png)
 <use ./images/Circuit-Diagram-Wifi-8266.png>
 Package pdftex.def Info: ./images/Circuit-Diagram-Wifi-8266.png  used on input 
-line 359.
+line 357.
 (pdftex.def)             Requested size: 435.42734pt x 146.94917pt.
 
-Overfull \hbox (45.42734pt too wide) in paragraph at lines 359--360
+Overfull \hbox (45.42734pt too wide) in paragraph at lines 357--358
  [][] 
  []
 
@@ -1120,15 +1124,15 @@ Overfull \hbox (45.42734pt too wide) in paragraph at lines 359--360
 
 ]
 Appendix B.
-<./images/fc-28-corrosion.png, id=478, 339.51843pt x 148.30406pt>
+<./images/fc-28-corrosion.png, id=477, 339.51843pt x 148.30406pt>
 File: ./images/fc-28-corrosion.png Graphic file (type png)
 <use ./images/fc-28-corrosion.png>
-Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 370.
+Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 368.
 (pdftex.def)             Requested size: 339.5176pt x 148.30368pt.
-<./images/ESP-01.jpg, id=479, 1606.0pt x 1204.5pt>
+<./images/ESP-01.jpg, id=478, 1606.0pt x 1204.5pt>
 File: ./images/ESP-01.jpg Graphic file (type jpg)
 <use ./images/ESP-01.jpg>
-Package pdftex.def Info: ./images/ESP-01.jpg  used on input line 397.
+Package pdftex.def Info: ./images/ESP-01.jpg  used on input line 395.
 (pdftex.def)             Requested size: 321.19432pt x 240.89574pt.
 [23 <./images/fc-28-corrosion.png>]
 Overfull \hbox (7.26588pt too wide) has occurred while \output is active
@@ -1141,35 +1145,35 @@ Appendix C.
 [25
 
 ]
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 465--467
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 463--465
 [][][][][][][][][][][][][][][][] 
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 467.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 465.
 
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 469--470
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 467--468
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (18.00415pt too wide) in paragraph at lines 472--473
+Overfull \hbox (18.00415pt too wide) in paragraph at lines 470--471
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [26]
-Overfull \hbox (72.0047pt too wide) in paragraph at lines 492--493
+Overfull \hbox (72.0047pt too wide) in paragraph at lines 490--491
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (84.00482pt too wide) in paragraph at lines 514--515
+Overfull \hbox (84.00482pt too wide) in paragraph at lines 512--513
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [27]
-Overfull \hbox (48.00446pt too wide) in paragraph at lines 528--529
+Overfull \hbox (48.00446pt too wide) in paragraph at lines 526--527
 [][][][][][][][][][][][][][] 
  []
 
@@ -1177,23 +1181,23 @@ Overfull \hbox (48.00446pt too wide) in paragraph at lines 528--529
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-Overfull \hbox (12.00409pt too wide) in paragraph at lines 597--598
+Overfull \hbox (12.00409pt too wide) in paragraph at lines 595--596
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (18.00415pt too wide) in paragraph at lines 606--607
+Overfull \hbox (18.00415pt too wide) in paragraph at lines 604--605
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (12.00409pt too wide) in paragraph at lines 615--616
+Overfull \hbox (12.00409pt too wide) in paragraph at lines 613--614
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
 
  []
 
 
-Overfull \hbox (132.00531pt too wide) in paragraph at lines 622--623
+Overfull \hbox (132.00531pt too wide) in paragraph at lines 620--621
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][] 
  []
@@ -1202,17 +1206,17 @@ Overfull \hbox (132.00531pt too wide) in paragraph at lines 622--623
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
-Overfull \hbox (48.00446pt too wide) in paragraph at lines 654--655
+Overfull \hbox (48.00446pt too wide) in paragraph at lines 652--653
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [30] [31]
-Overfull \hbox (36.00433pt too wide) in paragraph at lines 726--727
+Overfull \hbox (36.00433pt too wide) in paragraph at lines 724--725
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (66.00464pt too wide) in paragraph at lines 730--731
+Overfull \hbox (66.00464pt too wide) in paragraph at lines 728--729
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -1225,12 +1229,12 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 ty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 ) [32] [33]
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 819--820
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 817--818
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (72.0047pt too wide) in paragraph at lines 826--827
+Overfull \hbox (72.0047pt too wide) in paragraph at lines 824--825
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -1279,16 +1283,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--36
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 834.
- [35
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 832.
+[35
 
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 834.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 832.
  ("KT Verkætlan.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 834.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 834.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 832.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 832.
 Package rerunfilecheck Info: File `"KT Verkætlan".out' has not changed.
 (rerunfilecheck)             Checksum: 38731464D24260D9D71F5A5A1032ABB9;2178.
 
@@ -1300,10 +1307,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 11802 strings out of 493334
- 165594 string characters out of 3139251
+ 11804 strings out of 493334
+ 165619 string characters out of 3139251
  462570 words of memory out of 3000000
- 14532 multiletter control sequences out of 15000+200000
+ 14534 multiletter control sequences out of 15000+200000
  23671 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,8n,69p,1599b,2089s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1325,9 +1332,9 @@ ype1/public/amsfonts/cm/cmr12.pfb><C:/Users/Krist/AppData/Local/Programs/MiKTeX
 ograms/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/Krist/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Krist/AppD
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on "KT Verkætlan.pdf" (43 pages, 1211351 bytes).
+Output written on "KT Verkætlan.pdf" (43 pages, 1219682 bytes).
 PDF statistics:
- 1449 PDF objects out of 1728 (max. 8388607)
+ 1448 PDF objects out of 1728 (max. 8388607)
  606 named destinations out of 1000 (max. 500000)
  334 words of extra memory for PDF output out of 10000 (max. 10000000)
 
