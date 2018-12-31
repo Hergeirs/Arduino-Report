@@ -19,14 +19,21 @@
 \contentsline {chapter}{\numberline {3}Website}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Hosting}{11}{section.3.1}
 \contentsline {section}{\numberline {3.2}Login}{11}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Project E.Garden Structure}{12}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Observer Pattern}{15}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Project E.Garden Structure}{12}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Observer Pattern}{15}{subsection.3.3.1}
 \contentsline {subsubsection}{Observer}{15}{section*.6}
 \contentsline {subsubsection}{Observable}{16}{section*.7}
-\contentsline {chapter}{\numberline {A}Circuit Diagrams}{17}{appendix.A}
-\contentsline {chapter}{\numberline {B}Graphics of sensors and other components}{19}{appendix.B}
-\contentsline {section}{\numberline {B.1}Pump Description}{19}{section.B.1}
-\contentsline {chapter}{\numberline {C}Latex Listings}{21}{appendix.C}
-\contentsline {section}{\numberline {C.1}Models}{21}{section.C.1}
-\contentsline {section}{\numberline {C.2}ArduinoDataLoggerRepository}{22}{section.C.2}
-\contentsline {chapter}{Bibliography}{27}{lstnumber.C.4.137}
+\contentsline {subsection}{\numberline {3.3.2}DataPusherObserver}{18}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}DataHub}{18}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}DataPusher}{18}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}DI class}{18}{subsection.3.3.5}
+\contentsline {section}{\numberline {3.4}Controllers}{18}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}HomeController}{19}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}PlantController}{19}{subsection.3.4.2}
+\contentsline {chapter}{\numberline {A}Circuit Diagrams}{21}{appendix.A}
+\contentsline {chapter}{\numberline {B}Graphics of sensors and other components}{23}{appendix.B}
+\contentsline {section}{\numberline {B.1}Pump Description}{23}{section.B.1}
+\contentsline {chapter}{\numberline {C}Latex Listings}{25}{appendix.C}
+\contentsline {section}{\numberline {C.1}Models}{25}{section.C.1}
+\contentsline {section}{\numberline {C.2}ArduinoDataLoggerRepository}{26}{section.C.2}
+\contentsline {chapter}{Bibliography}{35}{lstnumber.C.9.39}
