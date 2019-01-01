@@ -30,10 +30,10 @@
 \contentsline {section}{\numberline {3.4}Controllers}{18}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}HomeController}{19}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}PlantController}{19}{subsection.3.4.2}
-\contentsline {chapter}{\numberline {A}Circuit Diagrams}{21}{appendix.A}
-\contentsline {chapter}{\numberline {B}Graphics of sensors and other components}{23}{appendix.B}
-\contentsline {section}{\numberline {B.1}Pump Description}{23}{section.B.1}
-\contentsline {chapter}{\numberline {C}Latex Listings}{25}{appendix.C}
-\contentsline {section}{\numberline {C.1}Models}{25}{section.C.1}
-\contentsline {section}{\numberline {C.2}ArduinoDataLoggerRepository}{26}{section.C.2}
-\contentsline {chapter}{Bibliography}{35}{lstnumber.C.9.39}
+\contentsline {chapter}{\numberline {A}Circuit Diagrams}{23}{appendix.A}
+\contentsline {chapter}{\numberline {B}Graphics of sensors and other components}{25}{appendix.B}
+\contentsline {section}{\numberline {B.1}Pump Description}{25}{section.B.1}
+\contentsline {chapter}{\numberline {C}Latex Listings}{27}{appendix.C}
+\contentsline {section}{\numberline {C.1}Models}{27}{section.C.1}
+\contentsline {section}{\numberline {C.2}ArduinoDataLoggerRepository}{28}{section.C.2}
+\contentsline {chapter}{Bibliography}{37}{lstnumber.C.9.39}

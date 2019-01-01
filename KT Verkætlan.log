@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  31 DEC 2018 03:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  31 DEC 2018 16:34
 entering extended mode
 **"./KT Verkætlan.tex"
 ("KT Verkætlan.tex"
@@ -1105,122 +1105,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: Reference `fig:DataPusher' on page 18 undefined on input line 32
 2.
 
-[18] [19] [20
-
-]
-Appendix A.
-<./images/Circuit-Diagram-Wifi-8266.png, id=467, 544.28343pt x 183.68625pt>
-File: ./images/Circuit-Diagram-Wifi-8266.png Graphic file (type png)
-<use ./images/Circuit-Diagram-Wifi-8266.png>
-Package pdftex.def Info: ./images/Circuit-Diagram-Wifi-8266.png  used on input 
-line 357.
-(pdftex.def)             Requested size: 435.42734pt x 146.94917pt.
-
-Overfull \hbox (45.42734pt too wide) in paragraph at lines 357--358
- [][] 
- []
-
-[21 <./images/Circuit-Diagram-Wifi-8266.png>] [22
-
-]
-Appendix B.
-<./images/fc-28-corrosion.png, id=477, 339.51843pt x 148.30406pt>
-File: ./images/fc-28-corrosion.png Graphic file (type png)
-<use ./images/fc-28-corrosion.png>
-Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 368.
-(pdftex.def)             Requested size: 339.5176pt x 148.30368pt.
-<./images/ESP-01.jpg, id=478, 1606.0pt x 1204.5pt>
-File: ./images/ESP-01.jpg Graphic file (type jpg)
-<use ./images/ESP-01.jpg>
-Package pdftex.def Info: ./images/ESP-01.jpg  used on input line 395.
-(pdftex.def)             Requested size: 321.19432pt x 240.89574pt.
-[23 <./images/fc-28-corrosion.png>]
-Overfull \hbox (7.26588pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 24 \T1/cmr/m/sl/12 APPENDIX B.  GRAPHICS OF SENSORS AND OTHER CO
-MPONENTS
- []
-
-[24 <./images/ESP-01.jpg>]
-Appendix C.
-[25
-
-]
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 463--465
-[][][][][][][][][][][][][][][][] 
- []
-
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 465.
-
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 467--468
-[][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (18.00415pt too wide) in paragraph at lines 470--471
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[26]
-Overfull \hbox (72.0047pt too wide) in paragraph at lines 490--491
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (84.00482pt too wide) in paragraph at lines 512--513
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[27]
-Overfull \hbox (48.00446pt too wide) in paragraph at lines 526--527
-[][][][][][][][][][][][][][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28]
-Overfull \hbox (12.00409pt too wide) in paragraph at lines 595--596
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (18.00415pt too wide) in paragraph at lines 604--605
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (12.00409pt too wide) in paragraph at lines 613--614
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
-
- []
-
-
-Overfull \hbox (132.00531pt too wide) in paragraph at lines 620--621
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
-Overfull \hbox (48.00446pt too wide) in paragraph at lines 652--653
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[30] [31]
-Overfull \hbox (36.00433pt too wide) in paragraph at lines 724--725
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (66.00464pt too wide) in paragraph at lines 728--729
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
+[18] [19]
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
 sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
@@ -1228,17 +1113,180 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
 ty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-) [32] [33]
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 817--818
+)
+Overfull \hbox (103.38379pt too wide) in paragraph at lines 352--354
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (103.38379pt too wide) in paragraph at lines 369--371
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.94873pt too wide) in paragraph at lines 379--380
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[20]
+Overfull \hbox (18.80371pt too wide) in paragraph at lines 395--396
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (258.44727pt too wide) in paragraph at lines 399--400
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.94873pt too wide) in paragraph at lines 400--401
+[][][][][][][][][][][][][][][][] 
+ []
+
+! Undefined control sequence.
+l.406 ...oads the partial view \arduinodatapartial
+                                                   and \data\_chart \_partia...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.406 ...artial view \arduinodatapartial and \data
+                                                  \_chart \_partial. The ard...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[21] [22
+
+]
+Appendix A.
+<./images/Circuit-Diagram-Wifi-8266.png, id=517, 544.28343pt x 183.68625pt>
+File: ./images/Circuit-Diagram-Wifi-8266.png Graphic file (type png)
+<use ./images/Circuit-Diagram-Wifi-8266.png>
+Package pdftex.def Info: ./images/Circuit-Diagram-Wifi-8266.png  used on input 
+line 413.
+(pdftex.def)             Requested size: 435.42734pt x 146.94917pt.
+
+Overfull \hbox (45.42734pt too wide) in paragraph at lines 413--414
+ [][] 
+ []
+
+[23 <./images/Circuit-Diagram-Wifi-8266.png>] [24
+
+]
+Appendix B.
+<./images/fc-28-corrosion.png, id=528, 339.51843pt x 148.30406pt>
+File: ./images/fc-28-corrosion.png Graphic file (type png)
+<use ./images/fc-28-corrosion.png>
+Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 424.
+(pdftex.def)             Requested size: 339.5176pt x 148.30368pt.
+<./images/ESP-01.jpg, id=529, 1606.0pt x 1204.5pt>
+File: ./images/ESP-01.jpg Graphic file (type jpg)
+<use ./images/ESP-01.jpg>
+Package pdftex.def Info: ./images/ESP-01.jpg  used on input line 451.
+(pdftex.def)             Requested size: 321.19432pt x 240.89574pt.
+[25 <./images/fc-28-corrosion.png>]
+Overfull \hbox (7.26588pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 26 \T1/cmr/m/sl/12 APPENDIX B.  GRAPHICS OF SENSORS AND OTHER CO
+MPONENTS
+ []
+
+[26 <./images/ESP-01.jpg>]
+Appendix C.
+[27
+
+]
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 519--521
+[][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 521.
+
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 523--524
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (18.00415pt too wide) in paragraph at lines 526--527
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[28]
+Overfull \hbox (72.0047pt too wide) in paragraph at lines 546--547
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (84.00482pt too wide) in paragraph at lines 568--569
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[29]
+Overfull \hbox (48.00446pt too wide) in paragraph at lines 582--583
+[][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+Overfull \hbox (12.00409pt too wide) in paragraph at lines 651--652
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (18.00415pt too wide) in paragraph at lines 660--661
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (12.00409pt too wide) in paragraph at lines 669--670
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+
+ []
+
+
+Overfull \hbox (132.00531pt too wide) in paragraph at lines 676--677
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+Overfull \hbox (48.00446pt too wide) in paragraph at lines 708--709
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[32] [33]
+Overfull \hbox (36.00433pt too wide) in paragraph at lines 780--781
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (66.00464pt too wide) in paragraph at lines 784--785
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[34] [35]
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 873--874
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (72.0047pt too wide) in paragraph at lines 824--825
+Overfull \hbox (72.0047pt too wide) in paragraph at lines 880--881
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[34] ("KT Verkætlan.bbl"
+[36] ("KT Verkætlan.bbl"
 Underfull \hbox (badness 1014) in paragraph at lines 9--13
 []\T1/cmr/m/n/12 Rick An-der-son.  In-tro-duc-tion to iden-tity on asp.net core
 .  URL
@@ -1286,31 +1334,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--36
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 832.
-[35
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 888.
+[37
 
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 832.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 888.
  ("KT Verkætlan.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 832.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 832.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 888.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 888.
 Package rerunfilecheck Info: File `"KT Verkætlan".out' has not changed.
 (rerunfilecheck)             Checksum: 38731464D24260D9D71F5A5A1032ABB9;2178.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 11804 strings out of 493334
- 165619 string characters out of 3139251
- 462570 words of memory out of 3000000
- 14534 multiletter control sequences out of 15000+200000
+ 11854 strings out of 493334
+ 166335 string characters out of 3139251
+ 462708 words of memory out of 3000000
+ 14542 multiletter control sequences out of 15000+200000
  23671 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,8n,69p,1599b,2089s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1332,9 +1377,9 @@ ype1/public/amsfonts/cm/cmr12.pfb><C:/Users/Krist/AppData/Local/Programs/MiKTeX
 ograms/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/Krist/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Krist/AppD
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on "KT Verkætlan.pdf" (43 pages, 1219682 bytes).
+Output written on "KT Verkætlan.pdf" (45 pages, 1222217 bytes).
 PDF statistics:
- 1448 PDF objects out of 1728 (max. 8388607)
- 606 named destinations out of 1000 (max. 500000)
+ 1507 PDF objects out of 1728 (max. 8388607)
+ 648 named destinations out of 1000 (max. 500000)
  334 words of extra memory for PDF output out of 10000 (max. 10000000)
 

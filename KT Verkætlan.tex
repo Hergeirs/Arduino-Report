@@ -381,7 +381,7 @@ The model this view uses is a Plant. The section surrounded by the curly bracket
 \end{lstlisting}
 \end{center}
 
-This view loops through the plant list, and supplies the partial view, \_plant_partial each element for each iteration. The bottom two tags includes the SignalR and Datapusher javascript libraries. The <br/> creates a linebreak.
+This view loops through the plant list, and supplies the partial view, \_plant\_partial each element for each iteration. The bottom two tags includes the SignalR and Datapusher javascript libraries. The <br/> creates a linebreak.
 
 
 \begin{center}
@@ -403,7 +403,7 @@ This view loops through the plant list, and supplies the partial view, \_plant_p
 \end{lstlisting}
 \end{center}
 
-This view uses a single plant model, one whic was supplied to it in loop in the previous partial view. First a html div element is created as a container for the rest of the html element. Its class is "plant" which means it gets stylized after, what that html class says. It's id tag is whatever PlantId is. Id is used stylize single elements with by targeting the unique id. Then it creates a new div element as class info, and this div contains tree other divs with description about the each attribute of the printed model. The last div then loads the partial view \_arduino\_data\_partial and \data_chart_partial. The arduino data partial view gets either the last element in the datas list in Plant, or it gets a null value. Data\_chart is supplied with the model
+This view uses a single plant model, one which was supplied to it in loop in the previous partial view. First a html div element is created as a container for the rest of the html element. Its class is "plant" which means it gets stylized after, what that html class says. It's id tag is whatever PlantId is. Id is used stylize single elements with by targeting the unique id. Then it creates a new div element as class info, and this div contains tree other divs with description about the each attribute of the printed model. The last div then loads the partial view \arduinodatapartial and \data\_chart \_partial. The arduino data partial view gets either the last element in the datas list in Plant, or it gets a null value. Data\_chart is supplied with the model
 \appendix
 
 \chapter{Circuit Diagrams}
