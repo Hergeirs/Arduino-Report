@@ -15,22 +15,24 @@
 \BOOKMARK [1][-]{section.2.4}{Light Sensor}{chapter.2}% 15
 \BOOKMARK [2][-]{subsection.2.4.1}{LDR Resistor}{section.2.4}% 16
 \BOOKMARK [1][-]{section.2.5}{Water Pump}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.6}{Wifi Module}{chapter.2}% 18
-\BOOKMARK [0][-]{chapter.3}{Website}{}% 19
-\BOOKMARK [1][-]{section.3.1}{Hosting}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.2}{Login}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.3}{Project E.Garden Structure}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.3.1}{Observer Pattern}{section.3.3}% 23
-\BOOKMARK [2][-]{subsection.3.3.2}{DataPusherObserver}{section.3.3}% 24
-\BOOKMARK [2][-]{subsection.3.3.3}{DataHub}{section.3.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.4}{DataPusher}{section.3.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.5}{DI class}{section.3.3}% 27
-\BOOKMARK [1][-]{section.3.4}{Controllers}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.4.1}{HomeController}{section.3.4}% 29
-\BOOKMARK [2][-]{subsection.3.4.2}{PlantController}{section.3.4}% 30
-\BOOKMARK [0][-]{appendix.A}{Circuit Diagrams}{}% 31
-\BOOKMARK [0][-]{appendix.B}{Graphics of sensors and other components}{}% 32
-\BOOKMARK [0][-]{appendix.C}{Latex Listings}{}% 33
-\BOOKMARK [1][-]{section.C.1}{Models}{appendix.C}% 34
-\BOOKMARK [1][-]{section.C.2}{ArduinoDataLoggerRepository}{appendix.C}% 35
-\BOOKMARK [0][-]{lstnumber.C.10.39}{Bibliography}{}% 36
+\BOOKMARK [2][-]{subsection.2.5.1}{Water Pump}{section.2.5}% 18
+\BOOKMARK [1][-]{section.2.6}{Wifi Module}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.6.1}{ESP8266-05}{section.2.6}% 20
+\BOOKMARK [0][-]{chapter.3}{Website}{}% 21
+\BOOKMARK [1][-]{section.3.1}{Hosting}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{Login}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.3}{Project E.Garden Structure}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.1}{Observer Pattern}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.2}{DataPusherObserver}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.3}{DataHub}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.4}{DataPusher}{section.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.5}{DI class}{section.3.3}% 29
+\BOOKMARK [1][-]{section.3.4}{Controllers}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.4.1}{HomeController}{section.3.4}% 31
+\BOOKMARK [2][-]{subsection.3.4.2}{PlantController}{section.3.4}% 32
+\BOOKMARK [0][-]{appendix.A}{Circuit Diagrams}{}% 33
+\BOOKMARK [0][-]{appendix.B}{Graphics of sensors and other components}{}% 34
+\BOOKMARK [0][-]{appendix.C}{Latex Listings}{}% 35
+\BOOKMARK [1][-]{section.C.1}{Models}{appendix.C}% 36
+\BOOKMARK [1][-]{section.C.2}{ArduinoDataLoggerRepository}{appendix.C}% 37
+\BOOKMARK [0][-]{lstnumber.C.11.39}{Bibliography}{}% 38
