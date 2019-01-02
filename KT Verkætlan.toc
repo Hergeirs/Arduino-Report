@@ -24,18 +24,24 @@
 \contentsline {section}{\numberline {3.2}Login}{13}{section.3.2}
 \contentsline {section}{\numberline {3.3}Project E.Garden Structure}{14}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Observer Pattern}{17}{subsection.3.3.1}
-\contentsline {subsubsection}{Observer}{17}{section*.6}
-\contentsline {subsubsection}{Observable}{18}{section*.7}
-\contentsline {subsection}{\numberline {3.3.2}DataPusherObserver}{20}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}DataHub}{20}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}DataPusher}{20}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}DI class}{20}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.2}Observer}{17}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Observable}{18}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}DataPusherObserver}{19}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}DataHub}{20}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}DataPusher}{20}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}DI class}{20}{subsection.3.3.7}
 \contentsline {section}{\numberline {3.4}Controllers}{20}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}HomeController}{21}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}HomeController}{20}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}PlantController}{21}{subsection.3.4.2}
 \contentsline {chapter}{\numberline {A}Circuit Diagrams}{25}{appendix.A}
-\contentsline {chapter}{\numberline {B}Graphics of sensors and other components}{27}{appendix.B}
+\contentsline {chapter}{\numberline {B}Arduino Components}{27}{appendix.B}
+\contentsline {section}{\numberline {B.1}fc-28}{27}{section.B.1}
+\contentsline {section}{\numberline {B.2}Pump}{27}{section.B.2}
+\contentsline {section}{\numberline {B.3}ESP-01}{27}{section.B.3}
 \contentsline {chapter}{\numberline {C}Latex Listings}{29}{appendix.C}
-\contentsline {section}{\numberline {C.1}Models}{32}{section.C.1}
-\contentsline {section}{\numberline {C.2}ArduinoDataLoggerRepository}{33}{section.C.2}
+\contentsline {section}{\numberline {C.1}Ardunio Ino File}{29}{section.C.1}
+\contentsline {section}{\numberline {C.2}Light Reading}{32}{section.C.2}
+\contentsline {section}{\numberline {C.3}Models}{32}{section.C.3}
+\contentsline {section}{\numberline {C.4}ArduinoDataLoggerRepository}{33}{section.C.4}
+\contentsline {section}{\numberline {C.5}Observer Code}{34}{section.C.5}
 \contentsline {chapter}{Bibliography}{43}{lstnumber.C.11.39}

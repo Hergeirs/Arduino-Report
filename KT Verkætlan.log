@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  2 JAN 2019 20:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  2 JAN 2019 21:44
 entering extended mode
 **"./KT Verkætlan.tex"
 ("KT Verkætlan.tex"
@@ -943,7 +943,7 @@ l.48 \cleardoublepage
 Chapter 1.
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 74.
+(hyperref)                be the same. Added a new anchor on input line 71.
 
 [1
 
@@ -952,11 +952,11 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 ]
 Chapter 2.
 
-LaTeX Warning: Reference `fig:capacitive' on page 3 undefined on input line 77.
+LaTeX Warning: Reference `fig:capacitive' on page 3 undefined on input line 74.
 
 
 [3]
-Overfull \hbox (0.71858pt too wide) in paragraph at lines 95--97
+Overfull \hbox (0.71858pt too wide) in paragraph at lines 92--94
 \T1/cmr/m/n/12 Our in-ten-tion was to use the Ar-duino to in-duce an al-ter-nat
 -ing cur-rent through
  []
@@ -965,15 +965,15 @@ Overfull \hbox (0.71858pt too wide) in paragraph at lines 95--97
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-<./images/FC-28-Diagram.PNG, id=259, 596.98032pt x 505.89pt>
+<./images/FC-28-Diagram.PNG, id=299, 596.98032pt x 505.89pt>
 File: ./images/FC-28-Diagram.PNG Graphic file (type png)
 <use ./images/FC-28-Diagram.PNG>
-Package pdftex.def Info: ./images/FC-28-Diagram.PNG  used on input line 99.
+Package pdftex.def Info: ./images/FC-28-Diagram.PNG  used on input line 96.
 (pdftex.def)             Requested size: 298.48943pt x 252.94437pt.
-<./images/capacitive-sensor.jpg, id=261, 1003.75pt x 1003.75pt>
+<./images/capacitive-sensor.jpg, id=301, 1003.75pt x 1003.75pt>
 File: ./images/capacitive-sensor.jpg Graphic file (type jpg)
 <use ./images/capacitive-sensor.jpg>
-Package pdftex.def Info: ./images/capacitive-sensor.jpg  used on input line 105
+Package pdftex.def Info: ./images/capacitive-sensor.jpg  used on input line 102
 .
 (pdftex.def)             Requested size: 200.74644pt x 200.74644pt.
 
@@ -992,123 +992,120 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 ty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 110.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 107.
 
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 [6 <./images/capacitive-sensor.jpg>]
-Overfull \hbox (11.99986pt too wide) in paragraph at lines 137--138
+Overfull \hbox (11.99986pt too wide) in paragraph at lines 134--135
 []\T1/cmr/m/n/12 This method reads the out-put from the ca-pac-i-tive sen-sor. 
 dig-i-tal-Write(dPin,
  []
 
-<./images/TMP-36.png, id=285, 287.57437pt x 335.00156pt>
+<./images/TMP-36.png, id=325, 287.57437pt x 335.00156pt>
 File: ./images/TMP-36.png Graphic file (type png)
 <use ./images/TMP-36.png>
-Package pdftex.def Info: ./images/TMP-36.png  used on input line 142.
+Package pdftex.def Info: ./images/TMP-36.png  used on input line 139.
 (pdftex.def)             Requested size: 230.0598pt x 268.0016pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
 [8 <./images/TMP-36.png>]
-<./images/LDR-Resistor.png, id=316, 401.5pt x 217.81375pt>
+<./images/LDR-Resistor.png, id=356, 401.5pt x 217.81375pt>
 File: ./images/LDR-Resistor.png Graphic file (type png)
 <use ./images/LDR-Resistor.png>
-Package pdftex.def Info: ./images/LDR-Resistor.png  used on input line 168.
+Package pdftex.def Info: ./images/LDR-Resistor.png  used on input line 165.
 (pdftex.def)             Requested size: 321.20042pt x 174.25122pt.
-<./images/Water-Pump.jpg, id=317, 803.0pt x 803.0pt>
+<./images/Water-Pump.jpg, id=357, 803.0pt x 803.0pt>
 File: ./images/Water-Pump.jpg Graphic file (type jpg)
 <use ./images/Water-Pump.jpg>
-Package pdftex.def Info: ./images/Water-Pump.jpg  used on input line 177.
+Package pdftex.def Info: ./images/Water-Pump.jpg  used on input line 174.
 (pdftex.def)             Requested size: 240.90186pt x 240.90186pt.
  [9 <./images/LDR-Resistor.png>]
-<./images/ESP8266.png, id=328, 445.665pt x 379.4175pt>
+<./images/ESP8266.png, id=368, 445.665pt x 379.4175pt>
 File: ./images/ESP8266.png Graphic file (type png)
 <use ./images/ESP8266.png>
-Package pdftex.def Info: ./images/ESP8266.png  used on input line 185.
+Package pdftex.def Info: ./images/ESP8266.png  used on input line 182.
 (pdftex.def)             Requested size: 133.70053pt x 113.82613pt.
  [10 <./images/Water-Pump.jpg> <./images/ESP8266.png>] [11] [12
 
 ]
 Chapter 3.
-[13]
 
-Package Listings Warning: Text dropped after begin of listing on input line 201
+Package Listings Warning: Text dropped after begin of listing on input line 197
 .
 
-
-Overfull \hbox (25.85205pt too wide) in paragraph at lines 203--204
+[13]
+Overfull \hbox (25.85205pt too wide) in paragraph at lines 199--200
 [][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (32.90039pt too wide) in paragraph at lines 206--207
+Overfull \hbox (32.90039pt too wide) in paragraph at lines 202--203
 [][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (61.09375pt too wide) in paragraph at lines 208--209
+Overfull \hbox (61.09375pt too wide) in paragraph at lines 204--205
 [][][][][][][][][][][][] 
  []
 
 
 Package natbib Warning: Citation `FacebookLogin' on page 14 undefined on input 
-line 212.
+line 208.
 
 
-Overfull \hbox (4.36464pt too wide) in paragraph at lines 212--213
+Overfull \hbox (4.36464pt too wide) in paragraph at lines 208--209
 \T1/cmr/m/n/12 bookOp-tions.AppId and face-bookOp-tions.AppSecret are plu-g-ins
  from chrome,
  []
 
 
-Overfull \hbox (66.00464pt too wide) in paragraph at lines 220--221
+Overfull \hbox (66.00464pt too wide) in paragraph at lines 216--217
 [][][][][][][][][][][][][] 
  []
+
+
+Overfull \hbox (54.00452pt too wide) in paragraph at lines 218--219
+[][][][][][][][][][][][][] 
+ []
+
+
+LaTeX Warning: Reference `list:Interface Repositories' on page 14 undefined on 
+input line 221.
 
 [14]
-Overfull \hbox (54.00452pt too wide) in paragraph at lines 222--223
-[][][][][][][][][][][][][] 
- []
-
-
-LaTeX Warning: Reference `list:Interface Repositories' on page 15 undefined on 
-input line 225.
-
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 228.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 224.
 
-Overfull \hbox (6.00403pt too wide) in paragraph at lines 240--241
+Overfull \hbox (6.00403pt too wide) in paragraph at lines 236--237
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [15]
-Overfull \hbox (18.00415pt too wide) in paragraph at lines 272--274
+Overfull \hbox (18.00415pt too wide) in paragraph at lines 267--269
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [16]
 
 LaTeX Warning: Reference `lst:ArduinoDataLoggerRepository' on page 17 undefined
- on input line 311.
+ on input line 306.
 
 [17]
-Overfull \hbox (70.0175pt too wide) in paragraph at lines 318--319
+Overfull \hbox (70.0175pt too wide) in paragraph at lines 311--312
 []\T1/cmr/m/n/12 Listen() lis-tens for clients to con-nect to the ob-serv-able 
 class. _socket.AcceptTcpClient()
  []
 
-[18]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[18] [19]
 
- [19]
+LaTeX Warning: Reference `fig:DataPusher' on page 20 undefined on input line 33
+3.
 
-LaTeX Warning: Reference `fig:DataPusher' on page 20 undefined on input line 34
-0.
-
-[20] [21]
+[20]
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
 sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
@@ -1116,18 +1113,18 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
 ty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-)
-Overfull \hbox (39.94873pt too wide) in paragraph at lines 399--400
+) [21]
+Overfull \hbox (39.94873pt too wide) in paragraph at lines 392--393
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [22]
-Overfull \hbox (18.80371pt too wide) in paragraph at lines 415--416
+Overfull \hbox (18.80371pt too wide) in paragraph at lines 408--409
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (46.99707pt too wide) in paragraph at lines 419--420
+Overfull \hbox (46.99707pt too wide) in paragraph at lines 412--413
 [][][][][][][][][][][][][][][][] 
  []
 
@@ -1135,14 +1132,14 @@ Overfull \hbox (46.99707pt too wide) in paragraph at lines 419--420
 
 ]
 Appendix A.
-<./images/Circuit-Diagram-Wifi-8266.png, id=546, 544.28343pt x 183.68625pt>
+<./images/Circuit-Diagram-Wifi-8266.png, id=583, 544.28343pt x 183.68625pt>
 File: ./images/Circuit-Diagram-Wifi-8266.png Graphic file (type png)
 <use ./images/Circuit-Diagram-Wifi-8266.png>
 Package pdftex.def Info: ./images/Circuit-Diagram-Wifi-8266.png  used on input 
-line 434.
+line 427.
 (pdftex.def)             Requested size: 435.42734pt x 146.94917pt.
 
-Overfull \hbox (45.42734pt too wide) in paragraph at lines 434--435
+Overfull \hbox (45.42734pt too wide) in paragraph at lines 427--428
  [][] 
  []
 
@@ -1150,112 +1147,105 @@ Overfull \hbox (45.42734pt too wide) in paragraph at lines 434--435
 
 ]
 Appendix B.
-<./images/fc-28-corrosion.png, id=556, 339.51843pt x 148.30406pt>
+<./images/fc-28-corrosion.png, id=593, 339.51843pt x 148.30406pt>
 File: ./images/fc-28-corrosion.png Graphic file (type png)
 <use ./images/fc-28-corrosion.png>
-Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 445.
+Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 439.
 (pdftex.def)             Requested size: 339.5176pt x 148.30368pt.
-<./images/ESP-01.jpg, id=557, 1606.0pt x 1204.5pt>
+<./images/ESP-01.jpg, id=594, 1606.0pt x 1204.5pt>
 File: ./images/ESP-01.jpg Graphic file (type jpg)
 <use ./images/ESP-01.jpg>
-Package pdftex.def Info: ./images/ESP-01.jpg  used on input line 471.
+Package pdftex.def Info: ./images/ESP-01.jpg  used on input line 466.
 (pdftex.def)             Requested size: 321.19432pt x 240.89574pt.
-[27 <./images/fc-28-corrosion.png>]
-Overfull \hbox (7.26588pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 28 \T1/cmr/m/sl/12 APPENDIX B.  GRAPHICS OF SENSORS AND OTHER CO
-MPONENTS
- []
-
-[28 <./images/ESP-01.jpg>]
+[27 <./images/fc-28-corrosion.png>] [28 <./images/ESP-01.jpg>]
 Appendix C.
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 503.
 [29
 
-] [30] [31] [32]
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 668--670
+]
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 499.
+ [30] [31] [32] [33]
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 666--668
 [][][][][][][][][][][][][][][][] 
  []
 
-[33]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 670.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 668.
 
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 672--673
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 670--671
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (18.00415pt too wide) in paragraph at lines 675--676
+Overfull \hbox (18.00415pt too wide) in paragraph at lines 673--674
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (72.0047pt too wide) in paragraph at lines 695--696
+Overfull \hbox (72.0047pt too wide) in paragraph at lines 693--694
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (84.00482pt too wide) in paragraph at lines 717--718
+[34]
+Overfull \hbox (84.00482pt too wide) in paragraph at lines 715--716
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \vbox (badness 1960) has occurred while \output is active []
-
- [34]
-Overfull \hbox (48.00446pt too wide) in paragraph at lines 731--732
+Overfull \hbox (48.00446pt too wide) in paragraph at lines 729--730
 [][][][][][][][][][][][][][] 
  []
 
 [35]
-Overfull \hbox (12.00409pt too wide) in paragraph at lines 800--801
+Overfull \hbox (12.00409pt too wide) in paragraph at lines 798--799
 [][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (18.00415pt too wide) in paragraph at lines 809--810
-[][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
-Overfull \hbox (12.00409pt too wide) in paragraph at lines 818--819
+Overfull \hbox (18.00415pt too wide) in paragraph at lines 807--808
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (12.00409pt too wide) in paragraph at lines 816--817
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
 
  []
 
 
-Overfull \hbox (132.00531pt too wide) in paragraph at lines 825--826
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][] 
+Overfull \hbox (60.00458pt too wide) in paragraph at lines 823--824
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (48.00446pt too wide) in paragraph at lines 857--858
+Underfull \vbox (badness 3271) has occurred while \output is active []
+
+ [37]
+Overfull \hbox (48.00446pt too wide) in paragraph at lines 856--857
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[37] [38]
-Overfull \hbox (36.00433pt too wide) in paragraph at lines 929--930
+[38]
+Overfull \hbox (36.00433pt too wide) in paragraph at lines 928--929
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (66.00464pt too wide) in paragraph at lines 933--934
+Overfull \hbox (66.00464pt too wide) in paragraph at lines 932--933
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [39] [40]
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 1022--1023
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 1021--1022
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (72.0047pt too wide) in paragraph at lines 1029--1030
+Overfull \hbox (72.0047pt too wide) in paragraph at lines 1028--1029
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -1309,31 +1299,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--36
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1037.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1036.
 [43
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1037.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1036.
  ("KT Verkætlan.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1037.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1037.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1036.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1036.
 
-Package rerunfilecheck Info: File `"KT Verkætlan".out' has not changed.
-(rerunfilecheck)             Checksum: 12C6761E83F03945F346119C3965D5DB;2311.
 
+
+Package rerunfilecheck Warning: File `"KT Verkætlan".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"KT Verkætlan".out':
+(rerunfilecheck)             Before: 10F2B04D972BB538B7EC9B36EBB866D6;2768
+(rerunfilecheck)             After:  550A65C74152D8D71913E79C70658B18;2768.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 12068 strings out of 493334
- 169491 string characters out of 3139251
- 507834 words of memory out of 3000000
- 14617 multiletter control sequences out of 15000+200000
+ 12082 strings out of 493334
+ 169684 string characters out of 3139251
+ 509707 words of memory out of 3000000
+ 14625 multiletter control sequences out of 15000+200000
  24292 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,8n,69p,1599b,2089s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,8n,69p,1599b,2149s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 } <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
 cbx1440.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
@@ -1352,9 +1351,9 @@ ype1/public/amsfonts/cm/cmr12.pfb><C:/Users/Krist/AppData/Local/Programs/MiKTeX
 ograms/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/Krist/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Krist/AppD
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on "KT Verkætlan.pdf" (51 pages, 1263852 bytes).
+Output written on "KT Verkætlan.pdf" (51 pages, 1260519 bytes).
 PDF statistics:
- 1711 PDF objects out of 1728 (max. 8388607)
- 786 named destinations out of 1000 (max. 500000)
- 350 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1756 PDF objects out of 2073 (max. 8388607)
+ 792 named destinations out of 1000 (max. 500000)
+ 414 words of extra memory for PDF output out of 10000 (max. 10000000)
 

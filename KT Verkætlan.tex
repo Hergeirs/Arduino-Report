@@ -42,7 +42,8 @@
 \maketitle
 
 \begin{abstract}
-We were asked to do an it project using an Arduino Uno. We chose to to do an automated gardening system with it, because that is relevant for some work projects that are currently in progress on Sandoy, where we are from. Our ardunio project entails an automated system that waters, measures moisture, heat and light exposure. That is done by customizing an Arduino Uno which has a moisture-, heat and light sensor that does all our measurements. All the the data is then collected by the Arduino, and then sent to a Web Service via. a esp-05 wifi module. The Web Service receives the data, and presents it to the user. The user is registered with the Web Service, and can track his plant data through his registered user account, where he also can customize water input for the plant/s.
+Vit vóru bodnir um at gera eina KT Verkætlan, og í tí sambandinum valdu vit at gera ein automatiskan urtapott, sum vísti dátu um urtapottin á einari heimasíðu. Hesin urtapotturin kann máta ljós, fugt, hita og pumpa vatn. Hetta valdu vit, tí tað er henda nógv ting á Sandoynni, har vit eru frá, viðvíkjandi gróðrarvirksemi. Vit brúka ein Arudino Uno sum miðsøð fyri allar sensorarnar. Øll dátu vera send á ein servara gjøgnum eitt ESP8266-05 Wifi modul. Á hesum servara ber tað til at lesa dátu um urtapottir, ið eru knýttir at einum brúkara.
+
 \end{abstract}
 
 \cleardoublepage\addcontentsline{toc}{chapter}{Contents}
@@ -294,7 +295,7 @@ We decided to use Gang Of Four's observer pattern\cite{GoF}. We think that it fi
  
 In short, the pattern is about having one class that has a list of dependencies which it notifies when there's a change.
 
-\subsubsection{Observer}
+\subsection{Observer}
 Our provider is called Observer and implements the IObserver with ArduinoData in the template brackets. It can be seen in \ref{list:Observer}. That it implements the interface means that the class implements its own version of the methods
 \begin{itemize}
 \item OnCompletet()
@@ -302,29 +303,27 @@ Our provider is called Observer and implements the IObserver with ArduinoData in
 \item OnNext(T Value)
 \end{itemize}
 
-The first method indicates that the provider is finished with transferring data. Second method informs the observer that an error occurred. The third method supplies \_arduinoDataLoggerRepository for it to save.
-The class has two fields called \_unsubscriber of IDisposable and one EFDataoggerPlantRepository called \_arduinoDataRepository. IDisposable is a C\# interface that provides a mechanism for releasing unmanaged resources by its method Dispose(). ArduinoDataRepository is one we made, and it is the container for the data in which the Arduino transfers to the webserver. It's properties can be seen in listings \ref{lst:ArduinoDataLoggerRepository}. The Observer constructor initializes the field \_arduinoDataRepository with a database context. The parameters in UseSQLServer are the ones for a server running on the localhost. The Subscribe(IObservable<ArduinoData> provider) method lets the provider subscribe to the current instance of Observer. Unsubscribe() and Dispose() both dispose of the resources they hold. 
+The first method indicates that the provider is finished with transferring data. Second method informs the observer that an error occurred. The third method specifies what to do with the next value.
+The class has two fields called \_unsubscriber of IDisposable and one EFDataoggerPlantRepository called \_arduinoDataRepository. IDisposable is a C\# interface that provides a mechanism for releasing unmanaged resources by its method Dispose(). ArduinoDataLoggerRepository is one we made which we use to save data to the database. Its properties can be seen in listing\ref{lst:ArduinoDataLoggerRepository}. The Observer constructor initializes the field \_arduinoDataRepository with a database context. The parameters in UseSQLServer are the ones for a server running on the localhost. The Subscribe(IObservable<ArduinoData> provider) method lets the provider subscribe to the current instance of Observer. Unsubscribe() and Dispose() both dispose of the resources they hold. 
 
-\subsubsection{Observable}
-
-
-Our provides is the Observable class which can be seen in \ref{list:Observable}. It implements the IDisposable, IObservable, and IHostedService interfaces. The implementation of Dispose() closes the socket, calls onCompleted on each observer in the observers list. The implementation of Subscribe() adds the observer parameter to the observer list, if it doesn't contain observers, and then returns a new instance of Unsubscriber, which was initialized with the observer parameter and the observers list. The Observable class has three private fields called Port, \_socket, and the previously mentioned observers. The port is a constant int that is assigned with 8080. \_socket is a TCPListener which is a standard C\# class that belongs to the System.Net.Sockets namespace. It listens for connections from TCP clients. The public Observable(IServiceProvider serviceProvider) constructor initializes the list with a new list that contains IObserver<ArduinoData), and also initializes the \_sokcet with any IPaddress that connects to field port. The constructor parameter, serviceProvider, then subscribes the singleton instance of Observer to the current instance of obserable, and subscribes the singleton instance of DataPusherObserver to the same instance.
+\subsection{Observable}
+Observable class can be seen in \ref{list:Observable}. It implements the IDisposable, IObservable, and IHostedService interfaces. The implementation of Dispose() closes the socket and calls onCompleted on each observer in the observers list. The implementation of Subscribe() adds the observer parameter to the observer list if it doesn't contain observers, and then returns a new instance of Unsubscriber, which was initialized with the observer parameter and the observers list. The Observable class has three private fields called Port, \_socket, and the previously mentioned observers. The port is a constant int that is assigned with 8080 which is the port the Arduino connect to. \_socket is a TCPListener which is a standard C\# class that belongs to the System.Net.Sockets namespace. It listens for connections from TCP clients. The public Observable(IServiceProvider serviceProvider) constructor initializes the list with a new list that contains IObserver<ArduinoData), and also initializes the \_sokcet with any IPaddress that connects to the port. The constructor parameter, serviceProvider, then subscribes the singleton instance of Observer to the current instance of observable, and subscribes the singleton instance of DataPusherObserver to the same instance.
 
 Listen() listens for clients to connect to the observable class. \_socket.AcceptTcpClient() accepts the pending connection request, and that request is assigned to a variable client. A new thread is then created which calls the ListenToClient(TcpClient client) method where the previously created client is the parameter. That thread is started the same time it is called.
 
-ListenToClient() is run while a client is connected. The stream from the client is assigned to a variable reader, then the method enters a new while loop which is active as long as there's data to be received from the client. A byte array of size two and an ArduinoData object are then created. The reader then reads two bytes, then inserts those two bytes at index 0 in the array. data.PlantId = BitConverter.ToUInt16(buffer) takes the two bytes and converts it to an unsigned 16 bit intenger, and assigns data.PlantId to the converted value. data.Temperature = reader.ReadByte() reads the current byte in the stream, advances the stream by one, and assigns the temperature with the read value. The same happens to data.Moisture. Then a new buffer is created with a byte size of 4, and the reader reads the subsequent 4 bytes in the stream to buffer from index zero. That buffer is then converted to a 32 bit integer, and data.Light is assigned to that value. data.Water is at last assigned to the last byte in the stream. The method then calls Notify(ref data), where the newly created ArduinoData is passed by reference. The method then exists the inner loop and pauses for one second and then closes the connection to client and the clause for the outer loop.
+ListenToClient() is run while a client is connected. The stream from the client is assigned to a variable reader, then the method enters a new while loop which is active as long as there's data to be received from the client. A byte array of size two and an ArduinoData object are then created. The reader then reads two bytes, and inserts those two bytes at index 0 in the array. data.PlantId = BitConverter.ToUInt16(buffer) takes the two bytes and converts it to an unsigned 16 bit integer, and assigns data.PlantId to the converted value. data.Temperature = reader.ReadByte() reads the current byte in the stream, advances the stream by one, and assigns the temperature with the read value. The same happens to data.Moisture. Then a new buffer is created with a byte size of 4, and the reader reads the subsequent 4 bytes in the stream to buffer from index zero. That buffer is then converted to a 32 bit integer, and data.Light is assigned to that value. data.Water is at last assigned to the last byte in the stream. The method then calls Notify(ref data), where the newly created ArduinoData is passed by reference. The method then exits the inner loop and pauses for one second and then closes the connection to client and the clause for the outer loop.
 
-Unsubscriber is a private internal class for Observable. It also implements the IDisposable interface.  It has two private fields, one List of observers and one observer. Those are initialized in the parameterized constructor which gets called in Observable's Subscribe() method as previously mentioned. This class' Dispose checks to see whether the observer field is null and that the list contains observers. The Subscriper's \_observer is then removed from the list.
+Unsubscriber is a private internal class for Observable. It also implements the IDisposable interface.  It has two private fields, one List of observers and one observer. Those are initialized in the parameterized constructor which gets called in Observable's Subscribe() method. This class' Dispose checks to see whether the observer field is null and that the list contains observers. The Subscriber's \_observer is then removed from the list.
 
-Notify(ref ArduinoData) takes a reference to ArduinoData as a parameter. First it checks to see if the data has a plantId equal to 21569; if that is true, then it gives the console a message a makes a return call. We had some problems with this Id, because it didn't trigger our UpdateData in DataPusher which meant that our view didn't update asynchronously. This data's other properties e.g. temperature were also peculiar, so we believe that its package was corrupted by the underpowered WIFI chip, but we don't understand how the same id seemed to reappear so often. 
-The method then validates that data is not null. If it is then the observer at that time in the foreach loops calls OnError with an error message that says the data was corrupted. If data was valid, then the method tries to call the looped observer's OnNext(data) method with the data as a paremter, this time passed by value. If this triggers and InvalidOperationException, then the catch statement catches the exception and prints the exception message to the console.
+Notify(ref ArduinoData) takes a reference to ArduinoData as a parameter. First it checks to see if the data has a plantId equal to 21569 if that is true, then it gives the console a message a makes a return call. We had some problems with this Id, because it didn't trigger our UpdateData in DataPusher which meant that our view didn't update asynchronously. This data's other properties e.g. temperature were also peculiar, so we believe that its package was corrupted by the poorly powered WIFI chip. We still don't understand how the same id seemed to reappear so often. 
+The method then validates that data is not null. If it is, then the observer at that time in the foreach loops calls OnError with an error message that says the data was corrupted. If data was valid, then the method tries to call the looped observer's OnNext(data) method with the data as a paremter, this time passed by value. If this triggers and InvalidOperationException, then the catch statement catches the exception and prints the exception message to the console. 
 
-StartAsync and StopAsync are the two methods that are inherited from the IHostedService. Those two return a task and each take a CancellationToken as a parameter. StartAsync starts the TcpListener, \_socket, then starts a new thread that calls Listen and at last it returns a returns a Task that has completed successfully. StopAsync calls dispose and also returns a completed Task.
+StartAsync and StopAsync are the two methods that are inherited from the IHostedService. Those two return a task and each take a CancellationToken as a parameter. StartAsync starts the TcpListener, \_socket, then starts a new thread that calls Listen and at last it returns a returns a Task that has completed successfully. StopAsync calls dispose and also returns a completed Task. The CancellationToken doesn't do anything, because we don't want to cancel the request.
 
 
 \subsection{DataPusherObserver}
 
-DataPusherObserver is the class that connect the Arduino to the Webserver. It implements the IObserver<ArduinoData> interface. It has one field calledconnection which is of type HubConnection. This connection is initialized in the DataPusherObserver constructor, and it is the localhost/datahub. This class implements the IObserver interface similarly  as the Observer where it subscribes and notifies error the same.
+DataPusherObserver is the class that connect the Arduino to the Webserver. It implements the IObserver<ArduinoData> interface. It has one field called connection which is of type HubConnection. This connection is initialized in the DataPusherObserver constructor, and it is the localhost/datahub. This class implements the IObserver interface similarly as the Observer where it subscribes and notifies error the same.
 
 OnNext takes an object of ArduinoData as a parameter. Then it asynchronously starts the connection to the server, and invokes the method "UpdateData" on the server with value as the method parameter. It's cancellationToken is set to none as well. At last it stops the connection to the server. 
 
@@ -419,8 +418,12 @@ This view loops through the plant list, and supplies the partial view, \_plant\_
 </div>
 \end{lstlisting}
 \end{center}
-This view uses a single plant model, one which was supplied to it in loop in the previous partial view. First a html div element is created as a container for the rest of the html element. Its class is "plant" which means it gets stylized after, what that html class says. It's id tag is whatever PlantId is. Id is used stylize single elements with by targeting the unique id. Then it creates a new div element as class info, and this div contains tree other divs with description about the each attribute of the printed model. The last div then loads the partial view arduinodatapartial and datachartpartial. The arduino data partial view gets either the last element in the datas list in Plant, or it gets a null value. Datachart is supplied with the model
+This view uses a single plant model, one which was supplied to it in loop in the previous partial view. First a html div element is created as a container for the rest of the html element. Its class is "plant" which means it gets stylized after, what that html class says. It's id tag is whatever PlantId is. Id is used stylize single elements with by targeting the unique id. Then it creates a new div element as class info, and this div contains tree other divs with description about the each attribute of the printed model. The last div then loads the partial view arduinodatapartial and datachartpartial. The arduino data partial view gets either the last element in the datas list in Plant, or it gets a null value. Datachart is supplied with the model.
 \appendix
+
+\section{Conclusion}
+
+We can say that we achieved our goals. We have an Arduino which moistens our soil, can read moisture-, light-, and temperature levels. It is capable of transmitting data to a Webserver, where users are able to view track how their plants are doing. It's superficial data, but it's still data. If we were to start over again, then we would buy a new Wifi module and a new light sensor, but we're content with what we have achieved.
 
 \chapter{Circuit Diagrams}
 The following are diagrams of our components and Arduino system.
@@ -432,9 +435,10 @@ The following are diagrams of our components and Arduino system.
 \end{figure}
 
 
-\chapter{Graphics of sensors and other components}
+\chapter{Arduino Components}
 The following are pictures of our sensors and other components.
 
+\section{fc-28}
 \begin{figure}[!ht]
   \centering
       \includegraphics{fc-28-corrosion}
@@ -442,6 +446,7 @@ The following are pictures of our sensors and other components.
   \label{fig:resistive}
 \end{figure}
 
+\section{Pump}
 \begin{figure}[ht!]
 	\begin{itemize}
 	\item 100\% brand new and high quality
@@ -460,7 +465,7 @@ The following are pictures of our sensors and other components.
 	\label{fig:pump description}
 \end{figure}
 
-
+\section{ESP-01}
 \begin{figure}[!ht]
 	\centering
 		\includegraphics[scale=0.20]{ESP-01}
@@ -471,6 +476,7 @@ The following are pictures of our sensors and other components.
 \chapter{Latex Listings}
 The code highlighting in this tex document was taken from \href{https://github.com/trihedral/ArduinoLatexListing/blob/master/arduinoLanguage.tex}{trihedral's ArduinoLatexListing Github repository}
 
+\section{Ardunio Ino File}
 \begin{lstlisting}[caption={Arduino Code Main}\label{list:ArduinoMain}, language=Arduino]
 #include "ESP8266.h"
 #include "CapacitiveMoistureSensor.h"
@@ -589,6 +595,8 @@ void loop() {
   delay(5000);
 }
 \end{lstlisting}
+
+\section{Light Reading}
 \begin{lstlisting}[caption={lightReading}\label{list:LightReading}, language=Arduino]
 uint32_t LightSensor::read() {
   Serial.println("Reading LIGHT");
@@ -655,7 +663,7 @@ public class EFDataLoggerPlantRepository
 	}
 }
 \end{lstlisting}
-
+\section{Observer Code}
 \begin{lstlisting}[caption={Observer Class}\label{list:Observer}, language=CSharp]
 public class Observer : IObserver<ArduinoData>, IDisposable
 {
@@ -817,7 +825,8 @@ public class Observable : IDisposable, IObservable<ArduinoData>, IHostedService
 		foreach (var observer in Observers)
 		{
 			if (data == null)
-				observer.OnError(new Exception("Notifying corrupt data from arduino"));
+				observer.OnError(new Exception("Notifying corrupt data from
+				arduino"));
 			else
 			{
 				try

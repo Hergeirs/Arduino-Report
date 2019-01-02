@@ -23,16 +23,24 @@
 \BOOKMARK [1][-]{section.3.2}{Login}{chapter.3}% 23
 \BOOKMARK [1][-]{section.3.3}{Project E.Garden Structure}{chapter.3}% 24
 \BOOKMARK [2][-]{subsection.3.3.1}{Observer Pattern}{section.3.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.2}{DataPusherObserver}{section.3.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.3}{DataHub}{section.3.3}% 27
-\BOOKMARK [2][-]{subsection.3.3.4}{DataPusher}{section.3.3}% 28
-\BOOKMARK [2][-]{subsection.3.3.5}{DI class}{section.3.3}% 29
-\BOOKMARK [1][-]{section.3.4}{Controllers}{chapter.3}% 30
-\BOOKMARK [2][-]{subsection.3.4.1}{HomeController}{section.3.4}% 31
-\BOOKMARK [2][-]{subsection.3.4.2}{PlantController}{section.3.4}% 32
-\BOOKMARK [0][-]{appendix.A}{Circuit Diagrams}{}% 33
-\BOOKMARK [0][-]{appendix.B}{Graphics of sensors and other components}{}% 34
-\BOOKMARK [0][-]{appendix.C}{Latex Listings}{}% 35
-\BOOKMARK [1][-]{section.C.1}{Models}{appendix.C}% 36
-\BOOKMARK [1][-]{section.C.2}{ArduinoDataLoggerRepository}{appendix.C}% 37
-\BOOKMARK [0][-]{lstnumber.C.11.39}{Bibliography}{}% 38
+\BOOKMARK [2][-]{subsection.3.3.2}{Observer}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.3}{Observable}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.4}{DataPusherObserver}{section.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.5}{DataHub}{section.3.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.6}{DataPusher}{section.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.7}{DI class}{section.3.3}% 31
+\BOOKMARK [1][-]{section.3.4}{Controllers}{chapter.3}% 32
+\BOOKMARK [2][-]{subsection.3.4.1}{HomeController}{section.3.4}% 33
+\BOOKMARK [2][-]{subsection.3.4.2}{PlantController}{section.3.4}% 34
+\BOOKMARK [0][-]{appendix.A}{Circuit Diagrams}{}% 35
+\BOOKMARK [0][-]{appendix.B}{Arduino Components}{}% 36
+\BOOKMARK [1][-]{section.B.1}{fc-28}{appendix.B}% 37
+\BOOKMARK [1][-]{section.B.2}{Pump}{appendix.B}% 38
+\BOOKMARK [1][-]{section.B.3}{ESP-01}{appendix.B}% 39
+\BOOKMARK [0][-]{appendix.C}{Latex Listings}{}% 40
+\BOOKMARK [1][-]{section.C.1}{Ardunio Ino File}{appendix.C}% 41
+\BOOKMARK [1][-]{section.C.2}{Light Reading}{appendix.C}% 42
+\BOOKMARK [1][-]{section.C.3}{Models}{appendix.C}% 43
+\BOOKMARK [1][-]{section.C.4}{ArduinoDataLoggerRepository}{appendix.C}% 44
+\BOOKMARK [1][-]{section.C.5}{Observer Code}{appendix.C}% 45
+\BOOKMARK [0][-]{lstnumber.C.11.39}{Bibliography}{}% 46
