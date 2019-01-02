@@ -54,7 +54,7 @@ We were asked to do an it project using an Arduino Uno. We chose to to do an aut
 The foreword often consists of the author's personal opinion, the history of how the work emerged, how the work is structured, how the reader can choose to read it etc. It might also contain dedications, acknowledgements and similar things. 
 
 \section*{Acknowledgement}
-We want to thank The University of The Faroe Islands for providing us with the materials provided to us from the beginning, and to thank them for providing us with the funds to procure new materials. We also want to thank Benadikt Joensen for guiding  and teaching us on the more electrical side of things in our project.
+We want to thank The University of The Faroe Islands for providing us with the materials provided to us from the beginning, and to thank them for providing us with the funds to procure new materials. We also want to thank Benadikt Joensen for guiding  and teaching us the more electrical side of things in our project.
 \addcontentsline{toc}{section}{Acknowledgement}
 
 \mainmatter
@@ -73,7 +73,16 @@ The Arduino Uno, TMP36GZ heat sensor, resistors and the cables which we use in t
 Arduino is an open-source electronics platforms which is based on user-friendly software and hardware components\cite{ArduinoIntroduction}. It can read outputs from these components e.g. readings from sensors, and it can give input to these sensors.
 
 We worked on an Arduino Uno. It is a microcontroller board. It has 14 digital i/o pins. they can be located on the board right next to the text \textit{DIGITAL}. Six of those pins can be used as Power Width Modulation, shortened as PWM, outputs. Those pins are the ones who have a ~ next to their ascribed numbers. It has six analog pins. It then has five different kinds of power pins. We only use the GND and the 5V and 3.3V pins. The 5V and 3.3 pins output a 5V and 3.3V from the regulator on the board which can be used to power different hardware components. The 3.3V pins has a maximum current draw of 50mA. GND stands for ground, and serves as the common return path for current from the different hardware components in our Arduino system. 
+\subsection{Arduino Main}
+The code for where the Arduino setup and loop are in \ref{list:ArduinoMain}. The first lines are inclusions of sensors and the SoftwareSerial library which is used to connect the ESP8266-05 module. The next block is where we define our interent properties and which port to communicate through. The third block is our declarations i.e. what digital pins on the Arduino are attached to the Rx and Tx pins for the wifi module then we use that first declaration the setup the ESP8266 wifi with the baudrate 115200. The while loop tries to establish a connection to an access points with the predefined SSID and PASSWORD. If that succeeded then it prints to the the console that it was a success and breaks out of the loop, otherwise it prints that it failed. All Serial.print functions are used a debugging tool. The loop will try to reconnect to the wife every twentieth second. That is done so that we don't need to restart the Arduino every time something goes wrong. The next loop tries to establish a TCP connection to the Webserver. Data is a struct which holds all our information which the sensors reads. Its a way for us to structure our data. Water never gets used though, and it was supposed to say how much water was in a tank.
 
+Package is also a struct, and it creates a union of data values and a unsigned int8\_t array of bytes with the size nine. It takes nine bytes because that is that accumulated max size of all the variables in the Data struct.
+
+Datahandler is class that populates that Package. First it creates an integer constant and assigns it to one, then it creates object instances of our sensors. CapacitiveMoistureSensor is set to digital pin four and analog pin two, TemperatureSensor is set to eight and one etc. 
+
+PopulatePackage() does as the name implies. First it creates a variable reference og type Data and assigns it the package in line 81 then it takes the values in the in that package and assigns it the DataHandler id, and what the sensors are reading. Water gets assigned a random number. getPackage() calls the populatePackage() method and returns a reference to that package.
+
+loop() is the method that is constantly running, when the Arduino is turned of. That means that for every iteration of the loop, it creates a Package and assigns it with values from populatePackage, and tried to send it to the webserver. First the actual data is supplied to Wifi.Send, then the secod parameter is the size of the package. There's a five seconds delay for every iteration.
 \section{Moisture Sensors}
 \subsection{FC28}
 Our intention was to use the Arduino to induce an alternating current through the sensor. To simplify things, we circumvented the circuit of FC-28 such that we connected directly to the pins on the sensor. To alternate the current, we first emit 5V from pin 12 and set pin 13 to low (0V) for 1 ms then we take a reading through the analog pin A0. Then we flip the pin 12 and 13 ( 5V from pin 13 ) for the same amount of time. This should somewhat remedy the problems of electrolysis by shifting the ions back and forth between the moisture sensor pins, instead of just letting them congest at one pin. The chip had to be removed so that it could use AC.
@@ -349,7 +358,8 @@ The code for the plant controller can be seen in \ref{list:PlantController}. The
 
 \begin{center}
 \begin{lstlisting}[caption={models}\label{list:PlantIndex}, language=html]
-@model System.Collections.Generic.IEnumerable<Repository.Models.Plant>
+@model System.Collections.Generic.
+	IEnumerable<Repository.Models.Plant>
 
 @{
     ViewBag.Title = "Your Plants";
@@ -366,7 +376,8 @@ The model this view uses is a Plant. The section surrounded by the curly bracket
 \begin{center}
 \begin{lstlisting}[caption={PlantsPartial}\label{list:PlantsPartial}, language=html]
 @using Microsoft.AspNetCore.Mvc.Rendering
-@model System.Collections.Generic.IEnumerable<Repository.Models.Plant>
+@model System.Collections.Generic
+	.IEnumerable<Repository.Models.Plant>
 
 <h1>Your plants: </h1>
 
@@ -396,14 +407,15 @@ This view loops through the plant list, and supplies the partial view, \_plant\_
    </div>
    
    <div class="data">
-      @await Html.PartialAsync("_arduino_data_partial.cshtml", @Model.Datas.LastOrDefault())
-      @await Html.PartialAsync("_data_chart_partial",@Model);
+      @await Html.PartialAsync("_arduino_data_partial.cshtml",
+      @Model.Datas.LastOrDefault())
+      @await Html.PartialAsync("_data_chart_partial",
+      @Model);
    </div>
 </div>
 \end{lstlisting}
 \end{center}
-
-This view uses a single plant model, one which was supplied to it in loop in the previous partial view. First a html div element is created as a container for the rest of the html element. Its class is "plant" which means it gets stylized after, what that html class says. It's id tag is whatever PlantId is. Id is used stylize single elements with by targeting the unique id. Then it creates a new div element as class info, and this div contains tree other divs with description about the each attribute of the printed model. The last div then loads the partial view \arduinodatapartial and \data\_chart \_partial. The arduino data partial view gets either the last element in the datas list in Plant, or it gets a null value. Data\_chart is supplied with the model
+This view uses a single plant model, one which was supplied to it in loop in the previous partial view. First a html div element is created as a container for the rest of the html element. Its class is "plant" which means it gets stylized after, what that html class says. It's id tag is whatever PlantId is. Id is used stylize single elements with by targeting the unique id. Then it creates a new div element as class info, and this div contains tree other divs with description about the each attribute of the printed model. The last div then loads the partial view arduinodatapartial and datachartpartial. The arduino data partial view gets either the last element in the datas list in Plant, or it gets a null value. Datachart is supplied with the model
 \appendix
 
 \chapter{Circuit Diagrams}
@@ -426,7 +438,6 @@ The following are pictures of our sensors and other components.
   \label{fig:resistive}
 \end{figure}
 
-\section{Pump Description}
 \begin{figure}[ht!]
 	\begin{itemize}
 	\item 100\% brand new and high quality
@@ -456,6 +467,125 @@ The following are pictures of our sensors and other components.
 \chapter{Latex Listings}
 The code highlighting in this tex document was taken from \href{https://github.com/trihedral/ArduinoLatexListing/blob/master/arduinoLanguage.tex}{trihedral's ArduinoLatexListing Github repository}
 
+\begin{lstlisting}[caption={Arduino Code Main}\label{list:ArduinoMain}, language=Arduino]
+#include "ESP8266.h"
+#include "CapacitiveMoistureSensor.h"
+#include "LightSensor.h"
+#include "TemperatureSensor.h"
+#include <SoftwareSerial.h>
+
+/*
+   Definitions
+*/
+#define SSID        "Kristmund Hotspot"
+#define PASSWORD    "skopun240"
+#define HOST_NAME   "192.168.137.163"
+#define HOST_PORT   (8080)
+
+/*
+   Declarations
+*/
+SoftwareSerial mySerial(2, 3); /* RX:D4, TX:D3 */
+ESP8266 wifi(mySerial, 115200);
+uint32_t len;
+
+void setup() {
+  //Init debug serial connection
+  Serial.begin(9600);
+  Serial.println("Serial connection setup [DONE]");
+  Serial.println("Allowing ESP8266 time to start...");
+  delay(10000);
+ 
+
+  //Init WiFi
+  while (true) {
+    Serial.println("WiFi setup [START]");
+    if (wifi.joinAP(SSID, PASSWORD)) {
+      Serial.print("Join AP success\r\n");
+      if (wifi.disableMUX()) {
+        Serial.println("WiFi setup [DONE]");
+        break;
+      } else {
+        Serial.println("WiFi setup [MUX ERR]");
+      }
+    } else {
+      Serial.println("WiFi setup [AP ERR]");
+    }
+    //If init failed, wait 20s and try again
+    delay(20000);
+  }
+  while (true) {
+    if (wifi.createTCP(HOST_NAME, HOST_PORT)) {
+      break;
+    }
+    else {
+      Serial.println("Create tcp [ERR]");
+      delay(10000);
+    }
+  }
+
+  Serial.println(wifi.getVersion());
+  Serial.println(wifi.getAPList());
+}
+
+struct Data {
+  public:
+    uint16_t plantId;
+    uint8_t temperature;
+    uint8_t moisture;
+    uint32_t light;
+    uint8_t water;
+};
+
+struct Package {
+  union {
+    Data values;
+    uint8_t bytes[9];
+  } data;
+};
+
+class DataHandler {
+  private:
+    const uint16_t plantId = 1;
+    Package package;
+    const CapacitiveMoistureSensor moisture = CapacitiveMoistureSensor(4, A2);
+    const TemperatureSensor temperature = TemperatureSensor(8, A1);
+    const LightSensor light = LightSensor(13, A0);
+
+    void populatePackage() {
+      Data& values = package.data.values;
+      values.plantId = this->plantId;
+      values.temperature = temperature.read();
+      values.moisture = moisture.read();
+      values.light = light.read();
+      values.water = 90;
+    }
+
+  public:
+    DataHandler() {
+    }
+  public:
+    const Package& getPackage() {
+      populatePackage();
+      return package;
+    }
+};
+
+const DataHandler dataHandler;
+
+void loop() {
+  Package package = dataHandler.getPackage();
+  
+  while (!wifi.send(package.data.bytes, sizeof(package.data.bytes))) {
+    Serial.println("Send data [ERR]");
+  }
+  Serial.println("Send data [YESMAN]");
+  
+  
+  delay(5000);
+}
+
+\end{lstlisting}
 \section{Models}
 \begin{lstlisting}[caption={models}\label{list:Models}, language=CSharp]
 public class ArduinoData
