@@ -1,5 +1,9 @@
 \begin{thebibliography}{1}
 
+\bibitem{Identity}
+Rick Anderson.
+\newblock Introduction to identity on asp.net core.
+
 \bibitem{ArduinoIntroduction}
 Arduino.
 \newblock Introduction to arduino.

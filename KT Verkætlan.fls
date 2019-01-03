@@ -1,115 +1,247 @@
-PWD c:/Users/herge/Documents/Arduino Report/KT VerkÊtlan
-INPUT c:/texlive/2018/texmf.cnf
-INPUT c:/texlive/2018/texmf-dist/web2c/texmf.cnf
-INPUT c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/herge/Documents/Arduino Report/KT VerkÊtlan/KT VerkÊtlan.tex
-OUTPUT KT VerkÊtlan.log
-INPUT c:/texlive/2018/texmf-dist/tex/latex/base/article.cls
-INPUT c:/texlive/2018/texmf-dist/tex/latex/base/article.cls
-INPUT c:/texlive/2018/texmf-dist/tex/latex/base/size10.clo
-INPUT c:/texlive/2018/texmf-dist/tex/latex/base/size10.clo
-INPUT c:/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/babel/switch.def
-INPUT c:/texlive/2018/texmf-dist/tex/generic/babel-english/english.ldf
-INPUT c:/texlive/2018/texmf-dist/tex/generic/babel-english/english.ldf
-INPUT c:/texlive/2018/texmf-dist/tex/generic/babel/babel.def
-INPUT c:/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def
-INPUT c:/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT KT VerkÊtlan.aux
-INPUT KT VerkÊtlan.aux
-OUTPUT KT VerkÊtlan.aux
-INPUT c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT c:/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-OUTPUT KT VerkÊtlan.pdf
-INPUT c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT KT VerkÊtlan.toc
-INPUT KT VerkÊtlan.toc
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-OUTPUT KT VerkÊtlan.toc
-INPUT KT VerkÊtlan.lof
-INPUT KT VerkÊtlan.lof
-OUTPUT KT VerkÊtlan.lof
-INPUT KT VerkÊtlan.lot
-INPUT KT VerkÊtlan.lot
-OUTPUT KT VerkÊtlan.lot
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
-INPUT c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+PWD /home/hergeirs/Projects/Arduino-Report
+INPUT /usr/share/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/hergeirs/Projects/Arduino-Report/KT Verk√¶tlan.tex
+OUTPUT KT Verk√¶tlan.log
+INPUT /usr/share/texmf-dist/tex/latex/base/book.cls
+INPUT /usr/share/texmf-dist/tex/latex/base/book.cls
+INPUT /usr/share/texmf-dist/tex/latex/base/bk12.clo
+INPUT /usr/share/texmf-dist/tex/latex/base/bk12.clo
+INPUT /usr/share/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/share/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/share/texmf-dist/tex/latex/base/t1enc.def
+INPUT /usr/share/texmf-dist/tex/latex/base/t1enc.def
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
+INPUT /usr/share/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/share/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/share/texmf-dist/tex/generic/babel/switch.def
+INPUT /usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT /usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT /usr/share/texmf-dist/tex/generic/babel/babel.def
+INPUT /usr/share/texmf-dist/tex/generic/babel/txtbabel.def
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/share/texmf-dist/tex/latex/base/latexsym.sty
+INPUT /usr/share/texmf-dist/tex/latex/base/latexsym.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/share/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/share/texmf-dist/tex/latex/base/ts1enc.def
+INPUT /usr/share/texmf-dist/tex/latex/base/ts1enc.def
+INPUT /usr/share/texmf-dist/tex/latex/base/ts1enc.dfu
+INPUT /usr/share/texmf-dist/tex/latex/base/ts1enc.dfu
+INPUT /usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/share/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/share/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT arduinoLanguage.tex
+INPUT arduinoLanguage.tex
+INPUT /usr/share/texmf-dist/tex/latex/psnfss/courier.sty
+INPUT /usr/share/texmf-dist/tex/latex/psnfss/courier.sty
+INPUT CSharp.tex
+INPUT CSharp.tex
+INPUT KT Verk√¶tlan.aux
+INPUT KT Verk√¶tlan.aux
+OUTPUT KT Verk√¶tlan.aux
+INPUT /usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+INPUT /usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT KT Verk√¶tlan.out
+INPUT KT Verk√¶tlan.out
+INPUT KT Verk√¶tlan.out
+INPUT KT Verk√¶tlan.out
+OUTPUT KT Verk√¶tlan.pdf
+INPUT ./KT Verk√¶tlan.out
+INPUT ./KT Verk√¶tlan.out
+OUTPUT KT Verk√¶tlan.out
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm2074.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/share/texmf-dist/tex/latex/base/ulasy.fd
+INPUT /usr/share/texmf-dist/tex/latex/base/ulasy.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy7.tfm
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecsl1200.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm2488.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx2488.tfm
+INPUT KT Verk√¶tlan.toc
+INPUT KT Verk√¶tlan.toc
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
+OUTPUT KT Verk√¶tlan.toc
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1728.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1728.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
 INPUT ./images/FC-28-Diagram.PNG
 INPUT ./images/FC-28-Diagram.PNG
 INPUT ./images/FC-28-Diagram.PNG
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT KT VerkÊtlan.aux
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT ./images/capacitive-sensor.jpg
+INPUT ./images/capacitive-sensor.jpg
+INPUT ./images/capacitive-sensor.jpg
+INPUT /usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
+INPUT /usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
+INPUT ./images/TMP-36.PNG
+INPUT ./images/TMP-36.PNG
+INPUT ./images/TMP-36.PNG
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
+INPUT ./images/LDR-Resistor.png
+INPUT ./images/LDR-Resistor.png
+INPUT ./images/LDR-Resistor.png
+INPUT ./images/Water-Pump.jpg
+INPUT ./images/Water-Pump.jpg
+INPUT ./images/Water-Pump.jpg
+INPUT ./images/ESP8266.PNG
+INPUT ./images/ESP8266.PNG
+INPUT ./images/ESP8266.PNG
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrb8t.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/courier/pcrb8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrb8r.tfm
+INPUT ./images/fc-28-corrosion.PNG
+INPUT ./images/fc-28-corrosion.PNG
+INPUT ./images/fc-28-corrosion.PNG
+INPUT ./images/ESP-01.jpg
+INPUT ./images/ESP-01.jpg
+INPUT ./images/ESP-01.jpg
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrro8t.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/courier/pcrro8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrro8r.tfm
+INPUT KT Verk√¶tlan.bbl
+INPUT KT Verk√¶tlan.bbl
+INPUT KT Verk√¶tlan.aux
+INPUT ./KT Verk√¶tlan.out
+INPUT ./KT Verk√¶tlan.out
+INPUT /usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb

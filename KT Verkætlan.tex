@@ -41,7 +41,7 @@
 \maketitle
 
 \begin{abstract}
-We were asked to do an it project using an Arduino Uno. We chose to to do an automated gardening system with it, because that is relevant for some work projects that are currently in progress on Sandoy, where we are from. Our ardunio project entails an automated system that waters, measures moisture, heat and light exposure. That is done by customizing an Arduino Uno which has a moisture-, heat and light sensor that does all our measurements. All the the data is then collected by the Arduino, and then sent to a Web Service via. a esp-05 wifi module. The Web Service receives the data, and presents it to the user. The user is registered with the Web Service, and can track his plant data through his registered user account, where he also can customize water input for the plant/s.
+We were asked to do an IT project using an Arduino Uno. We chose to to do an automated gardening system with it, because that is relevant for some projects that are currently in progress on Sandoy, where we are from. Our ardunio project entails an automated system that waters, measures moisture, heat and light exposure. That is done by customizing an Arduino Uno which has a moisture-, heat and light sensor that does all our measurements. All the the data is then collected by the Arduino, and then sent to a Web Service via. a esp-05 wifi module. The Web Service receives the data, and presents it to the user. The user is registered with the Web Service, and can track his plant data through his registered user account, where he also can customize water input for the plant/s.
 \end{abstract}
 
 \cleardoublepage\addcontentsline{toc}{chapter}{Contents}
@@ -60,13 +60,12 @@ We want to thank The University of The Faroe Islands for providing us with the m
 
 The purpose of this report is to document our project and the process of developing it.
 
-We have chosen to work with automatic a gardening system because it has some tasks, what we believe, are tedious and easy to forget. There has been an increasing interest on Sandoy in trying to grow more vegetables on the islands, and to sell them. That grown interest in thanks to initiatives such as "Veltan" and "Eplafestivalurin". Trying to be self-sufficient with regards to food produce is, according us, a good idea, and that's were we think that our modest electronic gardening project fits well with that philosophy, and will be an interest for those, who want to try to be more self-sufficient.
+We have chosen to work with automatic a gardening system because it has some tasks, what we believe, are tedious and easy to forget. There has been an increasing interest on Sandoy in trying to grow more vegetables on the islands, and to sell them. That grown interest is in part thanks to initiatives such as "Veltan" and "Eplafestivalurin". Trying to be self-sufficient with regards to food produce is, according to us, a good idea, and we believe our modest electronic gardening project fits well with that philosophy, and will be interesting for those, who want to try to be more self-sufficient.
  
 \addcontentsline{toc}{section}{Introduction}
 
 \chapter{Setup}
-The Arduino Uno, TMP36GZ heat sensor, resistors and the cables which we use in this project, was provided by the one responsible by the course. We used at the start a FC28 moisture sensor, but it generally uses DC current which means that it corrodes quickly because of electrolysis in the soil and alters the soil composition which could potentially damage the plant. That would also eventually lead to tainted readings. We changed it to use an AC pulse that can be seen in figure, but we decided to opt for Capacitive Soil Moisture Sensor V1.2 that is Corrosion Resistant. The FC28 sensor can be seen in \ref{fig:resistive} and the Capacitive sensor can be seen in figure \ref{fig:capacitive}.
-
+The Arduino Uno, TMP36GZ heat sensor, resistors and the cables which we use in this project, was provided by the one responsible by the course. At the start we used the FC28 moisture sensor, but it uses DC current which means that it corrodes quickly because of electrolysis in the soil which alters the soil composition and could potentially damage the plant. This would also eventually lead to tainted readings. We augmented it to use an AC pulse that can be seen in \ref{fig:FC28AC}, but we decided to opt for Capacitive Soil Moisture Sensor V1.2 that is Corrosion Resistant. The FC28 sensor can be seen in \ref{fig:resistive} and the Capacitive sensor can be seen in figure \ref{fig:capacitive}.
 \section{Arduino}
 Arduino is an open-source electronics platforms which is based on user-friendly software and hardware components\cite{ArduinoIntroduction}. It can read outputs from these components e.g. readings from sensors, and it can give input to these sensors.
 
@@ -77,15 +76,19 @@ We worked on an Arduino Uno. It is a microcontroller board. It has 14 digital i/
 Our intention was to use the Arduino to induce an alternating current through the sensor. To simplify things, we circumvented the circuit of FC-28 such that we connected directly to the pins on the sensor. To alternate the current, we first emit 5V from pin 12 and set pin 13 to low (0V) for 1 ms then we take a reading through the analog pin A0. Then we flip the pin 12 and 13 ( 5V from pin 13 ) for the same amount of time. This should somewhat remedy the problems of electrolysis by shifting the ions back and forth between the moisture sensor pins, instead of just letting them congest at one pin. The chip had to be removed so that it could use AC.
 The setup can be seen below.
 
-
-\includegraphics[scale = 0.50]{FC-28-Diagram.PNG}
+\label{fig:FC28AC}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.50]{FC-28-Diagram.PNG}
+	\caption{}
+\end{figure}
 
 The resistor in the circuit helps increase the amount of current entering the analog sensor. Without it about half the current would go in the pin 13 when the measurement occurs. We are therefor able to steer the range of current entering the analog input. The left left leg is connected to 8 digital pin, the middle leg is connected to A1 pin, and the third leg is connected to -18 on the breadboard which is then connected to the ground pin on the Arduino.  
 
 \subsection{Capacitive Soil Moisture Sensor v1.2}
 \includegraphics[scale=0.40]{capacitive-sensor}
 
-We looked at reviews, and this one seemed to be the most corrosion resistant of the ones we looked at. It is made by corrosion resistant material, so it has a higher lifetime than the other sensor. It measures moisture, or rather the ions in the soil, by reading the capacitance between two plates in the sensor. It has lesser range than the other one, as it measures air values as 555 and completely submerges as 280. We thought the minimized range wouldn't worsen our readings, and the benefit from increased lifetime far outweighed it.
+We looked at reviews, and this one seemed to be the most corrosion resistant of the ones we looked at. There is no metal facing the surface, so it has a higher lifetime than the other sensor. It measures moisture, or rather the ions in the soil, by reading the capacitance between two plates in the sensor. It has lesser range than the other one, as it measures air values as 555 and completely submerges as 280. We thought the minimized range wouldn't worsen our readings, and the benefit from increased lifetime far outweighed it.
 
 \begin{lstlisting}[language=Arduino]
 uint8_t CapacitiveMoistureSensor::readPercent(uint16_t val)
@@ -169,7 +172,7 @@ We initially chose to host the webserver on Microsoft's Azure, which all univers
 \section{Login}
 We found out that .Net Core has something called Identity Core\cite{Identity} which handles the login for an ASP.NET Core application. The user can create a membership for the application by using his or she's  Facebook, Twitter, Microsoft, or Google login credentials. We could have added the other options, but we deemed it unnecessary as most faroese that would be willing to use a system such ours will most likely have a Facebook account. It's also possible to login with a regular email.
 
-\begin{lstlisting}, language=CSharp] 
+\begin{lstlisting}[language=CSharp] 
 services.AddAuthentication().AddFacebook(facebookOptions =>
 {
 	facebookOptions.AppId =
@@ -184,9 +187,10 @@ This code block adds Facebook authentication to our login service. facebookOptio
 \subsection{Project E.Garden Structure}
 Our .Net Core project is divided into three parts. It's good practice to have all business logic i.e. models that represents plants, users, and Arduino Data in a separate class library from the main program. It's done so the project is decoupled, and so that the classes can be included in a separate project. This class library is called Repository in our project, and structure of it is also divided into three parts. First part is the Model folder where the classes are and can be seen in \ref{list:Models}. ApplicationUser inherits from User, because that makes it so that the properties from ApplicationUser gets added to AspNetUsers in the database. That is a functionality of the previously mentioned Identity. 
 
-One part of the library is a folder that contains the skeleton i.e. interfaces for our business handling, then the implementation of those interfaces is located in the Concrete folder. This means that the EFPlantRepository model inherits from IPlantRepository, and then specifies what the methods UserPlants() and SavePlants() should do. These repositories are then initialized in the file Startup.cs, specifically the ConfigureServices(IServiceCollection services) method. It's initialized with something called Dependency Injection\href{https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2}, and that can be seen in below.
+One part of the library is a folder that contains the skeleton i.e. interfaces for our business handling, then the implementation of those interfaces is located in the Concrete folder. This means that the EFPlantRepository model inherits from IPlantRepository, and then specifies what the methods UserPlants() and SavePlants() should do. These repositories are then initialized in the file Startup.cs, specifically the ConfigureServices(IServiceCollection services) method. It's initialized with something called Dependency Injection, and that can be seen in below.
 
-\begin{lstlisting}[caption={Dependency Injection}\label{list:DpInjection}, language=CSharp]
+\label{list:DpInjection}
+\begin{lstlisting}[caption={Dependency Injection}, language=CSharp]
 	services.AddScoped<IApplicationUserAccessor, ApplicationUserAccessor>();
 	services.AddScoped<IPlantRepository, EFPlantRepository>();
     services.AddScoped<IArduinoDataRepository, EFArduinoDataRepository>();
@@ -352,7 +356,7 @@ public class ApplicationUser : IdentityUser
 }
 \end{lstlisting}
 
-\begin{lstlisting}[caption={ArduinoDataRepository}\label{list:Observer},language=CSharp]
+\begin{lstlisting}[caption={ArduinoDataRepository}\label{list:ArduinoDataRepository},language=CSharp]
 public interface IArduinoDataRepository
 {
 	void SaveData(ArduinoData data);
