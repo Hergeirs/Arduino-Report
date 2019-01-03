@@ -714,18 +714,18 @@ public interface IUserRepository
 
         public EGardenerContext CreateDbContext(string[] args)
         {
-            //optionsBuilder.UseSqlServer(\\
-            "Server=.\\SQLEXPRESS;Database=EGarden; user id=sa;\\
-            password=Password0;Trusted_Connection=False;\\
+            //optionsBuilder.UseSqlServer(
+            "Server=.\\SQLEXPRESS;Database=EGarden; user id=sa;
+            password=Password0;Trusted_Connection=False;
             MultipleActiveResultSets=true;");
 
-            return new \\
-            EGardenerContext(\\
+            return new 
+            EGardenerContext(
             newDbContextOptionsBuilder<EGardenerContext>()
                 .UseSqlServer(
-                    "Server=(localdb)\\
-                    mssqllocaldb;Database=E.Gardener;\\
-                    Trusted_Connection=True;\\
+                    "Server=(localdb)
+                    mssqllocaldb;Database=E.Gardener;
+                    Trusted_Connection=True;
                     MultipleActiveResultSets=true")
                 .Options);
         }

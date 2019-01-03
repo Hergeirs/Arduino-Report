@@ -1,0 +1,50 @@
+\babel@toc {english}{}
+\contentsline {chapter}{Abstract}{i}{Doc-Start}
+\contentsline {chapter}{Contents}{ii}{Doc-Start}
+\contentsline {chapter}{Foreword}{iv}{chapter*.2}
+\contentsline {section}{Acknowledgement}{iv}{section*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{Introduction}{1}{section*.4}
+\contentsline {chapter}{\numberline {2}Setup}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}Arduino}{2}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Arduino Main}{3}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Moisture Sensors}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}FC28}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Capacitive Soil Moisture Sensor v1.2}{5}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Temperature Sensor}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}TMP-36 Sensor}{7}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Light Sensor}{8}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}LDR Resistor}{8}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Water Pump}{9}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Water Pump}{9}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Wifi Module}{9}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}ESP8266-05}{9}{subsection.2.6.1}
+\contentsline {chapter}{\numberline {3}Website}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Hosting}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Login}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Project E.Garden Structure}{12}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Observer Pattern}{15}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Observer}{15}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Observable}{16}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}DataPusherObserver}{17}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}DataHub}{18}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}DataPusher}{18}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}DI class}{18}{subsection.3.3.7}
+\contentsline {section}{\numberline {3.4}Controllers}{18}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}HomeController}{18}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}PlantController}{19}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Conclusion}{21}{section.3.5}
+\contentsline {chapter}{\numberline {A}Circuit Diagrams}{22}{appendix.A}
+\contentsline {chapter}{\numberline {B}Arduino Components}{25}{appendix.B}
+\contentsline {section}{\numberline {B.1}fc-28}{25}{section.B.1}
+\contentsline {section}{\numberline {B.2}Pump}{25}{section.B.2}
+\contentsline {section}{\numberline {B.3}ESP-01}{25}{section.B.3}
+\contentsline {chapter}{\numberline {C}Latex Listings}{27}{appendix.C}
+\contentsline {section}{\numberline {C.1}Ardunio Ino File}{27}{section.C.1}
+\contentsline {section}{\numberline {C.2}Light Reading}{30}{section.C.2}
+\contentsline {section}{\numberline {C.3}Models}{30}{section.C.3}
+\contentsline {section}{\numberline {C.4}Abstract Interfaces}{31}{section.C.4}
+\contentsline {section}{\numberline {C.5}EGarden Context}{32}{section.C.5}
+\contentsline {section}{\numberline {C.6}ArduinoDataLoggerRepository}{32}{section.C.6}
+\contentsline {section}{\numberline {C.7}Observer Code}{33}{section.C.7}
+\contentsline {chapter}{Bibliography}{42}{lstnumber.C.13.39}
