@@ -11,7 +11,7 @@
 \BOOKMARK [2][-]{subsection.2.2.1}{FC28}{section.2.2}% 11
 \BOOKMARK [2][-]{subsection.2.2.2}{Capacitive Soil Moisture Sensor v1.2}{section.2.2}% 12
 \BOOKMARK [1][-]{section.2.3}{Temperature Sensor}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.3.1}{TMP Sensor}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.1}{TMP-36 Sensor}{section.2.3}% 14
 \BOOKMARK [1][-]{section.2.4}{Light Sensor}{chapter.2}% 15
 \BOOKMARK [2][-]{subsection.2.4.1}{LDR Resistor}{section.2.4}% 16
 \BOOKMARK [1][-]{section.2.5}{Water Pump}{chapter.2}% 17
@@ -32,7 +32,7 @@
 \BOOKMARK [1][-]{section.3.4}{Controllers}{chapter.3}% 32
 \BOOKMARK [2][-]{subsection.3.4.1}{HomeController}{section.3.4}% 33
 \BOOKMARK [2][-]{subsection.3.4.2}{PlantController}{section.3.4}% 34
-\BOOKMARK [1][-]{section.Alph0.1}{Conclusion}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.5}{Conclusion}{chapter.3}% 35
 \BOOKMARK [0][-]{appendix.A}{Circuit Diagrams}{}% 36
 \BOOKMARK [0][-]{appendix.B}{Arduino Components}{}% 37
 \BOOKMARK [1][-]{section.B.1}{fc-28}{appendix.B}% 38
@@ -42,6 +42,8 @@
 \BOOKMARK [1][-]{section.C.1}{Ardunio Ino File}{appendix.C}% 42
 \BOOKMARK [1][-]{section.C.2}{Light Reading}{appendix.C}% 43
 \BOOKMARK [1][-]{section.C.3}{Models}{appendix.C}% 44
-\BOOKMARK [1][-]{section.C.4}{ArduinoDataLoggerRepository}{appendix.C}% 45
-\BOOKMARK [1][-]{section.C.5}{Observer Code}{appendix.C}% 46
-\BOOKMARK [0][-]{lstnumber.C.11.39}{Bibliography}{}% 47
+\BOOKMARK [1][-]{section.C.4}{Abstract Interfaces}{appendix.C}% 45
+\BOOKMARK [1][-]{section.C.5}{EGarden Context}{appendix.C}% 46
+\BOOKMARK [1][-]{section.C.6}{ArduinoDataLoggerRepository}{appendix.C}% 47
+\BOOKMARK [1][-]{section.C.7}{Observer Code}{appendix.C}% 48
+\BOOKMARK [0][-]{lstnumber.C.13.39}{Bibliography}{}% 49

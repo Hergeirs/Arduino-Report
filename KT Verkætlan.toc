@@ -12,7 +12,7 @@
 \contentsline {subsection}{\numberline {2.2.1}FC28}{5}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Capacitive Soil Moisture Sensor v1.2}{6}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}Temperature Sensor}{8}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}TMP Sensor}{8}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}TMP-36 Sensor}{8}{subsection.2.3.1}
 \contentsline {section}{\numberline {2.4}Light Sensor}{9}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}LDR Resistor}{9}{subsection.2.4.1}
 \contentsline {section}{\numberline {2.5}Water Pump}{10}{section.2.5}
@@ -33,7 +33,7 @@
 \contentsline {section}{\numberline {3.4}Controllers}{20}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}HomeController}{20}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}PlantController}{21}{subsection.3.4.2}
-\contentsline {section}{\numberline {.1}Conclusion}{23}{section.Alph0.1}
+\contentsline {section}{\numberline {3.5}Conclusion}{23}{section.3.5}
 \contentsline {chapter}{\numberline {A}Circuit Diagrams}{25}{appendix.A}
 \contentsline {chapter}{\numberline {B}Arduino Components}{27}{appendix.B}
 \contentsline {section}{\numberline {B.1}fc-28}{27}{section.B.1}
@@ -43,6 +43,8 @@
 \contentsline {section}{\numberline {C.1}Ardunio Ino File}{29}{section.C.1}
 \contentsline {section}{\numberline {C.2}Light Reading}{32}{section.C.2}
 \contentsline {section}{\numberline {C.3}Models}{32}{section.C.3}
-\contentsline {section}{\numberline {C.4}ArduinoDataLoggerRepository}{33}{section.C.4}
-\contentsline {section}{\numberline {C.5}Observer Code}{34}{section.C.5}
-\contentsline {chapter}{Bibliography}{43}{lstnumber.C.11.39}
+\contentsline {section}{\numberline {C.4}Abstract Interfaces}{33}{section.C.4}
+\contentsline {section}{\numberline {C.5}EGarden Context}{34}{section.C.5}
+\contentsline {section}{\numberline {C.6}ArduinoDataLoggerRepository}{34}{section.C.6}
+\contentsline {section}{\numberline {C.7}Observer Code}{35}{section.C.7}
+\contentsline {chapter}{Bibliography}{45}{lstnumber.C.13.39}

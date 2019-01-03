@@ -1,3 +1,4 @@
+\begin{thebibliography}{7}
 \begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -27,6 +28,12 @@ BC~Robotics.
 \newblock Using a tmp36 temperature sensor with arduino.
 \newblock URL
   \url{https://www.bc-robotics.com/tutorials/using-a-tmp36-temperature-sensor-with-arduino/}.
+
+\bibitem[Smith et~al.()Smith, Addie, and Latham]{DependencyInjection}
+Steve Smith, Scott Addie, and Luke Latham.
+\newblock Dependency injection in asp.net core.
+\newblock URL
+  \url{https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2}.
 
 \bibitem[Wikipedia()]{GoF}
 Wikipedia.
