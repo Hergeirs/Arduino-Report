@@ -18,6 +18,11 @@
 \usepackage{url} 
 \usepackage[numbers]{natbib} 
 
+\newcommand\citeurl[2]{%
+  \href{#1}{#2}\footnote{\url{#1}}%
+}
+
+
 \input{arduinoLanguage.tex}
 \input{CSharp.tex}
 \newenvironment{dedication}%
@@ -182,7 +187,7 @@ Our water pump is said to have a flow rate of 80-120L\\H. We haven't tested if t
 	\includegraphics[scale=0.3]{ESP8266}
 \end{center}
 
-The ESP8266-05 wifi module was the hardest to work with. We initially bought an ESP8266-01\ref{fig:ESP}, but that was even more complex to work with, because it had 8 pins, and the distance between each pin on the module was so small that we couldn't properly solder it. We then bought the 05 version which was much easier to solder. A picture is attached of the module in \ref{fig:ESP}. We don't use the antennae nor the upper GND pin. We have a problem with the module in that the Arduino UNO 3.3V supply has inadequate current capabilities to power it. It still works but we get occasional garbage data from the packages sent sent from the module. Garbage transmissions seem to increase the longer the module is in use. It's possible to use an alternate 3.3V supply rather than the one from the Arduino but we didn't look into it, as it would take focus from some of the other work needed in the development. We used an \href{https://github.com/Hergeirs/Arduino2/blob/master/FWG7RQ3IRXT1DFL/ESP8266.h}{ESP8266 library} which  has the methods send(), joinAP which we use.
+The ESP8266-05 wifi module was the hardest to work with. We initially bought an ESP8266-01, but that was even more complex to work with, because it had 8 pins, and the distance between each pin on the module was so small that we couldn't properly solder it. We then bought the 05 version which was much easier to solder. A picture is attached of the module in \ref{fig:ESP}. We don't use the antennae nor the upper GND pin. We have a problem with the module in that the Arduino UNO 3.3V supply has inadequate current capabilities to power it. It still works but we get occasional garbage data from the packages sent sent from the module. Garbage transmissions seem to increase the longer the module is in use. It's possible to use an alternate 3.3V supply rather than the one from the Arduino but we didn't look into it, as it would take focus from some of the other work needed in the development. We used a \citeurl{https://github.com/Hergeirs/Arduino2/blob/master/FWG7RQ3IRXT1DFL/ESP8266.h}{ESP8266 library} which  has the methods send(), joinAP which we use.
 
 \chapter{Website}
 \section*{Webserver}
