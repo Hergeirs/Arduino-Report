@@ -47,4 +47,3 @@
 \contentsline {section}{\numberline {C.5}EGarden Context}{32}{section.C.5}
 \contentsline {section}{\numberline {C.6}ArduinoDataLoggerRepository}{32}{section.C.6}
 \contentsline {section}{\numberline {C.7}Observer Code}{33}{section.C.7}
-\contentsline {chapter}{Bibliography}{42}{lstnumber.C.13.39}
