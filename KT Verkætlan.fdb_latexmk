@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex KT Verkætlan"] 1546534588 "KT Verkætlan.aux" "KT Verkætlan.bbl" "KT Verkætlan" 1546534593
+["bibtex KT Verkætlan"] 1546534588 "KT Verkætlan.aux" "KT Verkætlan.bbl" "KT Verkætlan" 1546535230
   "/usr/share/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1543696176 26816 ffe5423d2019860bad9f54bc402fac15 ""
   "KT Verkætlan.aux" 1546534593 10135 fcf2e695c4c42dbfb8b19198e082ccbd ""
   "bibliography.bib" 1546531509 1235 cbcb8197b0cacb5c173995d2dc739566 ""
   (generated)
   "KT Verkætlan.bbl"
   "KT Verkætlan.blg"
-["pdflatex"] 1546534588 "/home/hergeirs/Projects/Arduino-Report/KT Verkætlan.tex" "KT Verkætlan.pdf" "KT Verkætlan" 1546534593
-  "/home/hergeirs/Projects/Arduino-Report/KT Verkætlan.tex" 1546534564 54215 b73fd40379383ea0699cca7271fc612d ""
+["pdflatex"] 1546534588 "/home/hergeirs/Projects/Arduino-Report/KT Verkætlan.tex" "KT Verkætlan.pdf" "KT Verkætlan" 1546535230
+  "/home/hergeirs/Projects/Arduino-Report/KT Verkætlan.tex" 1546534862 54215 b73fd40379383ea0699cca7271fc612d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1543696176 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1543696176 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1543696176 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -133,7 +133,7 @@
   "KT Verkætlan.aux" 1546534593 10135 fcf2e695c4c42dbfb8b19198e082ccbd ""
   "KT Verkætlan.bbl" 1546534588 1628 279d95c9e0884f2a26d560037bcda88a "bibtex KT Verkætlan"
   "KT Verkætlan.out" 1546534593 2783 2e69339a9b7644d0eb199ec5d544c7e4 ""
-  "KT Verkætlan.tex" 1546534564 54215 b73fd40379383ea0699cca7271fc612d ""
+  "KT Verkætlan.tex" 1546534862 54215 b73fd40379383ea0699cca7271fc612d ""
   "KT Verkætlan.toc" 1546534593 3426 2df1d69c66e3c75da8c7d00082de9833 ""
   "arduinoLanguage.tex" 1546103052 6713 14a07efe147bc3eb4eacab65de636bfe ""
   "images/Circuit-Diagram-Wifi-8266.png" 1546531509 24177 61176013aee1deb299644204890b836f ""
@@ -148,6 +148,6 @@
   (generated)
   "KT Verkætlan.out"
   "KT Verkætlan.toc"
-  "KT Verkætlan.aux"
   "KT Verkætlan.pdf"
+  "KT Verkætlan.aux"
   "KT Verkætlan.log"
