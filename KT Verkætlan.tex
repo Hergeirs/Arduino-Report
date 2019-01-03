@@ -42,7 +42,7 @@
 \maketitle
 
 \begin{abstract}
-Vit vóru bodnir um at gera eina KT Verkætlan, og í tí sambandinum valdu vit at gera ein automatiskan urtapott, sum vísti dátu um urtapottin á einari heimasíðu. Hesin urtapotturin kann máta ljós, fugt, hita og pumpa vatn. Hetta valdu vit, tí tað er henda nógv ting á Sandoynni, har vit eru frá, viðvíkjandi gróðrarvirksemi. Vit brúka ein Arudino Uno sum miðstøð fyri allar sensorarnar. Øll dátu vera send á ein servara gjøgnum eitt ESP8266-05 Wifi modul. Á hesum servara ber tað til at lesa dátu um urtapottir, ið eru knýttir at einum brúkara.
+Vit vóru bidnir um at gera eina KT Verkætlan, og í tí sambandinum valdu vit at gera ein automatiskan urtapott, sum vísti dátu um urtapottin á einari heimasíðu. Hesin urtapotturin kann máta ljós, fugt, hita og kann eisini pumpa vatn í urtapottin. Hetta valdu vit, tí tað her henda nógv ting á Sandoynni, har vit eru frá, viðvíkjandi gróðrarvirksemi. Vit brúka ein Arudino Uno sum miðstøð fyri allar sensorarnar. Øll dátu vera send á ein servara gjøgnum eitt ESP8266-05 Wifi modul. Á hesum servara ber tað til at lesa dátu um urtapottir, ið eru knýttir at einum brúkara.
 
 \end{abstract}
 
@@ -65,36 +65,41 @@ We want to thank The University of The Faroe Islands for providing us with the m
 \mainmatter
 \chapter{Introduction}
 
-The purpose of this report is to document our project and the process of developing it.
+The purpose of this report is to document our project and the process of developing it. The purpose of the project is to create a system that has basic gardening capabilities, and is able to procure data from its plants and present them.
 
-We have chosen to work with automatic a gardening system because it has some tasks, what we believe, are tedious and easy to forget. There has been an increasing interest on Sandoy in trying to grow more vegetables on the islands, and to sell them. That grown interest in thanks to initiatives such as "Veltan" and "Eplafestivalurin". Trying to be self-sufficient with regards to food produce is, according us, a good idea, and that's were we think that our modest electronic gardening project fits well with that philosophy, and will be an interest for those, who want to try to be more self-sufficient.
- 
+We have chosen to work with automatic a gardening system because it has some tasks, what we believe can be easily automated. There has been an increasing interest on Sandoy in trying to grow and sell more vegetables on the islands. That grown interest in thanks to initiatives such as "Veltan" and "Eplafestivalurin". Trying to be self-sufficient with regards to food produce is something we agree upon, and that's were we think that our modest electronic gardening project fits well with that philosophy, and will be an interest for those, who want to try to be more self-sufficient.
+
+We need to measure at least light, moisture, and temperature in order for in to be a valid gardening system. We need a method to send data and something to present those data.
 \addcontentsline{toc}{section}{Introduction}
 
 \chapter{Setup}
-The Arduino Uno, TMP36GZ heat sensor, resistors and the cables which we use in this project, was provided by the one responsible by the course. We used at the start a FC28 moisture sensor, but it generally uses DC current which means that it corrodes quickly because of electrolysis in the soil and alters the soil composition which could potentially damage the plant. That would also eventually lead to tainted readings. We changed it to use an AC pulse that can be seen in figure, but we decided to opt for Capacitive Soil Moisture Sensor V1.2 that is Corrosion Resistant. The FC28 sensor can be seen in \ref{fig:resistive} and the Capacitive sensor can be seen in figure \ref{fig:capacitive}.
+The Arduino Uno, TMP36GZ heat sensor, LDR, other resistors and the cables which we use in this project, was provided by the one responsible by the course. We used at the start a FC28 moisture sensor, but it generally uses DC current which means that it corrodes quickly because of electrolysis in the soil and alters the soil composition which could potentially damage the plant. That would also eventually lead to tainted readings. We changed it to use an AC pulse that can be seen in figure, but we decided to opt for a Capacitive Soil Moisture Sensor V1.2 that is Corrosion Resistant. The FC28 sensor can be seen in \ref{fig:resistive} and the capacitive sensor can be seen in the section about it.
 
 \section{Arduino}
 Arduino is an open-source electronics platforms which is based on user-friendly software and hardware components\cite{ArduinoIntroduction}. It can read outputs from these components e.g. readings from sensors, and it can give input to these sensors.
 
-We worked on an Arduino Uno. It is a microcontroller board. It has 14 digital i/o pins. they can be located on the board right next to the text \textit{DIGITAL}. Six of those pins can be used as Power Width Modulation, shortened as PWM, outputs. Those pins are the ones who have a ~ next to their ascribed numbers. It has six analog pins. It then has five different kinds of power pins. We only use the GND and the 5V and 3.3V pins. The 5V and 3.3 pins output a 5V and 3.3V from the regulator on the board which can be used to power different hardware components. The 3.3V pins has a maximum current draw of 50mA. GND stands for ground, and serves as the common return path for current from the different hardware components in our Arduino system. 
+We worked on an Arduino Uno. It is a microcontroller board. It has 14 digital i/o pins. They can be located on the board right next to the text \textit{DIGITAL}. Six of those pins can be used as Power Width Modulation, shortened as PWM, outputs. Those pins are the ones who have a ~ next to their ascribed numbers. It has six analog pins. It then has five different kinds of power pins. We only use the GND and the 5V and 3.3V pins. The 5V and 3.3 pins output a 5V and 3.3V from the regulator on the board which can be used to power different hardware components. The 3.3V pins has a maximum current draw of 50mA. GND stands for ground, and serves as the common return path for current from the different hardware components in our Arduino system. A graphic representation of it can be viewed in section 2.2.1. 
+
 \subsection{Arduino Main}
-The code for where the Arduino setup and loop are in \ref{list:ArduinoMain}. The first lines are inclusions of sensors and the SoftwareSerial library which is used to connect the ESP8266-05 module. The next block is where we define our interent properties and which port to communicate through. The third block is our declarations i.e. what digital pins on the Arduino are attached to the Rx and Tx pins for the wifi module then we use that first declaration the setup the ESP8266 wifi with the baudrate 115200. The while loop tries to establish a connection to an access points with the predefined SSID and PASSWORD. If that succeeded then it prints to the the console that it was a success and breaks out of the loop, otherwise it prints that it failed. All Serial.print functions are used a debugging tool. The loop will try to reconnect to the wife every twentieth second. That is done so that we don't need to restart the Arduino every time something goes wrong. The next loop tries to establish a TCP connection to the Webserver. Data is a struct which holds all our information which the sensors reads. Its a way for us to structure our data. Water never gets used though, and it was supposed to say how much water was in a tank.
+The code for where the Arduino setup and loop are in \ref{list:ArduinoMain}. The first lines are inclusions of sensors and the SoftwareSerial library which is used to connect the ESP8266-05 module. The next block is where we define our internet properties and which port to communicate through. The third block is our declarations i.e. what digital pins on the Arduino are attached to the Rx and Tx pins for the wifi module then we use that first declaration to setup the ESP8266 wifi with the baudrate 115200. Setup method sets the Arduino up for the loop() method. The while loop tries to establish a connection to an access point with the predefined SSID and PASSWORD. If that succeeded, then it prints to the the console that it was a success and breaks out of the loop, otherwise it prints that it failed. All Serial.print functions are used as debugging tools, so that we are able tell if something is wrong or not. The loop will try to reconnect to the wifi every twentieth second. That is done so that we don't need to restart the Arduino every time something goes wrong. The next loop tries to establish a TCP connection to the Webserver. TCP stands for Transmission Control Protocol and it is a standard for how to establish and maintain a connection for how application programs can transmit data to each other over IP. 
+
+Data is a struct which holds all our information which the sensors reads. Its a way for us to structure our data. Water never gets used, and it was supposed to say how much water was in a tank. It never got used because its the least important thing in our project, and we wanted to focus on finishing the web server.
 
 Package is also a struct, and it creates a union of data values and a unsigned int8\_t array of bytes with the size nine. It takes nine bytes because that is that accumulated max size of all the variables in the Data struct.
 
 Datahandler is class that populates that Package. First it creates an integer constant and assigns it to one, then it creates object instances of our sensors. CapacitiveMoistureSensor is set to digital pin four and analog pin two, TemperatureSensor is set to eight and one etc. 
 
-PopulatePackage() does as the name implies. First it creates a variable reference og type Data and assigns it the package in line 81 then it takes the values in the in that package and assigns it the DataHandler id, and what the sensors are reading. Water gets assigned a random number. getPackage() calls the populatePackage() method and returns a reference to that package.
+PopulatePackage() does as the name implies. First it creates a variable reference of type Data and assigns it the package in line 81, then it takes the values in that package and assigns it the DataHandler id, and what the sensors are reading. Water gets assigned a random number. getPackage() calls the populatePackage() method and returns a reference to that package.
 
-loop() is the method that is constantly running, when the Arduino is turned of. That means that for every iteration of the loop, it creates a Package and assigns it with values from populatePackage, and tried to send it to the webserver. First the actual data is supplied to Wifi.Send, then the second parameter is the size of the package. There's a five seconds delay for every iteration.
+loop() is the method that is constantly running, when the Arduino is turned on. That means that for every iteration of the loop, it creates a Package and assigns it with values from populatePackage, and tries to send it to the webserver. First the actual data is supplied to Wifi.Send, then the size of the packace. There's a five seconds delay for every iteration.
+
 \section{Moisture Sensors}
 \subsection{FC28}
 Our intention was to use the Arduino to induce an alternating current through the sensor. To simplify things, we circumvented the circuit of FC-28 such that we connected directly to the pins on the sensor. To alternate the current, we first emit 5V from pin 12 and set pin 13 to low (0V) for 1 ms then we take a reading through the analog pin A0. Then we flip the pin 12 and 13 ( 5V from pin 13 ) for the same amount of time. This should somewhat remedy the problems of electrolysis by shifting the ions back and forth between the moisture sensor pins, instead of just letting them congest at one pin. The chip had to be removed so that it could use AC.
 The setup can be seen below.
 
 
-\includegraphics[scale = 0.50]{FC-28-Diagram.PNG}
+\includegraphics[scale = 0.50]{FC-28-Diagram.PNG}\label{graph:capacitive}
 
 The resistor in the circuit helps increase the amount of current entering the analog sensor. Without it about half the current would go in the pin 13 when the measurement occurs. We are therefor able to steer the range of current entering the analog input. The left left leg is connected to 8 digital pin, the middle leg is connected to A1 pin, and the third leg is connected to -18 on the breadboard which is then connected to the ground pin on the Arduino.  
 
@@ -103,7 +108,7 @@ The resistor in the circuit helps increase the amount of current entering the an
 \includegraphics[scale=0.20]{capacitive-sensor}
 \end{center}
 
-We looked at reviews, and this one seemed to be the most corrosion resistant of the ones we looked at. It is made by corrosion resistant material, so it has a higher lifetime than the other sensor. It measures moisture, or rather the ions in the soil, by reading the capacitance between two plates in the sensor. It has lesser range than the other one, as it measures air values as 555 and completely submerges as 280. We thought the minimized range wouldn't worsen our readings, and the benefit from increased lifetime far outweighed it.
+We looked at reviews, and this one seemed to be the most corrosion resistant of the ones we looked at. It is made by corrosion resistant material, so it has a higher lifetime than the other sensor. It measures moisture, or rather the ions in the soil, by reading the capacitance between two plates in the sensor. It has lesser range than the other one, as it measures air values as 555 and completely submerged as 280. We thought the minimized range wouldn't worsen our readings, and the benefit from increased lifetime far outweighed the potential range.
 
 \begin{lstlisting}[language=Arduino]
 uint8_t CapacitiveMoistureSensor::readPercent(uint16_t val)
@@ -119,7 +124,7 @@ uint8_t CapacitiveMoistureSensor::readPercent(uint16_t val)
 }
 
 \end{lstlisting}
-readPercent takes the read value from the analog read, and converts it to a percent that is mapped between air- and water value. Line 7 sets a constrain on val variable which says that it can't be more than 55 and not less than 280. Line 8 creates a new variable, which is val parameter mapped as a percentage between 555 and 280 where 555 is 0\% and 280 is 100\%.
+readPercent takes the read value from the analog read, and converts it to a percent that is mapped between air- and water value. Line 7 sets a constrain on val variable which says that it can't be more than 555 and not less than 280. Line 8 creates a new variable, which is val parameter mapped as a percentage between 555 and 280 where 555 is 0\% and 280 is 100\%. That number is then returned when the method is called.
 
 \begin{lstlisting}[language=Arduino]
 uint8_t CapacitiveMoistureSensor::read()
@@ -127,12 +132,12 @@ uint8_t CapacitiveMoistureSensor::read()
 	digitalWrite(dPin,HIGH);
 	delay(1000);
     uint16_t val = analogRead(aPin);
-	
+	digitalWrite(dPin,LOW);
     return readPercent(val);
 }
 \end{lstlisting}
 
-This method reads the output from the capacitive sensor. digitalWrite(dPin, HIGH) starts the sensor. dPin is the the digital pin in which the sensor is connected to the Arduino. delay(1000) pauses the code at one second, then it initalized the val varaiable through analogRad(aPin), where aPin is the analog pin which the sensor is connected. Then the method calls and  the above readPercent(val) method, which converts the value to a percentage, and the read() method returns that percentage to where the method was called from i.e. the main Arduino program.
+This method reads the output from the capacitive sensor. digitalWrite(dPin, HIGH) starts the sensor. dPin is the the digital pin in which the sensor is connected to the Arduino. delay(1000) pauses the code at one second, then it initalized the val variable through analogRad(aPin), where aPin is the analog pin which the sensor is connected. Then the method calls the above readPercent(val) method,which returns the converted number as a percentage.
 
 \section{Temperature Sensor}
 \subsection{TMP Sensor}
