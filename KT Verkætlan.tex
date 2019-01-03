@@ -16,7 +16,7 @@
 \usepackage{listings}
 \usepackage[pdftex]{hyperref}
 \usepackage{url}
-\usepackage[numbers]{natbib}
+\usepackage[numbers]{natbib} 
 
 \input{arduinoLanguage.tex}
 \input{CSharp.tex}
@@ -27,15 +27,11 @@
 \newenvironment{abstract}%
 {\cleardoublepage\addcontentsline{toc}{chapter}{Abstract}\null\vfill\begin{center}%
 \bfseries\abstractname\end{center}}%
-{\vfill\null}
 
 \title{Automatic Gardening System}
 \author{Kristmund Ryggstein and Hergeir Winther Lognberg \\ University of the Faroe Islands\\}
 
 \begin{document}
-\frontmatter
-\maketitle
-
 \frontmatter
 \maketitle
 
@@ -449,21 +445,21 @@ The following are circuit diagrams of our components and Arduino system.
   \centering
       \includegraphics[scale=0.9]{Pumpan}
   \caption{Circuit for water pump.}
-  \label{fig:CapacitiveCircuit}
+  \label{fig:WaterPumpCircuit}
 \end{figure}
 
 \begin{figure}[!ht]
   \centering
       \includegraphics[scale=0.9]{LDR}
   \caption{Circuit for LDR.}
-  \label{fig:CapacitiveCircuit}
+  \label{fig:LDRCircuit}
 \end{figure}
 
 \begin{figure}[!ht]
   \centering
       \includegraphics[scale=0.9]{Arduinoxml}
   \caption{Circuit for TMP Sensor}
-  \label{fig:CapacitiveCircuit}
+  \label{fig:TMP36GZCircuit}
 \end{figure}
 
 
