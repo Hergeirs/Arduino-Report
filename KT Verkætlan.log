@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  3 JAN 2019 18:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  3 JAN 2019 19:21
 entering extended mode
 **"./KT Verkætlan.tex"
 ("KT Verkætlan.tex"
@@ -820,31 +820,39 @@ LaTeX Info: Redefining \cite on input line 694.
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\courier.sty
 "
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
-)) (CSharp.tex) ("KT Verkætlan.aux")
+)) (CSharp.tex) ("KT Verkætlan.aux"
+
+LaTeX Warning: Label `fig:CapacitiveCircuit' multiply defined.
+
+
+LaTeX Warning: Label `fig:CapacitiveCircuit' multiply defined.
+
+
+LaTeX Warning: Label `fig:CapacitiveCircuit' multiply defined.
+
+)
 \openout1 = `"KT Verkætlan.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 37.
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 35.
+ ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 (C:\Users\Krist\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
@@ -876,7 +884,7 @@ G,.JBIG2,.JB2,.eps]
 )
 \c@lstlisting=\count128
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 37.
+Package hyperref Info: Link coloring OFF on input line 35.
 
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -888,23 +896,23 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count129
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
  ("KT Verkætlan.out") ("KT Verkætlan.out")
 \@outlinefile=\write3
 \openout3 = `"KT Verkætlan.out"'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 40.
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 40.
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 40.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 38.
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
@@ -918,14 +926,14 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 \cleardoublepage
+l.47 \cleardoublepage
                      \addcontentsline{toc}{chapter}{Contents} [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 \cleardoublepage
+l.47 \cleardoublepage
                      \addcontentsline{toc}{chapter}{Contents} [2
 
 ]
@@ -943,7 +951,7 @@ l.49 \cleardoublepage
 Chapter 1.
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 73.
+(hyperref)                be the same. Added a new anchor on input line 71.
 
 [1
 
@@ -952,7 +960,7 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 ]
 Chapter 2.
 [3] [4]
-Overfull \hbox (0.71858pt too wide) in paragraph at lines 98--100
+Overfull \hbox (0.71858pt too wide) in paragraph at lines 96--98
 \T1/cmr/m/n/12 Our in-ten-tion was to use the Ar-duino to in-duce an al-ter-nat
 -ing cur-rent through
  []
@@ -960,13 +968,13 @@ Overfull \hbox (0.71858pt too wide) in paragraph at lines 98--100
 <./images/FC-28-Diagram.PNG, id=314, 596.98032pt x 505.89pt>
 File: ./images/FC-28-Diagram.PNG Graphic file (type png)
 <use ./images/FC-28-Diagram.PNG>
-Package pdftex.def Info: ./images/FC-28-Diagram.PNG  used on input line 102.
+Package pdftex.def Info: ./images/FC-28-Diagram.PNG  used on input line 100.
 (pdftex.def)             Requested size: 298.48943pt x 252.94437pt.
 [5 <./images/FC-28-Diagram.PNG>]
 <./images/capacitive-sensor.jpg, id=322, 1003.75pt x 1003.75pt>
 File: ./images/capacitive-sensor.jpg Graphic file (type jpg)
 <use ./images/capacitive-sensor.jpg>
-Package pdftex.def Info: ./images/capacitive-sensor.jpg  used on input line 108
+Package pdftex.def Info: ./images/capacitive-sensor.jpg  used on input line 106
 .
 (pdftex.def)             Requested size: 200.74644pt x 200.74644pt.
 
@@ -982,13 +990,13 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 ty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 113.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 111.
 
 ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 [6 <./images/capacitive-sensor.jpg>]
-Overfull \hbox (11.99986pt too wide) in paragraph at lines 140--141
+Overfull \hbox (11.99986pt too wide) in paragraph at lines 138--139
 []\T1/cmr/m/n/12 This method reads the out-put from the ca-pac-i-tive sen-sor. 
 dig-i-tal-Write(dPin,
  []
@@ -996,7 +1004,7 @@ dig-i-tal-Write(dPin,
 <./images/TMP-36.png, id=337, 287.57437pt x 335.00156pt>
 File: ./images/TMP-36.png Graphic file (type png)
 <use ./images/TMP-36.png>
-Package pdftex.def Info: ./images/TMP-36.png  used on input line 145.
+Package pdftex.def Info: ./images/TMP-36.png  used on input line 143.
 (pdftex.def)             Requested size: 230.0598pt x 268.0016pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1006,44 +1014,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <./images/LDR-Resistor.png, id=371, 401.5pt x 217.81375pt>
 File: ./images/LDR-Resistor.png Graphic file (type png)
 <use ./images/LDR-Resistor.png>
-Package pdftex.def Info: ./images/LDR-Resistor.png  used on input line 171.
+Package pdftex.def Info: ./images/LDR-Resistor.png  used on input line 169.
 (pdftex.def)             Requested size: 321.20042pt x 174.25122pt.
 <./images/Water-Pump.jpg, id=372, 803.0pt x 803.0pt>
 File: ./images/Water-Pump.jpg Graphic file (type jpg)
 <use ./images/Water-Pump.jpg>
-Package pdftex.def Info: ./images/Water-Pump.jpg  used on input line 180.
+Package pdftex.def Info: ./images/Water-Pump.jpg  used on input line 178.
 (pdftex.def)             Requested size: 240.90186pt x 240.90186pt.
  [9 <./images/LDR-Resistor.png>]
 <./images/ESP8266.png, id=383, 445.665pt x 379.4175pt>
 File: ./images/ESP8266.png Graphic file (type png)
 <use ./images/ESP8266.png>
-Package pdftex.def Info: ./images/ESP8266.png  used on input line 188.
+Package pdftex.def Info: ./images/ESP8266.png  used on input line 186.
 (pdftex.def)             Requested size: 133.70053pt x 113.82613pt.
  [10 <./images/Water-Pump.jpg> <./images/ESP8266.png>] [11] [12
 
 ]
 Chapter 3.
-
-Package Listings Warning: Text dropped after begin of listing on input line 203
-.
-
 [13]
-Overfull \hbox (25.85205pt too wide) in paragraph at lines 205--206
-[][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (32.90039pt too wide) in paragraph at lines 208--209
-[][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (61.09375pt too wide) in paragraph at lines 210--211
-[][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (1.10156pt too wide) in paragraph at lines 214--215
+Overfull \hbox (1.10156pt too wide) in paragraph at lines 211--212
 \T1/cmr/m/n/12 bookOp-tions.AppId and face-bookOp-tions.AppSecret are plu-g-ins
  from chrome
  []
@@ -1077,11 +1066,7 @@ Overfull \hbox (18.00415pt too wide) in paragraph at lines 273--275
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Underfull \vbox (badness 5622) has occurred while \output is active []
-
- [16]
-[17]
+[16] [17]
 Overfull \hbox (70.0175pt too wide) in paragraph at lines 317--318
 []\T1/cmr/m/n/12 Listen() lis-tens for clients to con-nect to the ob-serv-able 
 class. _socket.AcceptTcpClient()
@@ -1110,9 +1095,11 @@ Overfull \hbox (46.99707pt too wide) in paragraph at lines 418--419
 [][][][][][][][][][][][][][][][] 
  []
 
-[23] [24]
+[23] [24
+
+]
 Appendix A.
-<./images/Circuit-Diagram-Wifi-8266.png, id=607, 544.28343pt x 183.68625pt>
+<./images/Circuit-Diagram-Wifi-8266.png, id=606, 544.28343pt x 183.68625pt>
 File: ./images/Circuit-Diagram-Wifi-8266.png Graphic file (type png)
 <use ./images/Circuit-Diagram-Wifi-8266.png>
 Package pdftex.def Info: ./images/Circuit-Diagram-Wifi-8266.png  used on input 
@@ -1123,130 +1110,149 @@ Overfull \hbox (45.42734pt too wide) in paragraph at lines 436--437
  [][] 
  []
 
-[25
-
- <./images/Circuit-Diagram-Wifi-8266.png>] [26
+<./images/Capacitive.png, id=607, 302.12875pt x 212.795pt>
+File: ./images/Capacitive.png Graphic file (type png)
+<use ./images/Capacitive.png>
+Package pdftex.def Info: ./images/Capacitive.png  used on input line 443.
+(pdftex.def)             Requested size: 271.91336pt x 191.51372pt.
+<./images/Pumpan.png, id=608, 293.095pt x 252.945pt>
+File: ./images/Pumpan.png Graphic file (type png)
+<use ./images/Pumpan.png>
+Package pdftex.def Info: ./images/Pumpan.png  used on input line 450.
+(pdftex.def)             Requested size: 263.78305pt x 227.64839pt.
+<./images/LDR.png, id=609, 325.215pt x 242.9075pt>
+File: ./images/LDR.png Graphic file (type png)
+<use ./images/LDR.png>
+Package pdftex.def Info: ./images/LDR.png  used on input line 457.
+(pdftex.def)             Requested size: 292.6908pt x 218.61472pt.
+<./images/Arduinoxml.png, id=610, 323.2075pt x 226.8475pt>
+File: ./images/Arduinoxml.png Graphic file (type png)
+<use ./images/Arduinoxml.png>
+Package pdftex.def Info: ./images/Arduinoxml.png  used on input line 464.
+(pdftex.def)             Requested size: 290.88406pt x 204.16086pt.
+[25 <./images/Circuit-Diagram-Wifi-8266.png>] [26 <./images/Capacitive.png> <./
+images/Pumpan.png>] [27 <./images/LDR.png> <./images/Arduinoxml.png>] [28
 
 ]
 Appendix B.
-<./images/fc-28-corrosion.png, id=617, 339.51843pt x 148.30406pt>
+<./images/fc-28-corrosion.png, id=636, 339.51843pt x 148.30406pt>
 File: ./images/fc-28-corrosion.png Graphic file (type png)
 <use ./images/fc-28-corrosion.png>
-Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 448.
+Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 476.
 (pdftex.def)             Requested size: 339.5176pt x 148.30368pt.
-<./images/ESP-01.jpg, id=618, 1606.0pt x 1204.5pt>
+<./images/ESP-01.jpg, id=637, 1606.0pt x 1204.5pt>
 File: ./images/ESP-01.jpg Graphic file (type jpg)
 <use ./images/ESP-01.jpg>
-Package pdftex.def Info: ./images/ESP-01.jpg  used on input line 475.
+Package pdftex.def Info: ./images/ESP-01.jpg  used on input line 506.
 (pdftex.def)             Requested size: 321.19432pt x 240.89574pt.
-[27 <./images/fc-28-corrosion.png>] [28 <./images/ESP-01.jpg>]
+[29 <./images/fc-28-corrosion.png>] [30 <./images/ESP-01.jpg>]
 Appendix C.
-[29
+[31
 
 ]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 508.
- [30] [31] [32] [33]
-Overfull \hbox (246.00647pt too wide) in paragraph at lines 669--670
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 539.
+ [32] [33] [34] [35]
+Overfull \hbox (246.00647pt too wide) in paragraph at lines 700--701
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 677.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 708.
 
-Overfull \hbox (24.00421pt too wide) in paragraph at lines 681--682
+Overfull \hbox (24.00421pt too wide) in paragraph at lines 712--713
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (132.00531pt too wide) in paragraph at lines 693--694
+Overfull \hbox (132.00531pt too wide) in paragraph at lines 724--725
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[34]
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 736--738
+[36]
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 767--769
 [][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 740--741
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 771--772
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (18.00415pt too wide) in paragraph at lines 743--744
+Overfull \hbox (18.00415pt too wide) in paragraph at lines 774--775
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[35]
-Overfull \hbox (72.0047pt too wide) in paragraph at lines 763--764
+[37]
+Overfull \hbox (72.0047pt too wide) in paragraph at lines 794--795
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (84.00482pt too wide) in paragraph at lines 785--786
+Overfull \hbox (84.00482pt too wide) in paragraph at lines 816--817
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (48.00446pt too wide) in paragraph at lines 799--800
+Overfull \hbox (48.00446pt too wide) in paragraph at lines 830--831
 [][][][][][][][][][][][][][] 
  []
 
-[36]
+[38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
-Overfull \hbox (12.00409pt too wide) in paragraph at lines 868--869
+ [39]
+Overfull \hbox (12.00409pt too wide) in paragraph at lines 899--900
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (18.00415pt too wide) in paragraph at lines 877--878
+Overfull \hbox (18.00415pt too wide) in paragraph at lines 908--909
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (12.00409pt too wide) in paragraph at lines 886--887
+Overfull \hbox (12.00409pt too wide) in paragraph at lines 917--918
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
 
  []
 
 
-Overfull \hbox (60.00458pt too wide) in paragraph at lines 893--894
+Overfull \hbox (60.00458pt too wide) in paragraph at lines 924--925
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
-Overfull \hbox (48.00446pt too wide) in paragraph at lines 926--927
+ [40]
+Overfull \hbox (48.00446pt too wide) in paragraph at lines 957--958
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[39]
-Overfull \hbox (36.00433pt too wide) in paragraph at lines 998--999
+[41]
+Overfull \hbox (36.00433pt too wide) in paragraph at lines 1029--1030
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[40]
-Overfull \hbox (66.00464pt too wide) in paragraph at lines 1002--1003
+[42]
+Overfull \hbox (66.00464pt too wide) in paragraph at lines 1033--1034
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[41] [42]
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 1091--1092
+[43] [44]
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 1122--1123
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (72.0047pt too wide) in paragraph at lines 1098--1099
+Overfull \hbox (72.0047pt too wide) in paragraph at lines 1129--1130
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[43] [44
+[45] [46
 
 ] ("KT Verkætlan.bbl"
 Underfull \hbox (badness 1014) in paragraph at lines 9--13
@@ -1315,28 +1321,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--48
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1106.
- [45
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1137.
+ [47
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1106.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1137.
  ("KT Verkætlan.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1106.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1106.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1137.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1137.
 
 Package rerunfilecheck Info: File `"KT Verkætlan".out' has not changed.
 (rerunfilecheck)             Checksum: 58F46E51C8AA93772A605470310F6613;2961.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12183 strings out of 493334
- 171368 string characters out of 3139251
- 510031 words of memory out of 3000000
- 14663 multiletter control sequences out of 15000+200000
+ 12203 strings out of 493334
+ 171795 string characters out of 3139251
+ 510116 words of memory out of 3000000
+ 14674 multiletter control sequences out of 15000+200000
  24292 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,8n,69p,1599b,2224s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1358,9 +1364,9 @@ ype1/public/amsfonts/cm/cmr12.pfb><C:/Users/Krist/AppData/Local/Programs/MiKTeX
 ograms/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/Krist/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Krist/AppD
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on "KT Verkætlan.pdf" (53 pages, 1292746 bytes).
+Output written on "KT Verkætlan.pdf" (55 pages, 1391537 bytes).
 PDF statistics:
- 1872 PDF objects out of 2073 (max. 8388607)
- 855 named destinations out of 1000 (max. 500000)
- 438 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1894 PDF objects out of 2073 (max. 8388607)
+ 860 named destinations out of 1000 (max. 500000)
+ 458 words of extra memory for PDF output out of 10000 (max. 10000000)
 

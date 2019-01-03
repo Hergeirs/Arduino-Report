@@ -35,16 +35,16 @@
 \contentsline {subsection}{\numberline {3.4.2}PlantController}{21}{subsection.3.4.2}
 \contentsline {section}{\numberline {3.5}Conclusion}{23}{section.3.5}
 \contentsline {chapter}{\numberline {A}Circuit Diagrams}{25}{appendix.A}
-\contentsline {chapter}{\numberline {B}Arduino Components}{27}{appendix.B}
-\contentsline {section}{\numberline {B.1}fc-28}{27}{section.B.1}
-\contentsline {section}{\numberline {B.2}Pump}{27}{section.B.2}
-\contentsline {section}{\numberline {B.3}ESP-01}{27}{section.B.3}
-\contentsline {chapter}{\numberline {C}Latex Listings}{29}{appendix.C}
-\contentsline {section}{\numberline {C.1}Ardunio Ino File}{29}{section.C.1}
-\contentsline {section}{\numberline {C.2}Light Reading}{32}{section.C.2}
-\contentsline {section}{\numberline {C.3}Models}{32}{section.C.3}
-\contentsline {section}{\numberline {C.4}Abstract Interfaces}{33}{section.C.4}
-\contentsline {section}{\numberline {C.5}EGarden Context}{34}{section.C.5}
-\contentsline {section}{\numberline {C.6}ArduinoDataLoggerRepository}{34}{section.C.6}
-\contentsline {section}{\numberline {C.7}Observer Code}{35}{section.C.7}
-\contentsline {chapter}{Bibliography}{45}{lstnumber.C.13.39}
+\contentsline {chapter}{\numberline {B}Arduino Components}{29}{appendix.B}
+\contentsline {section}{\numberline {B.1}fc-28}{29}{section.B.1}
+\contentsline {section}{\numberline {B.2}Pump}{29}{section.B.2}
+\contentsline {section}{\numberline {B.3}ESP-01}{29}{section.B.3}
+\contentsline {chapter}{\numberline {C}Latex Listings}{31}{appendix.C}
+\contentsline {section}{\numberline {C.1}Ardunio Ino File}{31}{section.C.1}
+\contentsline {section}{\numberline {C.2}Light Reading}{34}{section.C.2}
+\contentsline {section}{\numberline {C.3}Models}{34}{section.C.3}
+\contentsline {section}{\numberline {C.4}Abstract Interfaces}{35}{section.C.4}
+\contentsline {section}{\numberline {C.5}EGarden Context}{36}{section.C.5}
+\contentsline {section}{\numberline {C.6}ArduinoDataLoggerRepository}{36}{section.C.6}
+\contentsline {section}{\numberline {C.7}Observer Code}{37}{section.C.7}
+\contentsline {chapter}{Bibliography}{47}{lstnumber.C.13.39}
