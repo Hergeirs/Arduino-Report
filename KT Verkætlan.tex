@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,twoside,openright,titlepage]{book}
+\documentclass[a4paper,12pt,oneside,openright,titlepage]{book}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
@@ -312,11 +312,11 @@ Observable class can be seen in \ref{list:Observable}. It implements the IDispos
 
 Listen() listens for clients to connect to the observable class. \_socket.AcceptTcpClient() accepts the pending connection request, and that request is assigned to a variable client. A new thread is then created which calls the ListenToClient(TcpClient client) method where the previously created client is the parameter. That thread is started the same time it is called.
 
-ListenToClient() is run while a client is connected. The stream from the client is assigned to a variable reader, then the method enters a new while loop which is active as long as there's data to be received from the client. A byte array of size two and an ArduinoData object are then created. The reader then reads two bytes, and inserts those two bytes at index 0 in the array. data.PlantId = BitConverter.ToUInt16(buffer) takes the two bytes and converts it to an unsigned 16 bit integer, and assigns data.PlantId to the converted value. data.Temperature = reader.ReadByte() reads the current byte in the stream, advances the stream by one, and assigns the temperature with the read value. The same happens to data.Moisture. Then a new buffer is created with a byte size of 4, and the reader reads the subsequent 4 bytes in the stream to buffer from index zero. That buffer is then converted to a 32 bit integer, and data.Light is assigned to that value. data.Water is at last assigned to the last byte in the stream. The method then calls Notify(ref data), where the newly created ArduinoData is passed by reference. The method then exits the inner loop and pauses for one second and then closes the connection to client and the clause for the outer loop.
+ListenToClient() is run while a client is connected. The stream from the client is assigned to a variable reader, then the method enters a new while loop which is active as long as there's data to be received from the client. A byte array of size two and an ArduinoData object are then created. The reader then reads two bytes, and inserts those two bytes at index 0 in the array. data.PlantId = BitConverter.ToUInt16(buffer) takes the two bytes and converts it to an unsigned 16 bit integer, and assigns data.PlantId to the converted value. data.Temperature = reader.ReadByte() reads the current byte in the stream, advances the stream by one, and assigns the temperature with the read value. The same happens to data.Moisture. Then a new buffer is created with a byte size of 4, and the reader reads the subsequent 4 bytes in the stream to buffer from index zero. That buffer is then converted to a 32 bit integer, and data.Light is assigned to that value. data.Water is at last assigned to the last byte in the stream. The method then calls Notify(data), where the newly created ArduinoData is passed. The method then exits the inner loop and pauses for one second and then closes the connection to client and the clause for the outer loop.
 
 Unsubscriber is a private internal class for Observable. It also implements the IDisposable interface.  It has two private fields, one List of observers and one observer. Those are initialized in the parameterized constructor which gets called in Observable's Subscribe() method. This class' Dispose checks to see whether the observer field is null and that the list contains observers. The Subscriber's \_observer is then removed from the list.
 
-Notify(ref ArduinoData) takes a reference to ArduinoData as a parameter. First it checks to see if the data has a plantId equal to 21569 if that is true, then it gives the console a message a makes a return call. We had some problems with this Id, because it didn't trigger our UpdateData in DataPusher which meant that our view didn't update asynchronously. This data's other properties e.g. temperature were also peculiar, so we believe that its package was corrupted by the poorly powered WIFI chip. We still don't understand how the same id seemed to reappear so often. 
+Notify(ArduinoData) takes an instance of ArduinoData as a parameter. First it checks to see if the data has a plantId equal to 21569 if that is true, then it gives the console a message a makes a return call. We had some problems with this Id, because it didn't trigger our UpdateData in DataPusher which meant that our view didn't update asynchronously. This data's other properties e.g. temperature were also peculiar, so we believe that its package was corrupted by the poorly powered WIFI chip. We still don't understand how the same id seemed to reappear so often. 
 The method then validates that data is not null. If it is, then the observer at that time in the foreach loops calls OnError with an error message that says the data was corrupted. If data was valid, then the method tries to call the looped observer's OnNext(data) method with the data as a paremter, this time passed by value. If this triggers and InvalidOperationException, then the catch statement catches the exception and prints the exception message to the console. 
 
 StartAsync and StopAsync are the two methods that are inherited from the IHostedService. Those two return a task and each take a CancellationToken as a parameter. StartAsync starts the TcpListener, \_socket, then starts a new thread that calls Listen and at last it returns a returns a Task that has completed successfully. StopAsync calls dispose and also returns a completed Task. The CancellationToken doesn't do anything, because we don't want to cancel the request.
@@ -426,7 +426,7 @@ This view uses a single plant model, one which was supplied to it in loop in the
 We can say that we achieved our goals. We have an Arduino which moistens our soil, can read moisture-, light-, and temperature levels. It is capable of transmitting data to a Webserver, where users are able to view track how their plants are doing. It's superficial data, but it's still data. If we were to start over again, then we would buy a new Wifi module and a new light sensor, but we're content with what we have achieved.
 \appendix
 \chapter{Circuit Diagrams}
-The following are diagrams of our components and Arduino system.
+The following are circuit diagrams of our components and Arduino system.
 \begin{figure}[!ht]
   \centering
       \includegraphics[scale=0.8]{Circuit-Diagram-Wifi-8266}
@@ -473,9 +473,6 @@ The following are pictures of our sensors and other components.
   \caption{Corroded fc-28 after moderate use.}
   \label{fig:resistive}
 \end{figure}
-
-
-
 
 \section{Pump}
 \begin{figure}[ht!]
@@ -693,7 +690,8 @@ public interface IUserRepository
 \end{lstlisting}
 \section{EGarden Context}
 \begin{lstlisting}[caption={EGardenerContext}\label{list:EGardengerContext},language=CSharp]
- public class EGardenerContext : IdentityDbContext<ApplicationUser,IdentityRole,string>, IEGardenerContext
+ public class EGardenerContext : IdentityDbContext<ApplicationUser,IdentityRole,string>,
+						IEGardenerContext
     {
 
         public EGardenerContext(DbContextOptions options)
@@ -717,7 +715,9 @@ public interface IUserRepository
             password=Password0;Trusted_Connection=False;\\
             MultipleActiveResultSets=true;");
 
-            return new EGardenerContext(new DbContextOptionsBuilder<EGardenerContext>()
+            return new \\
+            EGardenerContext(\\
+            newDbContextOptionsBuilder<EGardenerContext>()
                 .UseSqlServer(
                     "Server=(localdb)\\
                     mssqllocaldb;Database=E.Gardener;\\
@@ -858,7 +858,7 @@ public class Observable : IDisposable, IObservable<ArduinoData>, IHostedService
                 data.Light = BitConverter.ToInt32(buffer);
                 data.Water = reader.ReadByte();
                    
-                Notify(ref data);
+                Notify(data);
               }
                 Thread.Sleep(1000);
             }
@@ -906,7 +906,7 @@ public class Observable : IDisposable, IObservable<ArduinoData>, IHostedService
         }
 	}
 
-	public void Notify(ref ArduinoData data)
+	public void Notify(ArduinoData data)
 	{
 		if (data.PlantId == 21569)
 		{

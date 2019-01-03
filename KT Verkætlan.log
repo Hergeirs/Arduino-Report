@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.12.19)  3 JAN 2019 19:45
 entering extended mode
  restricted \write18 enabled.
@@ -891,3 +892,5 @@ PDF statistics:
  862 named destinations out of 1000 (max. 500000)
  458 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+=======
+>>>>>>> df271aa5f0dd76827bfd6906c036a7d0d1662292

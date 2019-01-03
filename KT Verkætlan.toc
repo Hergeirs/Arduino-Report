@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \babel@toc {english}{}
 \contentsline {chapter}{Abstract}{iii}{Doc-Start}
 \contentsline {chapter}{Contents}{v}{Doc-Start}
@@ -48,3 +49,5 @@
 \contentsline {section}{\numberline {C.6}ArduinoDataLoggerRepository}{36}{section.C.6}
 \contentsline {section}{\numberline {C.7}Observer Code}{37}{section.C.7}
 \contentsline {chapter}{Bibliography}{47}{lstnumber.C.13.39}
+=======
+>>>>>>> df271aa5f0dd76827bfd6906c036a7d0d1662292
