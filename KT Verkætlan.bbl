@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -16,11 +16,23 @@ Arduino.
 \newblock Introduction to arduino.
 \newblock URL \url{https://www.arduino.cc/en/Guide/Introduction}.
 
+\bibitem[Novytskyy and Anderson()]{FacebookLogin}
+Valeriy Novytskyy and Rick Anderson.
+\newblock Facebook external login setup in asp.net core.
+\newblock URL
+  \url{https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/facebook-logins?view=aspnetcore-2.2}.
+
 \bibitem[Robotics()]{tmpTutorial}
 BC~Robotics.
 \newblock Using a tmp36 temperature sensor with arduino.
 \newblock URL
   \url{https://www.bc-robotics.com/tutorials/using-a-tmp36-temperature-sensor-with-arduino/}.
+
+\bibitem[Smith et~al.()Smith, Addie, and Latham]{DependencyInjection}
+Steve Smith, Scott Addie, and Luke Latham.
+\newblock Dependency injection in asp.net core.
+\newblock URL
+  \url{https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2}.
 
 \bibitem[Wikipedia()]{GoF}
 Wikipedia.
