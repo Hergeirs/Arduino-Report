@@ -33,6 +33,7 @@
 \contentsline {section}{\numberline {3.4}Controllers}{20}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}HomeController}{20}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}PlantController}{21}{subsection.3.4.2}
+\contentsline {section}{\numberline {.1}Conclusion}{23}{section.Alph0.1}
 \contentsline {chapter}{\numberline {A}Circuit Diagrams}{25}{appendix.A}
 \contentsline {chapter}{\numberline {B}Arduino Components}{27}{appendix.B}
 \contentsline {section}{\numberline {B.1}fc-28}{27}{section.B.1}
