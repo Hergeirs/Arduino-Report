@@ -47,9 +47,9 @@ Vit vóru bidnir um at gera eina KT Verkætlan, og í tí sambandinum valdu vit 
 
 We believe that the project has been challenging but also incredible rewarding, because this is the largest project we both have worked on so far. Our version control has been Github, and all our code and project description is available there.
 \begin{itemize}
-\item\href{https://github.com/Hergeirs/Arduino2/tree/master/FWG7RQ3IRXT1DFL}{Arduino code}
-\item \href{https://github.com/Hergeirs/Arduino-Web}{Web Code}
-\item \href{https://github.com/Hergeirs/Arduino-Report}{IT Report}
+\item\citeurl{https://github.com/Hergeirs/Arduino2/tree/master/FWG7RQ3IRXT1DFL}{Arduino code}
+\item \citeurl{https://github.com/Hergeirs/Arduino-Web}{Web Code}
+\item \citeurl{https://github.com/Hergeirs/Arduino-Report}{IT Report}
 \end{itemize}
 We've also attached code we deemed important in the appendix, because it is easier to refer it from there. The code from the Arduino projects are the cpp files and the Arduino ino file. The report is in two parts, one is the arduino part and one is the webserver part.
 \section*{Acknowledgement}
@@ -75,7 +75,7 @@ Arduino is an open-source electronics platforms which is based on user-friendly 
 We worked on an Arduino Uno. It is a microcontroller board. It has 14 digital i/o pins. They can be located on the board right next to the text \textit{DIGITAL}. Six of those pins can be used as Power Width Modulation, shortened as PWM, outputs. Those pins are the ones who have a ~ next to their ascribed numbers. It has six analog pins. It then has five different kinds of power pins. We only use the GND and the 5V and 3.3V pins. The 5V and 3.3 pins output a 5V and 3.3V from the regulator on the board which can be used to power different hardware components. The 3.3V pins has a maximum current draw of 50mA. GND stands for ground, and serves as the common return path for current from the different hardware components in our Arduino system. A graphic representation of it can be viewed in section 2.2.1. 
 
 \subsection{Arduino Main}
-The code for where the Arduino setup and loop are in \ref{list:ArduinoMain}. The first lines are inclusions of sensors and the SoftwareSerial library which is used to connect the ESP8266-05 module. The next block is where we define our internet properties and which port to communicate through. The third block is our declarations i.e. what digital pins on the Arduino are attached to the Rx and Tx pins for the wifi module then we use that first declaration to setup the ESP8266 wifi with the baudrate 115200. Setup method sets the Arduino up for the loop() method. The while loop tries to establish a connection to an access point with the predefined SSID and PASSWORD. If that succeeded, then it prints to the the console that it was a success and breaks out of the loop, otherwise it prints that it failed. All Serial.print functions are used as debugging tools, so that we are able tell if something is wrong or not. The loop will try to reconnect to the wifi every twentieth second. That is done so that we don't need to restart the Arduino every time something goes wrong. The next loop tries to establish a TCP connection to the Webserver. TCP stands for Transmission Control Protocol and it is a standard for how to establish and maintain a connection for how application programs can transmit data to each other over IP. 
+The code for where the Arduino setup and loop are in \ref{list:ArduinoMain}. The first lines are inclusions of sensors and the SoftwareSerial library which is used to connect the ESP8266-05 module. The next block is where we define our wifi properties and which port to communicate through. The third block is our declarations i.e. what digital pins on the Arduino are attached to the Rx and Tx pins for the wifi module then we use that first declaration to setup the ESP8266 wifi with the baudrate 115200. Setup method sets the Arduino up for the loop() method. The while loop tries to establish a connection to an access point with the predefined SSID and PASSWORD. If that succeeded, then it prints to the the console that it was a success and breaks out of the loop, otherwise it prints that it failed. All Serial.print functions are used as debugging tools, so that we are able tell if something is wrong or not. The loop will try to reconnect to the wifi every twentieth second. That is done so that we don't need to restart the Arduino every time something goes wrong. The next loop tries to establish a TCP connection to the Webserver. TCP stands for Transmission Control Protocol and it is a standard for how to establish and maintain a connection for how application programs can transmit data to each other over IP. 
 
 Data is a struct which holds all our information which the sensors reads. Its a way for us to structure our data. Water never gets used, and it was supposed to say how much water was in a tank. It never got used because its the least important thing in our project, and we wanted to focus on finishing the web server.
 
@@ -94,7 +94,7 @@ The setup can be seen below.
 
 \includegraphics[scale = 0.50]{FC-28-Diagram.PNG}\label{graph:capacitive}
 
-The resistor in the circuit helps increase the amount of current entering the analog sensor. Without it about half the current would go in the pin 13 when the measurement occurs. We are therefor able to steer the range of current entering the analog input. The left left leg is connected to 8 digital pin, the middle leg is connected to A1 pin, and the third leg is connected to -18 on the breadboard which is then connected to the ground pin on the Arduino.  
+The resistor in the circuit helps increase the amount of current entering the analog sensor. Without it about half the current would go in the pin 13 when the measurement occurs. We are therefor able to steer the range of current entering the analog input. The left left leg is connected to 8 digital pin, the middle leg is connected to A1 pin, and the third leg is connected to -18 on the breadboard which is then connected to the ground pin on the Arduino.
 
 \subsection{Capacitive Soil Moisture Sensor v1.2}
 \begin{center}
@@ -194,10 +194,10 @@ The circuit for this module can be seen in \ref{fig:WifiCircuit}.
 We chose to work with Microsoft's ASP.NET Core which is an open-source cross-platform framework for building cloud-based and internet-connected applications. We chose this framework because we were familiar with it through the course 5022.16 Web Applications: ASP.NET with C\# which we had right before this course. It is something both collaborators in this project like to use. 
 
 \section{Hosting}
-We initially wanted to host the webserver on Microsoft's Azure which all university students get access to through Microsoft's student offer. We quickly found out that it didn't work for us, because we couldn't connect to any of its ports. 
+We initially wanted to host the webserver on Microsoft's Azure which all university students get access to through Microsoft's student offer. We quickly found out that it didn't work for us, because we couldn't connect to any of its ports through the school network. It made us think that this might be a problem for other networks as well. We analysed the school network and saw that the port 8080 was open. After some research we concluded that even in highly locked down networks 8080 is one of the most common open ports because of its wide use in WEB applications. We then decided to set up our own server in a room in Skopun.
 
 \section{Login}
-We found out that .Net Core has something called Identity Core\cite{Identity} which handles the login for an ASP.NET Core application. The user can create a membership for the application by using his or she's Facebook, Twitter, Microsoft, or Google login credentials. We could have added the other options, but we deemed it unnecessary as most faroese that would be willing to use a system such ours will most likely have a Facebook account. It's also possible to login with a regular email.
+We found out that .Net Core has something called Identity Core\cite{Identity} which handles the login for an ASP.NET Core application. The user can create a membership for the application by using his or she's Facebook, Twitter, Microsoft, or Google login credentials. We could have added the other options, but we deemed it unnecessary as most faroese that would be willing to use a system such ours will most likely have a Facebook account. It's also possible to register with a regular email.
 
 \begin{lstlisting}[language=CSharp] 
 services.AddAuthentication().AddFacebook(facebookOptions =>
@@ -212,10 +212,10 @@ services.AddAuthentication().AddFacebook(facebookOptions =>
 This code block adds Facebook authentication to our login service. facebookOptions.AppId and facebookOptions.AppSecret are plugins from chrome which had to be created in Chrome to support facebook login for our project. We found the tutorial for it on \cite{FacebookLogin} which is Microsoft's support page for Facebook external login. The idea with the login functionality is that plants can be attached to users in our system, and that he is able to view data about his plants on the website.
 
 \section{Project E.Garden Structure}
-Our .Net Core project is divided into three parts. It's good practice to have all business logic i.e. models that represents plants, users, and Arduino Data in a separate class library from the main program. It's done so the project is decoupled, and so that the classes can be inc. First part is the Model folder where the classes are and can be seen in \ref{list:Models}. ApplicationUser inherits from User, because that makes it so that the properties from ApplicationUser gets added to AspNetUsers in the database. That is a functionality of the previously mentioned Identity. 
+Our .Net Core project is divided into three parts. It's good practice to have all business logic i.e. models that represents plants, users, and Arduino Data in a separate class library from the main program. It's done so the project is decoupled, and so that the classes can be reused in other projects. First part is the Model folder where the classes are and can be seen in \ref{list:Models}. ApplicationUser inherits from User, because that makes it so that the properties from ApplicationUser gets added to AspNetUsers in the database. That is a functionality of the previously mentioned \emph{Identity}. 
 
 
-One part of the repository library is a folder that contains the skeleton i.e. interfaces for our business handling, then the implementation of those interfaces is located in the Concrete folder. This means that the EFPlantRepository model inherits from IPlantRepository, and then specifies what the methods UserPlants() and SavePlants() should do. These repositories are then initialized in the file Startup.cs, specifically the ConfigureServices(IServiceCollection services) method. It's initialized with something called Dependency Injection\cite{DependencyInjection}
+One part of the repository library is a folder that contains the skeleton i.e. interfaces for our business handling, then the implementation of those interfaces is located in the Concrete folder. This means that the EFPlantRepository model inherits from IPlantRepository, and then specifies what the methods UserPlants() and SavePlants() should do. These repositories are then initialized in the file Startup.cs, specifically the ConfigureServices(IServiceCollection services) method. It's initialized through Dependency Injection\cite{DependencyInjection}
 
 
 \label{list:DpInjection}
@@ -509,7 +509,7 @@ The following are pictures of our sensors and other components.
 
 
 \chapter{Latex Listings}
-The code highlighting in this tex document was taken from \href{https://github.com/trihedral/ArduinoLatexListing/blob/master/arduinoLanguage.tex}{trihedral's ArduinoLatexListing Github repository}
+The code highlighting in this tex document was taken from \citeurl{https://github.com/trihedral/ArduinoLatexListing/blob/master/arduinoLanguage.tex}{trihedral's ArduinoLatexListing Github repository}
 
 \section{Ardunio Ino File}
 \begin{lstlisting}[caption={Arduino Code Main}\label{list:ArduinoMain}, language=Arduino]
