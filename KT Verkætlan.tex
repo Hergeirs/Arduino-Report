@@ -18,11 +18,6 @@
 \usepackage{url} 
 \usepackage[numbers]{natbib} 
 
-\newcommand\citeurl[2]{%
-  \href{#1}{#2}\footnote{\url{#1}}%
-}
-
-
 \input{arduinoLanguage.tex}
 \input{CSharp.tex}
 \newenvironment{dedication}%
@@ -162,6 +157,7 @@ const int8_t TemperatureSensor::readCelsius()
 \end{lstlisting}
 digitalWrite(triggerPin, HIGH) sends a pulse to the sensor which supplies the sensor with 5v. Then delayMicroseconds() delays the program to make sure that the current has had enough time to settle. Then reading = analogRead(readPind) reads the output from the sensor. The output from it, is converted to voltage by multiplying it with five. That is then divided by 1024 to find the percentage of the analog read, because the Arduino reads the input as a 10 bit number, which ranges from 0 and 1023, where 0 is no voltage and 1023 is 5V. Half a volt is then subtracted from that (offset voltage), and then that result is multiplied with 100 to convert it from V to degrees. Five is subtracted from the reading because we want it so that 0V corresponds to -50\textdegree{}C. 
 
+The circuit for this moisture sensor can be seen in \ref{fig:CapacitiveCircuit}.
 \section{Light Sensor}
 \subsection{LDR Resistor}
 
@@ -172,6 +168,8 @@ digitalWrite(triggerPin, HIGH) sends a pulse to the sensor which supplies the se
 
 We use a LDR Resistor to detects the level of light in the room. The resistor changes its resistance based on how much light is in the room. If the room is unlit then the resistor will have a resistance of a few ohms, but will decrease if the room gets lighter. It's not ideal for our purpose because it's not very sensitive, and that it needed to be calibrated. We chose it because it was available and that we wanted to focus on the webserver and other areas of the project.
 
+The circuit for the LDR can be seen in \ref{fig:LDRCircuit}.
+
 \section{Water Pump}
 \subsection{Water Pump}
 \begin{center}
@@ -180,13 +178,16 @@ We use a LDR Resistor to detects the level of light in the room. The resistor ch
 
 Our water pump is said to have a flow rate of 80-120L\\H. We haven't tested if that is correct, but our tests to see if it worked deemed that it's pumping flow rate is more than enough for our use. It uses a DC current 2.5-6V. The rest of the product description is in \ref{fig:pump description}. Its tube was bought in the local Pet store, and was glued on the opening at the left in the picture.
 
+The circuit for the pump can be seen in \ref{fig:WaterPumpCircuit}. 
+
 \section{Wifi Module}
 \subsection{ESP8266-05}
 \begin{center}
 	\includegraphics[scale=0.3]{ESP8266}
 \end{center}
 
-The ESP8266-05 wifi module was the hardest to work with. We initially bought an ESP8266-01, but that was even more complex to work with, because it had 8 pins, and the distance between each pin on the module was so small that we couldn't properly solder it. We then bought the 05 version which was much easier to solder. A picture is attached of the module in \ref{fig:ESP}. We don't use the antennae nor the upper GND pin. We have a problem with the module in that the Arduino UNO 3.3V supply has inadequate current capabilities to power it. It still works but we get occasional garbage data from the packages sent sent from the module. Garbage transmissions seem to increase the longer the module is in use. It's possible to use an alternate 3.3V supply rather than the one from the Arduino but we didn't look into it, as it would take focus from some of the other work needed in the development. We used a \citeurl{https://github.com/Hergeirs/Arduino2/blob/master/FWG7RQ3IRXT1DFL/ESP8266.h}{ESP8266 library} which  has the methods send(), joinAP which we use.
+The ESP8266-05 wifi module was the hardest to work with. We initially bought an ESP8266-01\ref{fig:ESP}, but that was even more complex to work with, because it had 8 pins, and the distance between each pin on the module was so small that we couldn't properly solder it. We then bought the 05 version which was much easier to solder. A picture is attached of the module in \ref{fig:ESP}. We don't use the antennae nor the upper GND pin. We have a problem with the module in that the Arduino UNO 3.3V supply has inadequate current capabilities to power it. It still works but we get occasional garbage data from the packages sent sent from the module. Garbage transmissions seem to increase the longer the module is in use. It's possible to use an alternate 3.3V supply rather than the one from the Arduino but we didn't look into it, as it would take focus from some of the other work needed in the development. We used an \href{https://github.com/Hergeirs/Arduino2/blob/master/FWG7RQ3IRXT1DFL/ESP8266.h}{ESP8266 library} which  has the methods send() and joinAP() which we use. 
+The circuit for this module can be seen in \ref{fig:WifiCircuit}.
 
 \chapter{Website}
 \section*{Webserver}
@@ -248,7 +249,6 @@ public class EFArduinoDataRepository : IArduinoDataRepository
 \end{lstlisting}
 
 It has one private datamember called \_context of type EGardenerContext, which gets initialized in the EFArduinoDataRepository constructor. This context is the context between the models and their corresponding database entities. All the EFRepositories have this EGardenerContext. The SaveData(Arduino Data) is the actual implementation of the IArduinoDataReposistory. It takes an ArduinoData object as a parameter. First a new context variable is initialized, then a plant gets initialized by dotting into the context, and choosing a plant in the database that has a PlantId that corresponds to same id the data parameter has. A list of data gets initialized by assigning it to the data list in the newly created plant, and then the data parameter is added to that list. context.SaveChanges(); saves all the changes made.  This function is called in Observer's OnNext(ArduinoData value), and value gets saved there.
-
 
 \begin{lstlisting}[caption={EFPlantRepository Class}\label{list:Concrete EFPlantRepository}, language=CSharp]
 public class EFPlantRepository : IPlantRepository
@@ -428,12 +428,13 @@ This view uses a single plant model, one which was supplied to it in loop in the
 
 \section{Conclusion}
 We can say that we achieved our goals. We have an Arduino which moistens our soil, can read moisture-, light-, and temperature levels. It is capable of transmitting data to a Webserver, where users are able to view track how their plants are doing. It's superficial data, but it's still data. If we were to start over again, then we would buy a new Wifi module and a new light sensor, but we're content with what we have achieved.
+
 \appendix
 \chapter{Circuit Diagrams}
 The following are circuit diagrams of our components and Arduino system.
 \begin{figure}[!ht]
   \centering
-      \includegraphics[scale=0.8]{Circuit-Diagram-Wifi-8266}
+      \includegraphics[scale=0.8]{WifiCircuit}
   \caption{Circuit diagram of the Wifi chip}
   \label{fig:Wifi Circuit}
 \end{figure}
@@ -470,7 +471,7 @@ The following are circuit diagrams of our components and Arduino system.
 \chapter{Arduino Components}
 The following are pictures of our sensors and other components.
 
-\section{fc-28}
+
 \begin{figure}[!ht]
   \centering
       \includegraphics{fc-28-corrosion}
@@ -478,8 +479,16 @@ The following are pictures of our sensors and other components.
   \label{fig:resistive}
 \end{figure}
 
-\section{Pump}
-\begin{figure}[ht!]
+
+\begin{figure}[!ht]
+	\centering
+		\includegraphics[scale=0.10]{ESP-01}
+	\caption{ESP8266-01 module}
+	\label{fig:ESP}
+\end{figure}
+
+
+\begin{figure}[ht]
 	\begin{itemize}
 	\item 100\% brand new and high quality
 	\item DC Voltage:2.5-6V
@@ -497,13 +506,7 @@ The following are pictures of our sensors and other components.
 	\label{fig:pump description}
 \end{figure}
 
-\section{ESP-01}
-\begin{figure}[!ht]
-	\centering
-		\includegraphics[scale=0.20]{ESP-01}
-	\caption{ESP8266-01 module. You can see that distance between each pin is small which meant for us that it was hard to sold for someone inexperienced}
-	\label{fig:ESP}
-\end{figure}
+
 
 \chapter{Latex Listings}
 The code highlighting in this tex document was taken from \href{https://github.com/trihedral/ArduinoLatexListing/blob/master/arduinoLanguage.tex}{trihedral's ArduinoLatexListing Github repository}
