@@ -135,6 +135,9 @@ uint8_t CapacitiveMoistureSensor::read()
 
 This method reads the output from the capacitive sensor. digitalWrite(dPin, HIGH) starts the sensor. dPin is the the digital pin in which the sensor is connected to the Arduino. delay(1000) pauses the code at one second, then it initalized the val variable through analogRad(aPin), where aPin is the analog pin which the sensor is connected. Then the method calls the above readPercent(val) method,which returns the converted number as a percentage.
 
+The circuit for this moisture sensor can be seen in \ref{fig:CapacitiveCircuit}.
+
+
 \section{Temperature Sensor}
 \subsection{TMP-36 Sensor}
 \begin{center}
@@ -160,10 +163,11 @@ const int8_t TemperatureSensor::readCelsius()
 \end{lstlisting}
 digitalWrite(triggerPin, HIGH) sends a pulse to the sensor which supplies the sensor with 5v. Then delayMicroseconds() delays the program to make sure that the current has had enough time to settle. Then reading = analogRead(readPind) reads the output from the sensor. The output from it, is converted to voltage by multiplying it with five. That is then divided by 1024 to find the percentage of the analog read, because the Arduino reads the input as a 10 bit number, which ranges from 0 and 1023, where 0 is no voltage and 1023 is 5V. Half a volt is then subtracted from that (offset voltage), and then that result is multiplied with 100 to convert it from V to degrees. Five is subtracted from the reading because we want it so that 0V corresponds to -50\textdegree{}C. 
 
-The circuit for this moisture sensor can be seen in \ref{fig:CapacitiveCircuit}.
-\section{Light Sensor}
-\subsection{LDR Resistor}
+The circuit for this temperature sensor can be seen in \ref{fig:TMP36GZCircuit}.
 
+
+\section{Light Sensor}
+\subsection{LDR Resistor} 
 \begin{center}
 	\includegraphics[scale=0.80]{LDR-Resistor}
 \end{center}
@@ -189,7 +193,8 @@ The circuit for the pump can be seen in \ref{fig:WaterPumpCircuit}.
 	\includegraphics[scale=0.3]{ESP8266}
 \end{center}
 
-The ESP8266-05 wifi module was the hardest to work with. We initially bought an ESP8266-01\ref{fig:ESP}, but that was even more complex to work with, because it had 8 pins, and the distance between each pin on the module was so small that we couldn't properly solder it. We then bought the 05 version which was much easier to solder. A picture is attached of the module in \ref{fig:ESP}. We don't use the antennae nor the upper GND pin. We have a problem with the module in that the Arduino UNO 3.3V supply has inadequate current capabilities to power it. It still works but we get occasional garbage data from the packages sent sent from the module. Garbage transmissions seem to increase the longer the module is in use. It's possible to use an alternate 3.3V supply rather than the one from the Arduino but we didn't look into it, as it would take focus from some of the other work needed in the development. We used an \citeurl{https://github.com/Hergeirs/Arduino2/blob/master/FWG7RQ3IRXT1DFL/ESP8266.h}{ESP8266 library} which  has the methods send() and joinAP() which we use. 
+The ESP8266-05 wifi module was the hardest to work with. We initially bought an ESP8266-01, but that was even more complex to work with, because it had 8 pins, and the distance between each pin on the module was so small that we couldn't properly solder it. We then bought the 05 version which was much easier to solder. A picture is attached of the module in \ref{fig:ESP}. We don't use the antennae nor the upper GND pin. We have a problem with the module in that the Arduino UNO 3.3V supply has inadequate current capabilities to power it. It still works but we get occasional garbage data from the packages sent sent from the module. Garbage transmissions seem to increase the longer the module is in use. It's possible to use an alternate 3.3V supply rather than the one from the Arduino but we didn't look into it, as it would take focus from some of the other work needed in the development. We used a \citeurl{https://github.com/Hergeirs/Arduino2/blob/master/FWG7RQ3IRXT1DFL/ESP8266.h}{ESP8266 library} which contains an API for communicating with our ESP8266 over SoftwareSerial. It hugely simplifies the interaction by sending unintuative text commands and parsing them.
+
 The circuit for this module can be seen in \ref{fig:WifiCircuit}.
 
 \chapter{Website}
