@@ -6,20 +6,42 @@
 \BOOKMARK [1][-]{section*.4}{Introduction}{chapter.1}% 6
 \BOOKMARK [0][-]{chapter.2}{Setup}{}% 7
 \BOOKMARK [1][-]{section.2.1}{Arduino}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.2}{Moisture Sensors}{chapter.2}% 9
-\BOOKMARK [2][-]{subsection.2.2.1}{FC28}{section.2.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.2}{Capacitive Soil Moisture Sensor v1.2}{section.2.2}% 11
-\BOOKMARK [1][-]{section.2.3}{Temperature Sensor}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.3.1}{TMP Sensor}{section.2.3}% 13
-\BOOKMARK [1][-]{section.2.4}{Light Sensor}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.4.1}{LDR Resistor}{section.2.4}% 15
-\BOOKMARK [1][-]{section.2.5}{Water Pump}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.6}{Wifi Module}{chapter.2}% 17
-\BOOKMARK [0][-]{chapter.3}{Website}{}% 18
-\BOOKMARK [1][-]{section.3.1}{Hosting}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.2}{Login}{chapter.3}% 20
-\BOOKMARK [2][-]{subsection.3.2.1}{Project E.Garden Structure}{section.3.2}% 21
-\BOOKMARK [2][-]{subsection.3.2.2}{Observer Pattern}{section.3.2}% 22
-\BOOKMARK [0][-]{appendix.A}{Graphics of sensors and other components}{}% 23
-\BOOKMARK [0][-]{appendix.B}{Latex Listings}{}% 24
-\BOOKMARK [0][-]{lstnumber.B.3.34}{Bibliography}{}% 25
+\BOOKMARK [2][-]{subsection.2.1.1}{Arduino Main}{section.2.1}% 9
+\BOOKMARK [1][-]{section.2.2}{Moisture Sensors}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.1}{FC28}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.2}{Capacitive Soil Moisture Sensor v1.2}{section.2.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Temperature Sensor}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.3.1}{TMP Sensor}{section.2.3}% 14
+\BOOKMARK [1][-]{section.2.4}{Light Sensor}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.4.1}{LDR Resistor}{section.2.4}% 16
+\BOOKMARK [1][-]{section.2.5}{Water Pump}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.5.1}{Water Pump}{section.2.5}% 18
+\BOOKMARK [1][-]{section.2.6}{Wifi Module}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.6.1}{ESP8266-05}{section.2.6}% 20
+\BOOKMARK [0][-]{chapter.3}{Website}{}% 21
+\BOOKMARK [1][-]{section.3.1}{Hosting}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{Login}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.3}{Project E.Garden Structure}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.1}{Observer Pattern}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.2}{Observer}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.3}{Observable}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.4}{DataPusherObserver}{section.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.5}{DataHub}{section.3.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.6}{DataPusher}{section.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.7}{DI class}{section.3.3}% 31
+\BOOKMARK [1][-]{section.3.4}{Controllers}{chapter.3}% 32
+\BOOKMARK [2][-]{subsection.3.4.1}{HomeController}{section.3.4}% 33
+\BOOKMARK [2][-]{subsection.3.4.2}{PlantController}{section.3.4}% 34
+\BOOKMARK [1][-]{section.Alph0.1}{Conclusion}{chapter.3}% 35
+\BOOKMARK [0][-]{appendix.A}{Circuit Diagrams}{}% 36
+\BOOKMARK [0][-]{appendix.B}{Arduino Components}{}% 37
+\BOOKMARK [1][-]{section.B.1}{fc-28}{appendix.B}% 38
+\BOOKMARK [1][-]{section.B.2}{Pump}{appendix.B}% 39
+\BOOKMARK [1][-]{section.B.3}{ESP-01}{appendix.B}% 40
+\BOOKMARK [0][-]{appendix.C}{Latex Listings}{}% 41
+\BOOKMARK [1][-]{section.C.1}{Ardunio Ino File}{appendix.C}% 42
+\BOOKMARK [1][-]{section.C.2}{Light Reading}{appendix.C}% 43
+\BOOKMARK [1][-]{section.C.3}{Models}{appendix.C}% 44
+\BOOKMARK [1][-]{section.C.4}{ArduinoDataLoggerRepository}{appendix.C}% 45
+\BOOKMARK [1][-]{section.C.5}{Observer Code}{appendix.C}% 46
+\BOOKMARK [0][-]{lstnumber.C.11.39}{Bibliography}{}% 47

@@ -1,15 +1,43 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{Identity}
+\bibitem[Anderson()]{Identity}
 Rick Anderson.
 \newblock Introduction to identity on asp.net core.
+\newblock URL
+  \url{https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-2.2&tabs=visual-studio}.
 
-\bibitem{ArduinoIntroduction}
+\bibitem[Arduino()]{ArduinoIntroduction}
 Arduino.
 \newblock Introduction to arduino.
+\newblock URL \url{https://www.arduino.cc/en/Guide/Introduction}.
 
-\bibitem{tmpTutorial}
+\bibitem[Novytskyy and Anderson()]{FacebookLogin}
+Valeriy Novytskyy and Rick Anderson.
+\newblock Facebook external login setup in asp.net core.
+\newblock URL
+  \url{https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/facebook-logins?view=aspnetcore-2.2}.
+
+\bibitem[Robotics()]{tmpTutorial}
 BC~Robotics.
 \newblock Using a tmp36 temperature sensor with arduino.
+\newblock URL
+  \url{https://www.bc-robotics.com/tutorials/using-a-tmp36-temperature-sensor-with-arduino/}.
+
+\bibitem[Wikipedia()]{GoF}
+Wikipedia.
+\newblock Observer pattern.
+\newblock URL \url{https://en.wikipedia.org/wiki/Observer_pattern}.
+
+\bibitem[yishengjin1413 et~al.()yishengjin1413, mairaw, guardrex, tompratt AQ,
+  Mikejo5000, and xaviex]{MicrosoftObserver}
+yishengjin1413, mairaw, guardrex, tompratt AQ, Mikejo5000, and xaviex.
+\newblock Observer design pattern.
+\newblock URL
+  \url{https://docs.microsoft.com/en-us/dotnet/standard/events/observer-design-pattern}.
 
 \end{thebibliography}
