@@ -18,13 +18,11 @@
 \usepackage{url} 
 \usepackage[numbers]{natbib} 
 
+\input{arduinoLanguage.tex}
+\input{CSharp.tex}
 \newcommand\citeurl[2]{%
   \href{#1}{#2}\footnote{\url{#1}}%
 }
-
-
-\input{arduinoLanguage.tex}
-\input{CSharp.tex}
 \newenvironment{dedication}%
 {\cleardoublepage\addcontentsline{toc}{chapter}{Dedication}\null\vfill\begin{flushright}}%
 {\end{flushright}\vfill\null}
@@ -72,7 +70,7 @@ We need to measure at least light, moisture, and temperature in order for in to 
 \addcontentsline{toc}{section}{Introduction}
 
 \chapter{Setup}
-The Arduino Uno, TMP36GZ heat sensor, LDR, other resistors and the cables which we use in this project, was provided by the one responsible by the course. We used at the start a FC28 moisture sensor, but it generally uses DC current which means that it corrodes quickly because of electrolysis in the soil and alters the soil composition which could potentially damage the plant. That would also eventually lead to tainted readings. We changed it to use an AC pulse that can be seen in figure, but we decided to opt for a Capacitive Soil Moisture Sensor V1.2 that is Corrosion Resistant. The FC28 sensor can be seen in \ref{fig:resistive} and the capacitive sensor can be seen in the section about it.
+The Arduino Uno, TMP36GZ heat sensor, LDR, other resistors and the cables which we use in this project, was provided by the one responsible by the course. We used at the start a FC28 moisture sensor, but it generally uses DC current which means that it corrodes quickly because of electrolysis in the soil and alters the soil composition which could potentially damage the plant. That would also eventually lead to tainted readings. We changed it to use an AC pulse that can be seen in figure, but we decided to opt for a Capacitive Soil Moisture Sensor V1.2 that is Corrosion Resistant. The FC28 sensor can be seen in \ref{fig:resistive} and the capactive sensor can be seen in the section about it.
 
 \section{Arduino}
 Arduino is an open-source electronics platforms which is based on user-friendly software and hardware components\cite{ArduinoIntroduction}. It can read outputs from these components e.g. readings from sensors, and it can give input to these sensors.
@@ -80,7 +78,7 @@ Arduino is an open-source electronics platforms which is based on user-friendly 
 We worked on an Arduino Uno. It is a microcontroller board. It has 14 digital i/o pins. They can be located on the board right next to the text \textit{DIGITAL}. Six of those pins can be used as Power Width Modulation, shortened as PWM, outputs. Those pins are the ones who have a ~ next to their ascribed numbers. It has six analog pins. It then has five different kinds of power pins. We only use the GND and the 5V and 3.3V pins. The 5V and 3.3 pins output a 5V and 3.3V from the regulator on the board which can be used to power different hardware components. The 3.3V pins has a maximum current draw of 50mA. GND stands for ground, and serves as the common return path for current from the different hardware components in our Arduino system. A graphic representation of it can be viewed in section 2.2.1. 
 
 \subsection{Arduino Main}
-The code for where the Arduino setup and loop are in \ref{list:ArduinoMain}. The first lines are inclusions of sensors and the SoftwareSerial library which is used to connect the ESP8266-05 module. The next block is where we define our wifi properties and which port to communicate through. The third block is our declarations i.e. what digital pins on the Arduino are attached to the Rx and Tx pins for the wifi module then we use that first declaration to setup the ESP8266 wifi with the baudrate 115200. Setup method sets the Arduino up for the loop() method. The while loop tries to establish a connection to an access point with the predefined SSID and PASSWORD. If that succeeded, then it prints to the the console that it was a success and breaks out of the loop, otherwise it prints that it failed. All Serial.print functions are used as debugging tools, so that we are able tell if something is wrong or not. The loop will try to reconnect to the wifi every twentieth second. That is done so that we don't need to restart the Arduino every time something goes wrong. The next loop tries to establish a TCP connection to the Webserver. TCP stands for Transmission Control Protocol and it is a standard for how to establish and maintain a connection for how application programs can transmit data to each other over IP. 
+The code for where the Arduino setup and loop are in \ref{list:ArduinoMain}. The first lines are inclusions of sensors and the SoftwareSerial library which is used to connect the ESP8266-05 module. The next block is where we define our internet properties and which port to communicate through. The third block is our declarations i.e. what digital pins on the Arduino are attached to the Rx and Tx pins for the wifi module then we use that first declaration to setup the ESP8266 wifi with the baudrate 115200. Setup method sets the Arduino up for the loop() method. The while loop tries to establish a connection to an access point with the predefined SSID and PASSWORD. If that succeeded, then it prints to the the console that it was a success and breaks out of the loop, otherwise it prints that it failed. All Serial.print functions are used as debugging tools, so that we are able tell if something is wrong or not. The loop will try to reconnect to the wifi every twentieth second. That is done so that we don't need to restart the Arduino every time something goes wrong. The next loop tries to establish a TCP connection to the Webserver. TCP stands for Transmission Control Protocol and it is a standard for how to establish and maintain a connection for how application programs can transmit data to each other over IP. 
 
 Data is a struct which holds all our information which the sensors reads. Its a way for us to structure our data. Water never gets used, and it was supposed to say how much water was in a tank. It never got used because its the least important thing in our project, and we wanted to focus on finishing the web server.
 
@@ -97,17 +95,16 @@ loop() is the method that is constantly running, when the Arduino is turned on. 
 Our intention was to use the Arduino to induce an alternating current through the sensor. To simplify things, we circumvented the circuit of FC-28 such that we connected directly to the pins on the sensor. To alternate the current, we first emit 5V from pin 12 and set pin 13 to low (0V) for 1 ms then we take a reading through the analog pin A0. Then we flip the pin 12 and 13 ( 5V from pin 13 ) for the same amount of time. This should somewhat remedy the problems of electrolysis by shifting the ions back and forth between the moisture sensor pins, instead of just letting them congest at one pin. The chip had to be removed so that it could use AC.
 The setup can be seen below.
 
-
 \includegraphics[scale = 0.50]{FC-28-Diagram.PNG}\label{graph:capacitive}
 
-The resistor in the circuit helps increase the amount of current entering the analog sensor. Without it about half the current would go in the pin 13 when the measurement occurs. We are therefor able to steer the range of current entering the analog input. The left left leg is connected to 8 digital pin, the middle leg is connected to A1 pin, and the third leg is connected to -18 on the breadboard which is then connected to the ground pin on the Arduino.
+The resistor in the circuit helps increase the amount of current entering the analog sensor. Without it about half the current would go in the pin 13 when the measurement occurs. We are therefor able to steer the range of current entering the analog input. The left left leg is connected to 8 digital pin, the middle leg is connected to A1 pin, and the third leg is connected to -18 on the breadboard which is then connected to the ground pin on the Arduino.  
 
 \subsection{Capacitive Soil Moisture Sensor v1.2}
 \begin{center}
 \includegraphics[scale=0.20]{capacitive-sensor}
 \end{center}
 
-We looked at reviews, and this one seemed to be the most corrosion resistant of the ones we looked at. It is made by corrosion resistant material, so it has a higher lifetime than the other sensor. It measures moisture, or rather the ions in the soil, by reading the capacitance between two plates in the sensor. It has lesser range than the other one, as it measures air values as 555 and completely submerged as 280. We thought the minimized range wouldn't worsen our readings, and the benefit from increased lifetime far outweighed the potential range.
+We looked at reviews, and this one seemed to be the most corrosion resistant of the ones we looked at. It has no metal facing the elements so it has a higher lifetime than the other sensor. It measures moisture, or rather the ions in the soil, by reading the capacitance between two conducters in the sensor. It has less range than the other one, as it measures air at 555 and completely submerged in water as 280. We thought the minimized range wouldn't worsen our readings, and the benefit from increased lifetime far outweighed the potential range.
 
 \begin{lstlisting}[language=Arduino]
 uint8_t CapacitiveMoistureSensor::readPercent(uint16_t val)
@@ -163,6 +160,7 @@ const int8_t TemperatureSensor::readCelsius()
 \end{lstlisting}
 digitalWrite(triggerPin, HIGH) sends a pulse to the sensor which supplies the sensor with 5v. Then delayMicroseconds() delays the program to make sure that the current has had enough time to settle. Then reading = analogRead(readPind) reads the output from the sensor. The output from it, is converted to voltage by multiplying it with five. That is then divided by 1024 to find the percentage of the analog read, because the Arduino reads the input as a 10 bit number, which ranges from 0 and 1023, where 0 is no voltage and 1023 is 5V. Half a volt is then subtracted from that (offset voltage), and then that result is multiplied with 100 to convert it from V to degrees. Five is subtracted from the reading because we want it so that 0V corresponds to -50\textdegree{}C. 
 
+The circuit for this moisture sensor can be seen in \ref{fig:CapacitiveCircuit}.
 \section{Light Sensor}
 \subsection{LDR Resistor}
 
@@ -173,6 +171,8 @@ digitalWrite(triggerPin, HIGH) sends a pulse to the sensor which supplies the se
 
 We use a LDR Resistor to detects the level of light in the room. The resistor changes its resistance based on how much light is in the room. If the room is unlit then the resistor will have a resistance of a few ohms, but will decrease if the room gets lighter. It's not ideal for our purpose because it's not very sensitive, and that it needed to be calibrated. We chose it because it was available and that we wanted to focus on the webserver and other areas of the project.
 
+The circuit for the LDR can be seen in \ref{fig:LDRCircuit}.
+
 \section{Water Pump}
 \subsection{Water Pump}
 \begin{center}
@@ -181,23 +181,26 @@ We use a LDR Resistor to detects the level of light in the room. The resistor ch
 
 Our water pump is said to have a flow rate of 80-120L\\H. We haven't tested if that is correct, but our tests to see if it worked deemed that it's pumping flow rate is more than enough for our use. It uses a DC current 2.5-6V. The rest of the product description is in \ref{fig:pump description}. Its tube was bought in the local Pet store, and was glued on the opening at the left in the picture.
 
+The circuit for the pump can be seen in \ref{fig:WaterPumpCircuit}. 
+
 \section{Wifi Module}
 \subsection{ESP8266-05}
 \begin{center}
 	\includegraphics[scale=0.3]{ESP8266}
 \end{center}
 
-The ESP8266-05 wifi module was the hardest to work with. We initially bought an ESP8266-01, but that was even more complex to work with, because it had 8 pins, and the distance between each pin on the module was so small that we couldn't properly solder it. We then bought the 05 version which was much easier to solder. A picture is attached of the module in \ref{fig:ESP}. We don't use the antennae nor the upper GND pin. We have a problem with the module in that the Arduino UNO 3.3V supply has inadequate current capabilities to power it. It still works but we get occasional garbage data from the packages sent sent from the module. Garbage transmissions seem to increase the longer the module is in use. It's possible to use an alternate 3.3V supply rather than the one from the Arduino but we didn't look into it, as it would take focus from some of the other work needed in the development. We used a \citeurl{https://github.com/Hergeirs/Arduino2/blob/master/FWG7RQ3IRXT1DFL/ESP8266.h}{ESP8266 library} which contains an API for communicating with our ESP8266 over SoftwareSerial. It hugely simplifies the interaction by sending unintuative text commands and parsing them.
+The ESP8266-05 wifi module was the hardest to work with. We initially bought an ESP8266-01\ref{fig:ESP}, but that was even more complex to work with, because it had 8 pins, and the distance between each pin on the module was so small that we couldn't properly solder it. We then bought the 05 version which was much easier to solder. A picture is attached of the module in \ref{fig:ESP}. We don't use the antennae nor the upper GND pin. We have a problem with the module in that the Arduino UNO 3.3V supply has inadequate current capabilities to power it. It still works but we get occasional garbage data from the packages sent sent from the module. Garbage transmissions seem to increase the longer the module is in use. It's possible to use an alternate 3.3V supply rather than the one from the Arduino but we didn't look into it, as it would take focus from some of the other work needed in the development. We used an \citeurl{https://github.com/Hergeirs/Arduino2/blob/master/FWG7RQ3IRXT1DFL/ESP8266.h}{ESP8266 library} which  has the methods send() and joinAP() which we use. 
+The circuit for this module can be seen in \ref{fig:WifiCircuit}.
 
 \chapter{Website}
 \section*{Webserver}
 We chose to work with Microsoft's ASP.NET Core which is an open-source cross-platform framework for building cloud-based and internet-connected applications. We chose this framework because we were familiar with it through the course 5022.16 Web Applications: ASP.NET with C\# which we had right before this course. It is something both collaborators in this project like to use. 
 
 \section{Hosting}
-We initially wanted to host the webserver on Microsoft's Azure which all university students get access to through Microsoft's student offer. We quickly found out that it didn't work for us, because we couldn't connect to any of its ports through the school network. It made us think that this might be a problem for other networks as well. We analysed the school network and saw that the port 8080 was open. After some research we concluded that even in highly locked down networks 8080 is one of the most common open ports because of its wide use in WEB applications. We then decided to set up our own server in a room in Skopun.
+We initially wanted to host the webserver on Microsoft's Azure which all university students get access to through Microsoft's student offer. We quickly found out that it didn't work for us, because we couldn't connect to any of its ports. 
 
 \section{Login}
-We found out that .Net Core has something called Identity Core\cite{Identity} which handles the login for an ASP.NET Core application. The user can create a membership for the application by using his or she's Facebook, Twitter, Microsoft, or Google login credentials. We could have added the other options, but we deemed it unnecessary as most faroese that would be willing to use a system such ours will most likely have a Facebook account. It's also possible to register with a regular email.
+We found out that .Net Core has something called Identity Core\cite{Identity} which handles the login for an ASP.NET Core application. The user can create a membership for the application by using his or she's Facebook, Twitter, Microsoft, or Google login credentials. We could have added the other options, but we deemed it unnecessary as most faroese that would be willing to use a system such ours will most likely have a Facebook account. It's also possible to login with a regular email.
 
 \begin{lstlisting}[language=CSharp] 
 services.AddAuthentication().AddFacebook(facebookOptions =>
@@ -212,10 +215,10 @@ services.AddAuthentication().AddFacebook(facebookOptions =>
 This code block adds Facebook authentication to our login service. facebookOptions.AppId and facebookOptions.AppSecret are plugins from chrome which had to be created in Chrome to support facebook login for our project. We found the tutorial for it on \cite{FacebookLogin} which is Microsoft's support page for Facebook external login. The idea with the login functionality is that plants can be attached to users in our system, and that he is able to view data about his plants on the website.
 
 \section{Project E.Garden Structure}
-Our .Net Core project is divided into three parts. It's good practice to have all business logic i.e. models that represents plants, users, and Arduino Data in a separate class library from the main program. It's done so the project is decoupled, and so that the classes can be reused in other projects. First part is the Model folder where the classes are and can be seen in \ref{list:Models}. ApplicationUser inherits from User, because that makes it so that the properties from ApplicationUser gets added to AspNetUsers in the database. That is a functionality of the previously mentioned \emph{Identity}. 
+Our .Net Core project is divided into three parts. It's good practice to have all business logic i.e. models that represents plants, users, and Arduino Data in a separate class library from the main program. It's done so the project is decoupled, and so that the classes can be inc. First part is the Model folder where the classes are and can be seen in \ref{list:Models}. ApplicationUser inherits from User, because that makes it so that the properties from ApplicationUser gets added to AspNetUsers in the database. That is a functionality of the previously mentioned Identity. 
 
 
-One part of the repository library is a folder that contains the skeleton i.e. interfaces for our business handling, then the implementation of those interfaces is located in the Concrete folder. This means that the EFPlantRepository model inherits from IPlantRepository, and then specifies what the methods UserPlants() and SavePlants() should do. These repositories are then initialized in the file Startup.cs, specifically the ConfigureServices(IServiceCollection services) method. It's initialized through Dependency Injection\cite{DependencyInjection}
+One part of the repository library is a folder that contains the skeleton i.e. interfaces for our business handling, then the implementation of those interfaces is located in the Concrete folder. This means that the EFPlantRepository model inherits from IPlantRepository, and then specifies what the methods UserPlants() and SavePlants() should do. These repositories are then initialized in the file Startup.cs, specifically the ConfigureServices(IServiceCollection services) method. It's initialized with something called Dependency Injection\cite{DependencyInjection}
 
 
 \label{list:DpInjection}
@@ -249,7 +252,6 @@ public class EFArduinoDataRepository : IArduinoDataRepository
 \end{lstlisting}
 
 It has one private datamember called \_context of type EGardenerContext, which gets initialized in the EFArduinoDataRepository constructor. This context is the context between the models and their corresponding database entities. All the EFRepositories have this EGardenerContext. The SaveData(Arduino Data) is the actual implementation of the IArduinoDataReposistory. It takes an ArduinoData object as a parameter. First a new context variable is initialized, then a plant gets initialized by dotting into the context, and choosing a plant in the database that has a PlantId that corresponds to same id the data parameter has. A list of data gets initialized by assigning it to the data list in the newly created plant, and then the data parameter is added to that list. context.SaveChanges(); saves all the changes made.  This function is called in Observer's OnNext(ArduinoData value), and value gets saved there.
-
 
 \begin{lstlisting}[caption={EFPlantRepository Class}\label{list:Concrete EFPlantRepository}, language=CSharp]
 public class EFPlantRepository : IPlantRepository
@@ -432,14 +434,15 @@ This view uses a single plant model, one which was supplied to it in loop in the
 
 \section{Conclusion}
 We can say that we achieved our goals. We have an Arduino which moistens our soil, can read moisture-, light-, and temperature levels. It is capable of transmitting data to a Webserver, where users are able to view track how their plants are doing. It's superficial data, but it's still data. If we were to start over again, then we would buy a new Wifi module and a new light sensor, but we're content with what we have achieved.
+
 \appendix
 \chapter{Circuit Diagrams}
 The following are circuit diagrams of our components and Arduino system.
 \begin{figure}[!ht]
   \centering
-      \includegraphics[scale=0.8]{Circuit-Diagram-Wifi-8266}
+      \includegraphics[scale=0.8]{WifiCircuit}
   \caption{Circuit diagram of the Wifi chip}
-  \label{fig:Wifi Circuit}
+  \label{fig:WifiCircuit}
 \end{figure}
 
 \begin{figure}[!ht]
@@ -474,7 +477,7 @@ The following are circuit diagrams of our components and Arduino system.
 \chapter{Arduino Components}
 The following are pictures of our sensors and other components.
 
-\section{fc-28}
+
 \begin{figure}[!ht]
   \centering
       \includegraphics{fc-28-corrosion}
@@ -482,8 +485,16 @@ The following are pictures of our sensors and other components.
   \label{fig:resistive}
 \end{figure}
 
-\section{Pump}
-\begin{figure}[ht!]
+
+\begin{figure}[!ht]
+	\centering
+		\includegraphics[scale=0.10]{ESP-01}
+	\caption{ESP8266-01 module}
+	\label{fig:ESP}
+\end{figure}
+
+
+\begin{figure}[ht]
 	\begin{itemize}
 	\item 100\% brand new and high quality
 	\item DC Voltage:2.5-6V
@@ -501,13 +512,7 @@ The following are pictures of our sensors and other components.
 	\label{fig:pump description}
 \end{figure}
 
-\section{ESP-01}
-\begin{figure}[!ht]
-	\centering
-		\includegraphics[scale=0.20]{ESP-01}
-	\caption{ESP8266-01 module. You can see that distance between each pin is small which meant for us that it was hard to sold for someone inexperienced}
-	\label{fig:ESP}
-\end{figure}
+
 
 \chapter{Latex Listings}
 The code highlighting in this tex document was taken from \citeurl{https://github.com/trihedral/ArduinoLatexListing/blob/master/arduinoLanguage.tex}{trihedral's ArduinoLatexListing Github repository}
@@ -718,18 +723,18 @@ public interface IUserRepository
 
         public EGardenerContext CreateDbContext(string[] args)
         {
-            //optionsBuilder.UseSqlServer(\\
-            "Server=.\\SQLEXPRESS;Database=EGarden; user id=sa;\\
-            password=Password0;Trusted_Connection=False;\\
+            //optionsBuilder.UseSqlServer(
+            "Server=.\\SQLEXPRESS;Database=EGarden; user id=sa;
+            password=Password0;Trusted_Connection=False;
             MultipleActiveResultSets=true;");
 
-            return new \\
-            EGardenerContext(\\
+            return new 
+            EGardenerContext(
             newDbContextOptionsBuilder<EGardenerContext>()
                 .UseSqlServer(
-                    "Server=(localdb)\\
-                    mssqllocaldb;Database=E.Gardener;\\
-                    Trusted_Connection=True;\\
+                    "Server=(localdb)
+                    mssqllocaldb;Database=E.Gardener;
+                    Trusted_Connection=True;
                     MultipleActiveResultSets=true")
                 .Options);
         }
