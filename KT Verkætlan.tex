@@ -156,7 +156,7 @@ const int8_t TemperatureSensor::readCelsius()
     return round((voltage - 0.5) * 100);
 }
 \end{lstlisting}
-digitalWrite(triggerPin, HIGH) sends a pulse to the sensor which supplies the sensor with 5v. Then delayMicroseconds() delays the program to make sure that the current has had enough time to settle. Then reading = analogRead(readPind) reads the output from the sensor. The output from it, is converted to voltage by multiplying it with five. That is then divided by 1024 to find the percentage of the analog read, because the Arduino outputs between 0 and 1023, where 0 is not voltage and 1023 is 5V. Five is then subtracted from that, and then that result is multiplied with 100 to convert it from mV to degrees. Five is subtracted from the reading because we want it so that 0V corresponds to -50\textdegree{}C. 
+digitalWrite(triggerPin, HIGH) sends a pulse to the sensor which supplies the sensor with 5v. Then delayMicroseconds() delays the program to make sure that the current has had enough time to settle. Then reading = analogRead(readPind) reads the output from the sensor. The output from it, is converted to voltage by multiplying it with five. That is then divided by 1024 to find the percentage of the analog read, because the Arduino reads the input as a 10 bit number, which ranges from 0 and 1023, where 0 is no voltage and 1023 is 5V. Five is then subtracted from that, and then that result is multiplied with 100 to convert it from mV to degrees. Five is subtracted from the reading because we want it so that 0V corresponds to -50\textdegree{}C. 
 
 \section{Light Sensor}
 \subsection{LDR Resistor}

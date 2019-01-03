@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex KT Verkætlan"] 1546545198 "KT Verkætlan.aux" "KT Verkætlan.bbl" "KT Verkætlan" 1546548767
+["bibtex KT Verkætlan"] 1546545198 "KT Verkætlan.aux" "KT Verkætlan.bbl" "KT Verkætlan" 1546548948
   "/usr/share/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1543696176 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "KT Verkætlan.aux" 1546548766 11589 f0a48f0f61c7d818ac2da2ee31194af9 ""
+  "KT Verkætlan.aux" 1546548947 11589 f0a48f0f61c7d818ac2da2ee31194af9 ""
   "bibliography.bib" 1546541617 1479 2ce9898832a7f2fa35a4660c5688f5dd ""
   (generated)
   "KT Verkætlan.bbl"
   "KT Verkætlan.blg"
-["pdflatex"] 1546548761 "/home/hergeirs/Projects/Arduino-Report/KT Verkætlan.tex" "KT Verkætlan.pdf" "KT Verkætlan" 1546548767
-  "/home/hergeirs/Projects/Arduino-Report/KT Verkætlan.tex" 1546548763 56613 eed735126699b1dcdff7cb848e9bb86c ""
+["pdflatex"] 1546548941 "/home/hergeirs/Projects/Arduino-Report/KT Verkætlan.tex" "KT Verkætlan.pdf" "KT Verkætlan" 1546548948
+  "/home/hergeirs/Projects/Arduino-Report/KT Verkætlan.tex" 1546548941 56650 9b65fac2f04ae4bcf0795ae3d7dd58fb ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1543696176 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1543696176 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1543696176 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -130,11 +130,11 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1545235377 2838640 f18603eaea31b2763a98b6d1dc759827 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1545235364 7910429 e5508b3bf6aa47ffaf75ec1b0a5b378e ""
   "CSharp.tex" 1546103052 2512 c2555b750d07f86c55ab4170f76918b9 ""
-  "KT Verkætlan.aux" 1546548766 11589 f0a48f0f61c7d818ac2da2ee31194af9 ""
+  "KT Verkætlan.aux" 1546548947 11589 f0a48f0f61c7d818ac2da2ee31194af9 ""
   "KT Verkætlan.bbl" 1546545198 1912 aef64883e4ac6dfac0d463244d01c37a "bibtex KT Verkætlan"
-  "KT Verkætlan.out" 1546548766 2912 7a8175b7d8108cbbcb4027e0fba9026a ""
-  "KT Verkætlan.tex" 1546548763 56613 eed735126699b1dcdff7cb848e9bb86c ""
-  "KT Verkætlan.toc" 1546548766 3577 829eaf44a02d518a042a2e5131ede33c ""
+  "KT Verkætlan.out" 1546548947 2912 7a8175b7d8108cbbcb4027e0fba9026a ""
+  "KT Verkætlan.tex" 1546548941 56650 9b65fac2f04ae4bcf0795ae3d7dd58fb ""
+  "KT Verkætlan.toc" 1546548947 3577 829eaf44a02d518a042a2e5131ede33c ""
   "arduinoLanguage.tex" 1546103052 6713 14a07efe147bc3eb4eacab65de636bfe ""
   "images/Arduinoxml.png" 1546542930 19114 6b4b3e5e25f2c69935be7b5067fcee8c ""
   "images/Capacitive.png" 1546542101 19134 21d00e6955761569be4b6cfdf62800a9 ""
@@ -150,8 +150,8 @@
   "images/capacitive-sensor.jpg" 1546103052 68855 bb17244fe959d43587acb2c7e03a2b6d ""
   "images/fc-28-corrosion.PNG" 1546103052 132135 f05dc6c3883e4d814319942cec3a7135 ""
   (generated)
-  "KT Verkætlan.aux"
-  "KT Verkætlan.out"
-  "KT Verkætlan.log"
-  "KT Verkætlan.pdf"
   "KT Verkætlan.toc"
+  "KT Verkætlan.log"
+  "KT Verkætlan.aux"
+  "KT Verkætlan.pdf"
+  "KT Verkætlan.out"
