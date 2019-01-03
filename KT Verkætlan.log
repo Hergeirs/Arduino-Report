@@ -1,415 +1,77 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  3 JAN 2019 19:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.12.19)  3 JAN 2019 19:45
 entering extended mode
-**"./KT Verkætlan.tex"
-("KT Verkætlan.tex"
-LaTeX2e <2016/03/31> patch level 3
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls"
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/home/hergeirs/Projects/Arduino-Report/KT Verkætlan.tex"
+(/home/hergeirs/Projects/Arduino-Report/KT Verkætlan.tex
+LaTeX2e <2018-04-01> patch level 5
+(/usr/share/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk12.clo"
+(/usr/share/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2018/04/05 v1.2c UTF-8 support for inputenc
-Now handling font encoding OML ...
-... no UTF-8 mapping file for font encoding OML
-Now handling font encoding T1 ...
-... processing UTF-8 mapping file for font encoding T1
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00AD (decimal 173)
-   defining Unicode char U+00BB (decimal 187)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C0 (decimal 192)
-   defining Unicode char U+00C1 (decimal 193)
-   defining Unicode char U+00C2 (decimal 194)
-   defining Unicode char U+00C3 (decimal 195)
-   defining Unicode char U+00C4 (decimal 196)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00C7 (decimal 199)
-   defining Unicode char U+00C8 (decimal 200)
-   defining Unicode char U+00C9 (decimal 201)
-   defining Unicode char U+00CA (decimal 202)
-   defining Unicode char U+00CB (decimal 203)
-   defining Unicode char U+00CC (decimal 204)
-   defining Unicode char U+00CD (decimal 205)
-   defining Unicode char U+00CE (decimal 206)
-   defining Unicode char U+00CF (decimal 207)
-   defining Unicode char U+00D0 (decimal 208)
-   defining Unicode char U+00D1 (decimal 209)
-   defining Unicode char U+00D2 (decimal 210)
-   defining Unicode char U+00D3 (decimal 211)
-   defining Unicode char U+00D4 (decimal 212)
-   defining Unicode char U+00D5 (decimal 213)
-   defining Unicode char U+00D6 (decimal 214)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00D9 (decimal 217)
-   defining Unicode char U+00DA (decimal 218)
-   defining Unicode char U+00DB (decimal 219)
-   defining Unicode char U+00DC (decimal 220)
-   defining Unicode char U+00DD (decimal 221)
-   defining Unicode char U+00DE (decimal 222)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E0 (decimal 224)
-   defining Unicode char U+00E1 (decimal 225)
-   defining Unicode char U+00E2 (decimal 226)
-   defining Unicode char U+00E3 (decimal 227)
-   defining Unicode char U+00E4 (decimal 228)
-   defining Unicode char U+00E5 (decimal 229)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00E7 (decimal 231)
-   defining Unicode char U+00E8 (decimal 232)
-   defining Unicode char U+00E9 (decimal 233)
-   defining Unicode char U+00EA (decimal 234)
-   defining Unicode char U+00EB (decimal 235)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F0 (decimal 240)
-   defining Unicode char U+00F1 (decimal 241)
-   defining Unicode char U+00F2 (decimal 242)
-   defining Unicode char U+00F3 (decimal 243)
-   defining Unicode char U+00F4 (decimal 244)
-   defining Unicode char U+00F5 (decimal 245)
-   defining Unicode char U+00F6 (decimal 246)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+00F9 (decimal 249)
-   defining Unicode char U+00FA (decimal 250)
-   defining Unicode char U+00FB (decimal 251)
-   defining Unicode char U+00FC (decimal 252)
-   defining Unicode char U+00FD (decimal 253)
-   defining Unicode char U+00FE (decimal 254)
-   defining Unicode char U+00FF (decimal 255)
-   defining Unicode char U+0100 (decimal 256)
-   defining Unicode char U+0101 (decimal 257)
-   defining Unicode char U+0102 (decimal 258)
-   defining Unicode char U+0103 (decimal 259)
-   defining Unicode char U+0104 (decimal 260)
-   defining Unicode char U+0105 (decimal 261)
-   defining Unicode char U+0106 (decimal 262)
-   defining Unicode char U+0107 (decimal 263)
-   defining Unicode char U+0108 (decimal 264)
-   defining Unicode char U+0109 (decimal 265)
-   defining Unicode char U+010A (decimal 266)
-   defining Unicode char U+010B (decimal 267)
-   defining Unicode char U+010C (decimal 268)
-   defining Unicode char U+010D (decimal 269)
-   defining Unicode char U+010E (decimal 270)
-   defining Unicode char U+010F (decimal 271)
-   defining Unicode char U+0110 (decimal 272)
-   defining Unicode char U+0111 (decimal 273)
-   defining Unicode char U+0112 (decimal 274)
-   defining Unicode char U+0113 (decimal 275)
-   defining Unicode char U+0114 (decimal 276)
-   defining Unicode char U+0115 (decimal 277)
-   defining Unicode char U+0116 (decimal 278)
-   defining Unicode char U+0117 (decimal 279)
-   defining Unicode char U+0118 (decimal 280)
-   defining Unicode char U+0119 (decimal 281)
-   defining Unicode char U+011A (decimal 282)
-   defining Unicode char U+011B (decimal 283)
-   defining Unicode char U+011C (decimal 284)
-   defining Unicode char U+011D (decimal 285)
-   defining Unicode char U+011E (decimal 286)
-   defining Unicode char U+011F (decimal 287)
-   defining Unicode char U+0120 (decimal 288)
-   defining Unicode char U+0121 (decimal 289)
-   defining Unicode char U+0122 (decimal 290)
-   defining Unicode char U+0123 (decimal 291)
-   defining Unicode char U+0124 (decimal 292)
-   defining Unicode char U+0125 (decimal 293)
-   defining Unicode char U+0128 (decimal 296)
-   defining Unicode char U+0129 (decimal 297)
-   defining Unicode char U+012A (decimal 298)
-   defining Unicode char U+012B (decimal 299)
-   defining Unicode char U+012C (decimal 300)
-   defining Unicode char U+012D (decimal 301)
-   defining Unicode char U+012E (decimal 302)
-   defining Unicode char U+012F (decimal 303)
-   defining Unicode char U+0130 (decimal 304)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0132 (decimal 306)
-   defining Unicode char U+0133 (decimal 307)
-   defining Unicode char U+0134 (decimal 308)
-   defining Unicode char U+0135 (decimal 309)
-   defining Unicode char U+0136 (decimal 310)
-   defining Unicode char U+0137 (decimal 311)
-   defining Unicode char U+0139 (decimal 313)
-   defining Unicode char U+013A (decimal 314)
-   defining Unicode char U+013B (decimal 315)
-   defining Unicode char U+013C (decimal 316)
-   defining Unicode char U+013D (decimal 317)
-   defining Unicode char U+013E (decimal 318)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0143 (decimal 323)
-   defining Unicode char U+0144 (decimal 324)
-   defining Unicode char U+0145 (decimal 325)
-   defining Unicode char U+0146 (decimal 326)
-   defining Unicode char U+0147 (decimal 327)
-   defining Unicode char U+0148 (decimal 328)
-   defining Unicode char U+014A (decimal 330)
-   defining Unicode char U+014B (decimal 331)
-   defining Unicode char U+014C (decimal 332)
-   defining Unicode char U+014D (decimal 333)
-   defining Unicode char U+014E (decimal 334)
-   defining Unicode char U+014F (decimal 335)
-   defining Unicode char U+0150 (decimal 336)
-   defining Unicode char U+0151 (decimal 337)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0154 (decimal 340)
-   defining Unicode char U+0155 (decimal 341)
-   defining Unicode char U+0156 (decimal 342)
-   defining Unicode char U+0157 (decimal 343)
-   defining Unicode char U+0158 (decimal 344)
-   defining Unicode char U+0159 (decimal 345)
-   defining Unicode char U+015A (decimal 346)
-   defining Unicode char U+015B (decimal 347)
-   defining Unicode char U+015C (decimal 348)
-   defining Unicode char U+015D (decimal 349)
-   defining Unicode char U+015E (decimal 350)
-   defining Unicode char U+015F (decimal 351)
-   defining Unicode char U+0160 (decimal 352)
-   defining Unicode char U+0161 (decimal 353)
-   defining Unicode char U+0162 (decimal 354)
-   defining Unicode char U+0163 (decimal 355)
-   defining Unicode char U+0164 (decimal 356)
-   defining Unicode char U+0165 (decimal 357)
-   defining Unicode char U+0168 (decimal 360)
-   defining Unicode char U+0169 (decimal 361)
-   defining Unicode char U+016A (decimal 362)
-   defining Unicode char U+016B (decimal 363)
-   defining Unicode char U+016C (decimal 364)
-   defining Unicode char U+016D (decimal 365)
-   defining Unicode char U+016E (decimal 366)
-   defining Unicode char U+016F (decimal 367)
-   defining Unicode char U+0170 (decimal 368)
-   defining Unicode char U+0171 (decimal 369)
-   defining Unicode char U+0172 (decimal 370)
-   defining Unicode char U+0173 (decimal 371)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0178 (decimal 376)
-   defining Unicode char U+0179 (decimal 377)
-   defining Unicode char U+017A (decimal 378)
-   defining Unicode char U+017B (decimal 379)
-   defining Unicode char U+017C (decimal 380)
-   defining Unicode char U+017D (decimal 381)
-   defining Unicode char U+017E (decimal 382)
-   defining Unicode char U+01CD (decimal 461)
-   defining Unicode char U+01CE (decimal 462)
-   defining Unicode char U+01CF (decimal 463)
-   defining Unicode char U+01D0 (decimal 464)
-   defining Unicode char U+01D1 (decimal 465)
-   defining Unicode char U+01D2 (decimal 466)
-   defining Unicode char U+01D3 (decimal 467)
-   defining Unicode char U+01D4 (decimal 468)
-   defining Unicode char U+01E2 (decimal 482)
-   defining Unicode char U+01E3 (decimal 483)
-   defining Unicode char U+01E6 (decimal 486)
-   defining Unicode char U+01E7 (decimal 487)
-   defining Unicode char U+01E8 (decimal 488)
-   defining Unicode char U+01E9 (decimal 489)
-   defining Unicode char U+01EA (decimal 490)
-   defining Unicode char U+01EB (decimal 491)
-   defining Unicode char U+01F0 (decimal 496)
-   defining Unicode char U+01F4 (decimal 500)
-   defining Unicode char U+01F5 (decimal 501)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+0232 (decimal 562)
-   defining Unicode char U+0233 (decimal 563)
-   defining Unicode char U+1E02 (decimal 7682)
-   defining Unicode char U+1E03 (decimal 7683)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2010 (decimal 8208)
-   defining Unicode char U+2011 (decimal 8209)
-   defining Unicode char U+2012 (decimal 8210)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2015 (decimal 8213)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201A (decimal 8218)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-   defining Unicode char U+201E (decimal 8222)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+2039 (decimal 8249)
-   defining Unicode char U+203A (decimal 8250)
-   defining Unicode char U+2423 (decimal 9251)
-   defining Unicode char U+1E20 (decimal 7712)
-   defining Unicode char U+1E21 (decimal 7713)
-)
-Now handling font encoding OT1 ...
-... processing UTF-8 mapping file for font encoding OT1
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AD (decimal 173)
-   defining Unicode char U+00B8 (decimal 184)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-)
-Now handling font encoding OMS ...
-... processing UTF-8 mapping file for font encoding OMS
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
-   defining Unicode char U+00A7 (decimal 167)
-   defining Unicode char U+00B6 (decimal 182)
-   defining Unicode char U+00B7 (decimal 183)
-   defining Unicode char U+2020 (decimal 8224)
-   defining Unicode char U+2021 (decimal 8225)
-   defining Unicode char U+2022 (decimal 8226)
-)
-Now handling font encoding OMX ...
-... no UTF-8 mapping file for font encoding OMX
-Now handling font encoding U ...
-... no UTF-8 mapping file for font encoding U
-   defining Unicode char U+00A9 (decimal 169)
-   defining Unicode char U+00AA (decimal 170)
-   defining Unicode char U+00AE (decimal 174)
-   defining Unicode char U+00BA (decimal 186)
-   defining Unicode char U+02C6 (decimal 710)
-   defining Unicode char U+02DC (decimal 732)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2026 (decimal 8230)
-   defining Unicode char U+2122 (decimal 8482)
-   defining Unicode char U+2423 (decimal 9251)
-   defining Unicode char U+FEFF (decimal 65279)
-)) ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.st
-y"
+) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
- ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
+ (/usr/share/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)) ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.s
-ty"
-Package: babel 2018/09/26 3.24 The Babel package
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
-"
-File: switch.def 2018/09/26 3.24 Babel switching mechanism
-)
-*************************************
-* Local config file bblopts.cfg used
-*
-(C:\Users\Krist\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-english\engl
-ish.ldf"
+)) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/11/13 3.27 The Babel package
+ (/usr/share/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
+) (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2018/09/26 3.24 Babel common definitions
-\babel@savecnt=\count88
+ (/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/11/13 3.27 Babel common definitions
+\babel@savecnt=\count89
 \U@D=\dimen103
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.d
-ef")
-\bbl@dirlevel=\count89
+ (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count90
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-))
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
-y"
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
-y"
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
-"
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen104
-))
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
-"
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen105
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
-"
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count90
+\inf@bad=\count91
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count91
-\leftroot@=\count92
+\uproot@=\count92
+\leftroot@=\count93
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count93
-\DOTSCASE@=\count94
+\classnum@=\count94
+\DOTSCASE@=\count95
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -418,15 +80,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen106
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count95
-\c@MaxMatrixCols=\count96
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
 \dotsspace@=\muskip10
-\c@parentequation=\count97
-\dspbrk@lvl=\count98
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
 \tag@help=\toks17
-\row@=\count99
-\column@=\count100
-\maxfields@=\count101
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
 \andhelp@=\toks18
 \eqnshift@=\dimen107
 \alignsep@=\dimen108
@@ -440,65 +102,44 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.
-sty"
+) (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.s
-ty"
+) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\latexsym.sty"
+) (/usr/share/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
-sty"
+) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
-y"
+ (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
-sty"
+) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+ (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
-ics.cfg"
+) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
-x.def"
+ (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.sty
-"
+) (/usr/share/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
-.cfg"
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+) (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -512,12 +153,11 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+ (/usr/share/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+ (/usr/share/texmf-dist/tex/latex/base/ts1enc.dfu
 File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -615,7 +255,6 @@ Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
 Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
 Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
 Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
-
 Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
 Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
 Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
@@ -653,51 +292,36 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
-sty"
+) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count102
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
-sty"
-\lst@mode=\count103
+\etb@tempcnta=\count103
+) (/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count104
 \lst@gtempboxa=\box28
 \lst@token=\toks22
-\lst@length=\count104
+\lst@length=\count105
 \lst@currlwidth=\dimen115
-\lst@column=\count105
-\lst@pos=\count106
+\lst@column=\count106
+\lst@pos=\count107
 \lst@lostspace=\dimen116
 \lst@width=\dimen117
-\lst@newlines=\count107
-\lst@lineno=\count108
+\lst@newlines=\count108
+\lst@lineno=\count109
 \lst@maxwidth=\dimen118
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
-ty"
+ (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-\c@lstnumber=\count109
-\lst@skipnumbers=\count110
+\c@lstnumber=\count110
+\lst@skipnumbers=\count111
 \lst@framebox=\box29
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
-cfg"
+) (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2018/09/02 1.7 listings configuration
 ))
 Package: listings 2018/09/02 1.7 (Carsten Heinz)
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.
-sty"
+ (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/09/30 v6.88a Hypertext links for LaTeX
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
-hyperref.sty"
+ (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
-
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
-generic.sty"
+ (/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -715,15 +339,13 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
-)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
-)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
 Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
 Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
@@ -735,33 +357,23 @@ Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
-sty"
+) (/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.s
-ty"
+) (/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
-.sty"
+) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen119
-\Hy@linkcounter=\count111
-\Hy@pagecounter=\count112
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
-f"
+\Hy@linkcounter=\count112
+\Hy@pagecounter=\count113
+ (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count113
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
-cfg"
+\Hy@SavedSpaceFactor=\count114
+ (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4535.
@@ -771,14 +383,14 @@ Package hyperref Info: Plain pages OFF on input line 4550.
 Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count114
- (C:\Users\Krist\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+\c@Hy@tempcnt=\count115
+ (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5141.
 \XeTeXLinkMargin=\dimen120
-\Fld@menulength=\count115
+\Fld@menulength=\count116
 \Field@Width=\dimen121
 \Fld@charsize=\dimen122
 Package hyperref Info: Hyper figures OFF on input line 6396.
@@ -790,168 +402,127 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6421.
 Package hyperref Info: PDF/A mode OFF on input line 6426.
 LaTeX Info: Redefining \ref on input line 6466.
 LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count116
-\c@Item=\count117
-\c@Hfootnote=\count118
+\Hy@abspage=\count117
+\c@Item=\count118
+\c@Hfootnote=\count119
 )
 Package hyperref Info: Driver: hpdftex.
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
-ef"
+ (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
-\Fld@listcount=\count119
-\c@bookmark@seq@number=\count120
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
-check.sty"
+\Fld@listcount=\count120
+\c@bookmark@seq@number=\count121
+ (/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 )
 \Hy@SectionHShift=\skip46
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+) (/usr/share/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip47
 \bibsep=\skip48
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count121
-) (arduinoLanguage.tex
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\courier.sty
-"
+\c@NAT@ctr=\count122
+) (./arduinoLanguage.tex (/usr/share/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
-)) (CSharp.tex) ("KT Verkætlan.aux"
-
-LaTeX Warning: Label `fig:CapacitiveCircuit' multiply defined.
-
-
-LaTeX Warning: Label `fig:CapacitiveCircuit' multiply defined.
-
-
-LaTeX Warning: Label `fig:CapacitiveCircuit' multiply defined.
-
-)
+)) (./CSharp.tex) (./KT Verkætlan.aux)
 \openout1 = `"KT Verkætlan.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 35.
- ("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 34.
+ (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-(C:\Users\Krist\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
+\scratchcounter=\count123
 \scratchdimen=\dimen123
 \scratchbox=\box30
-\nofMPsegments=\count123
-\nofMParguments=\count124
+\nofMPsegments=\count124
+\nofMParguments=\count125
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count125
+\MPscratchCnt=\count126
 \MPscratchDim=\dimen124
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
+\MPnumerator=\count127
+\makeMPintoPDFobject=\count128
 \everyMPtoPDFconversion=\toks24
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
-base.sty"
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
-y"
+ (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-)
-\c@lstlisting=\count128
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\c@lstlisting=\count129
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 35.
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
-ty"
+Package hyperref Info: Link coloring OFF on input line 34.
+ (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitl
-estring.sty"
+ (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count129
+\c@section@level=\count130
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
- ("KT Verkætlan.out") ("KT Verkætlan.out")
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
+ (./KT Verkætlan.out) (./KT Verkætlan.out)
 \@outlinefile=\write3
 \openout3 = `"KT Verkætlan.out"'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 38.
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 38.
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 38.
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+LaTeX Font Info:    Try loading font information for U+lasy on input line 37.
+ (/usr/share/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-[1
+) [1
 
 
 
-{C:/Users/Krist/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.47 \cleardoublepage
-                     \addcontentsline{toc}{chapter}{Contents} [1
+] [3] [4
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.47 \cleardoublepage
-                     \addcontentsline{toc}{chapter}{Contents} [2
-
-]
-("KT Verkætlan.toc" [3
+] (./KT Verkætlan.toc [5
 
 ])
 \tf@toc=\write4
 \openout4 = `"KT Verkætlan.toc"'.
 
- [4] [5
+ [6] [7
 
-] [6
+] [8
 
 ]
 Chapter 1.
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 71.
+(hyperref)                be the same. Added a new anchor on input line 67.
 
 [1
 
@@ -960,138 +531,119 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 ]
 Chapter 2.
 [3] [4]
-Overfull \hbox (0.71858pt too wide) in paragraph at lines 96--98
-\T1/cmr/m/n/12 Our in-ten-tion was to use the Ar-duino to in-duce an al-ter-nat
--ing cur-rent through
+Overfull \hbox (0.71858pt too wide) in paragraph at lines 92--94
+\T1/cmr/m/n/12 Our in-ten-tion was to use the Ar-duino to in-duce an al-ter-nat-ing cur-rent through
  []
 
-<./images/FC-28-Diagram.PNG, id=314, 596.98032pt x 505.89pt>
+<./images/FC-28-Diagram.PNG, id=318, 596.98032pt x 505.89pt>
 File: ./images/FC-28-Diagram.PNG Graphic file (type png)
 <use ./images/FC-28-Diagram.PNG>
-Package pdftex.def Info: ./images/FC-28-Diagram.PNG  used on input line 100.
+Package pdftex.def Info: ./images/FC-28-Diagram.PNG  used on input line 96.
 (pdftex.def)             Requested size: 298.48943pt x 252.94437pt.
 [5 <./images/FC-28-Diagram.PNG>]
-<./images/capacitive-sensor.jpg, id=322, 1003.75pt x 1003.75pt>
+<./images/capacitive-sensor.jpg, id=327, 1003.75pt x 1003.75pt>
 File: ./images/capacitive-sensor.jpg Graphic file (type jpg)
 <use ./images/capacitive-sensor.jpg>
-Package pdftex.def Info: ./images/capacitive-sensor.jpg  used on input line 106
-.
+Package pdftex.def Info: ./images/capacitive-sensor.jpg  used on input line 102.
 (pdftex.def)             Requested size: 200.74644pt x 200.74644pt.
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
-sty"
+ (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2018/09/02 1.7 listings language file
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
-sty"
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2018/09/02 1.7 listings language file
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
-ty"
+) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 111.
-
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 107.
+ (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-[6 <./images/capacitive-sensor.jpg>]
-Overfull \hbox (11.99986pt too wide) in paragraph at lines 138--139
-[]\T1/cmr/m/n/12 This method reads the out-put from the ca-pac-i-tive sen-sor. 
-dig-i-tal-Write(dPin,
+) [6 <./images/capacitive-sensor.jpg>]
+Overfull \hbox (11.99986pt too wide) in paragraph at lines 134--135
+[]\T1/cmr/m/n/12 This method reads the out-put from the ca-pac-i-tive sen-sor. dig-i-tal-Write(dPin,
  []
 
-<./images/TMP-36.png, id=337, 287.57437pt x 335.00156pt>
+<./images/TMP-36.png, id=342, 287.57437pt x 335.00156pt>
 File: ./images/TMP-36.png Graphic file (type png)
 <use ./images/TMP-36.png>
-Package pdftex.def Info: ./images/TMP-36.png  used on input line 143.
+Package pdftex.def Info: ./images/TMP-36.png  used on input line 139.
 (pdftex.def)             Requested size: 230.0598pt x 268.0016pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
-[8 <./images/TMP-36.png>]
-<./images/LDR-Resistor.png, id=371, 401.5pt x 217.81375pt>
+ [7] [8 <./images/TMP-36.PNG>]
+<./images/LDR-Resistor.png, id=376, 401.5pt x 217.81375pt>
 File: ./images/LDR-Resistor.png Graphic file (type png)
 <use ./images/LDR-Resistor.png>
-Package pdftex.def Info: ./images/LDR-Resistor.png  used on input line 169.
+Package pdftex.def Info: ./images/LDR-Resistor.png  used on input line 165.
 (pdftex.def)             Requested size: 321.20042pt x 174.25122pt.
-<./images/Water-Pump.jpg, id=372, 803.0pt x 803.0pt>
+<./images/Water-Pump.jpg, id=377, 803.0pt x 803.0pt>
 File: ./images/Water-Pump.jpg Graphic file (type jpg)
 <use ./images/Water-Pump.jpg>
-Package pdftex.def Info: ./images/Water-Pump.jpg  used on input line 178.
+Package pdftex.def Info: ./images/Water-Pump.jpg  used on input line 174.
 (pdftex.def)             Requested size: 240.90186pt x 240.90186pt.
  [9 <./images/LDR-Resistor.png>]
-<./images/ESP8266.png, id=383, 445.665pt x 379.4175pt>
+<./images/ESP8266.png, id=388, 445.665pt x 379.4175pt>
 File: ./images/ESP8266.png Graphic file (type png)
 <use ./images/ESP8266.png>
-Package pdftex.def Info: ./images/ESP8266.png  used on input line 186.
+Package pdftex.def Info: ./images/ESP8266.png  used on input line 182.
 (pdftex.def)             Requested size: 133.70053pt x 113.82613pt.
- [10 <./images/Water-Pump.jpg> <./images/ESP8266.png>] [11] [12
+ [10 <./images/Water-Pump.jpg> <./images/ESP8266.PNG>] [11] [12
 
 ]
 Chapter 3.
 [13]
-Overfull \hbox (1.10156pt too wide) in paragraph at lines 211--212
-\T1/cmr/m/n/12 bookOp-tions.AppId and face-bookOp-tions.AppSecret are plu-g-ins
- from chrome
+Overfull \hbox (1.10156pt too wide) in paragraph at lines 207--208
+\T1/cmr/m/n/12 bookOp-tions.AppId and face-bookOp-tions.AppSecret are plu-g-ins from chrome
  []
 
 
-Overfull \hbox (66.00464pt too wide) in paragraph at lines 222--223
+Overfull \hbox (66.00464pt too wide) in paragraph at lines 218--219
 [][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (54.00452pt too wide) in paragraph at lines 224--225
+Overfull \hbox (54.00452pt too wide) in paragraph at lines 220--221
 [][][][][][][][][][][][][] 
  []
 
 [14]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 230.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 226.
 
-Overfull \hbox (6.00403pt too wide) in paragraph at lines 242--243
+Overfull \hbox (6.00403pt too wide) in paragraph at lines 238--239
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (19.23619pt too wide) in paragraph at lines 250--251
-\T1/cmr/m/n/12 Save-Data(Arduino Data) is the ac-tual im-ple-men-ta-tion of the
- IAr-duin-o-DataRepo-
+Overfull \hbox (19.23619pt too wide) in paragraph at lines 246--247
+\T1/cmr/m/n/12 Save-Data(Arduino Data) is the ac-tual im-ple-men-ta-tion of the IAr-duin-o-DataRepo-
  []
 
 [15]
-Overfull \hbox (18.00415pt too wide) in paragraph at lines 273--275
+Overfull \hbox (18.00415pt too wide) in paragraph at lines 269--271
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [16] [17]
-Overfull \hbox (70.0175pt too wide) in paragraph at lines 317--318
-[]\T1/cmr/m/n/12 Listen() lis-tens for clients to con-nect to the ob-serv-able 
-class. _socket.AcceptTcpClient()
+Overfull \hbox (70.0175pt too wide) in paragraph at lines 313--314
+[]\T1/cmr/m/n/12 Listen() lis-tens for clients to con-nect to the ob-serv-able class. _socket.AcceptTcpClient()
  []
 
-[18] [19] [20]
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
-sty"
+[18] [19] [20] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2018/09/02 1.7 listings language file
-)
-("C:\Users\Krist\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
-ty"
+) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 ) [21]
-Overfull \hbox (39.94873pt too wide) in paragraph at lines 398--399
+Overfull \hbox (39.94873pt too wide) in paragraph at lines 394--395
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [22]
-Overfull \hbox (18.80371pt too wide) in paragraph at lines 414--415
+Overfull \hbox (18.80371pt too wide) in paragraph at lines 410--411
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (46.99707pt too wide) in paragraph at lines 418--419
+Overfull \hbox (46.99707pt too wide) in paragraph at lines 414--415
 [][][][][][][][][][][][][][][][] 
  []
 
@@ -1099,104 +651,101 @@ Overfull \hbox (46.99707pt too wide) in paragraph at lines 418--419
 
 ]
 Appendix A.
-<./images/Circuit-Diagram-Wifi-8266.png, id=606, 544.28343pt x 183.68625pt>
+<./images/Circuit-Diagram-Wifi-8266.png, id=613, 544.28343pt x 183.68625pt>
 File: ./images/Circuit-Diagram-Wifi-8266.png Graphic file (type png)
 <use ./images/Circuit-Diagram-Wifi-8266.png>
-Package pdftex.def Info: ./images/Circuit-Diagram-Wifi-8266.png  used on input 
-line 436.
+Package pdftex.def Info: ./images/Circuit-Diagram-Wifi-8266.png  used on input line 432.
 (pdftex.def)             Requested size: 435.42734pt x 146.94917pt.
 
-Overfull \hbox (45.42734pt too wide) in paragraph at lines 436--437
+Overfull \hbox (45.42734pt too wide) in paragraph at lines 432--433
  [][] 
  []
 
-<./images/Capacitive.png, id=607, 302.12875pt x 212.795pt>
+<./images/Capacitive.png, id=614, 302.12875pt x 212.795pt>
 File: ./images/Capacitive.png Graphic file (type png)
 <use ./images/Capacitive.png>
-Package pdftex.def Info: ./images/Capacitive.png  used on input line 443.
+Package pdftex.def Info: ./images/Capacitive.png  used on input line 439.
 (pdftex.def)             Requested size: 271.91336pt x 191.51372pt.
-<./images/Pumpan.png, id=608, 293.095pt x 252.945pt>
+<./images/Pumpan.png, id=615, 293.095pt x 252.945pt>
 File: ./images/Pumpan.png Graphic file (type png)
 <use ./images/Pumpan.png>
-Package pdftex.def Info: ./images/Pumpan.png  used on input line 450.
+Package pdftex.def Info: ./images/Pumpan.png  used on input line 446.
 (pdftex.def)             Requested size: 263.78305pt x 227.64839pt.
-<./images/LDR.png, id=609, 325.215pt x 242.9075pt>
+<./images/LDR.png, id=616, 325.215pt x 242.9075pt>
 File: ./images/LDR.png Graphic file (type png)
 <use ./images/LDR.png>
-Package pdftex.def Info: ./images/LDR.png  used on input line 457.
+Package pdftex.def Info: ./images/LDR.png  used on input line 453.
 (pdftex.def)             Requested size: 292.6908pt x 218.61472pt.
-<./images/Arduinoxml.png, id=610, 323.2075pt x 226.8475pt>
+<./images/Arduinoxml.png, id=617, 323.2075pt x 226.8475pt>
 File: ./images/Arduinoxml.png Graphic file (type png)
 <use ./images/Arduinoxml.png>
-Package pdftex.def Info: ./images/Arduinoxml.png  used on input line 464.
+Package pdftex.def Info: ./images/Arduinoxml.png  used on input line 460.
 (pdftex.def)             Requested size: 290.88406pt x 204.16086pt.
-[25 <./images/Circuit-Diagram-Wifi-8266.png>] [26 <./images/Capacitive.png> <./
-images/Pumpan.png>] [27 <./images/LDR.png> <./images/Arduinoxml.png>] [28
+[25 <./images/Circuit-Diagram-Wifi-8266.png>] [26 <./images/Capacitive.png> <./images/Pumpan.png>] [27 <./images/LDR.png> <./images/Arduinoxml.png>] [28
 
 ]
 Appendix B.
-<./images/fc-28-corrosion.png, id=636, 339.51843pt x 148.30406pt>
+<./images/fc-28-corrosion.png, id=643, 339.51843pt x 148.30406pt>
 File: ./images/fc-28-corrosion.png Graphic file (type png)
 <use ./images/fc-28-corrosion.png>
-Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 476.
+Package pdftex.def Info: ./images/fc-28-corrosion.png  used on input line 472.
 (pdftex.def)             Requested size: 339.5176pt x 148.30368pt.
-<./images/ESP-01.jpg, id=637, 1606.0pt x 1204.5pt>
+<./images/ESP-01.jpg, id=644, 1606.0pt x 1204.5pt>
 File: ./images/ESP-01.jpg Graphic file (type jpg)
 <use ./images/ESP-01.jpg>
-Package pdftex.def Info: ./images/ESP-01.jpg  used on input line 506.
+Package pdftex.def Info: ./images/ESP-01.jpg  used on input line 502.
 (pdftex.def)             Requested size: 321.19432pt x 240.89574pt.
-[29 <./images/fc-28-corrosion.png>] [30 <./images/ESP-01.jpg>]
+[29 <./images/fc-28-corrosion.PNG>] [30 <./images/ESP-01.jpg>]
 Appendix C.
 [31
 
 ]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 539.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 535.
  [32] [33] [34] [35]
-Overfull \hbox (246.00647pt too wide) in paragraph at lines 700--701
+Overfull \hbox (246.00647pt too wide) in paragraph at lines 696--697
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 708.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 704.
 
-Overfull \hbox (24.00421pt too wide) in paragraph at lines 712--713
+Overfull \hbox (24.00421pt too wide) in paragraph at lines 708--709
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (132.00531pt too wide) in paragraph at lines 724--725
+Overfull \hbox (132.00531pt too wide) in paragraph at lines 720--721
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [36]
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 767--769
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 763--765
 [][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 771--772
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 767--768
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (18.00415pt too wide) in paragraph at lines 774--775
+Overfull \hbox (18.00415pt too wide) in paragraph at lines 770--771
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [37]
-Overfull \hbox (72.0047pt too wide) in paragraph at lines 794--795
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (72.0047pt too wide) in paragraph at lines 790--791
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (84.00482pt too wide) in paragraph at lines 816--817
+Overfull \hbox (84.00482pt too wide) in paragraph at lines 812--813
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (48.00446pt too wide) in paragraph at lines 830--831
+Overfull \hbox (48.00446pt too wide) in paragraph at lines 826--827
 [][][][][][][][][][][][][][] 
  []
 
@@ -1204,23 +753,22 @@ Overfull \hbox (48.00446pt too wide) in paragraph at lines 830--831
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [39]
-Overfull \hbox (12.00409pt too wide) in paragraph at lines 899--900
+Overfull \hbox (12.00409pt too wide) in paragraph at lines 895--896
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (18.00415pt too wide) in paragraph at lines 908--909
+Overfull \hbox (18.00415pt too wide) in paragraph at lines 904--905
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (12.00409pt too wide) in paragraph at lines 917--918
+Overfull \hbox (12.00409pt too wide) in paragraph at lines 913--914
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
-
  []
 
 
-Overfull \hbox (60.00458pt too wide) in paragraph at lines 924--925
+Overfull \hbox (60.00458pt too wide) in paragraph at lines 920--921
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -1228,42 +776,40 @@ Overfull \hbox (60.00458pt too wide) in paragraph at lines 924--925
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40]
-Overfull \hbox (48.00446pt too wide) in paragraph at lines 957--958
+Overfull \hbox (48.00446pt too wide) in paragraph at lines 953--954
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [41]
-Overfull \hbox (36.00433pt too wide) in paragraph at lines 1029--1030
+Overfull \hbox (36.00433pt too wide) in paragraph at lines 1025--1026
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [42]
-Overfull \hbox (66.00464pt too wide) in paragraph at lines 1033--1034
+Overfull \hbox (66.00464pt too wide) in paragraph at lines 1029--1030
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [43] [44]
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 1122--1123
+Overfull \hbox (42.0044pt too wide) in paragraph at lines 1118--1119
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (72.0047pt too wide) in paragraph at lines 1129--1130
+Overfull \hbox (72.0047pt too wide) in paragraph at lines 1125--1126
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [45] [46
 
-] ("KT Verkætlan.bbl"
+] (./KT Verkætlan.bbl
 Underfull \hbox (badness 1014) in paragraph at lines 9--13
-[]\T1/cmr/m/n/12 Rick An-der-son.  In-tro-duc-tion to iden-tity on asp.net core
-.  URL
+[]\T1/cmr/m/n/12 Rick An-der-son.  In-tro-duc-tion to iden-tity on asp.net core.  URL
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--13
-[]$\T1/pcr/m/n/12 https : / / docs . microsoft . com / en-[]us / aspnet / core 
-/
+[]$\T1/pcr/m/n/12 https : / / docs . microsoft . com / en-[]us / aspnet / core /
  []
 
 
@@ -1273,14 +819,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--13
 
 
 Underfull \hbox (badness 1565) in paragraph at lines 20--24
-[]\T1/cmr/m/n/12 Valeriy Novyt-skyy and Rick An-der-son.  Face-book ex-ter-nal 
-lo-gin
+[]\T1/cmr/m/n/12 Valeriy Novyt-skyy and Rick An-der-son.  Face-book ex-ter-nal lo-gin
  []
 
 
 Underfull \hbox (badness 1490) in paragraph at lines 20--24
-\T1/cmr/m/n/12 setup in asp.net core.  URL []$\T1/pcr/m/n/12 https : / / docs .
- microsoft . com /
+\T1/cmr/m/n/12 setup in asp.net core.  URL []$\T1/pcr/m/n/12 https : / / docs . microsoft . com /
  []
 
 
@@ -1295,8 +839,7 @@ Underfull \hbox (badness 5622) in paragraph at lines 26--30
 
 
 Underfull \hbox (badness 6741) in paragraph at lines 26--30
-\T1/cmr/m/n/12 duino.  URL []$\T1/pcr/m/n/12 https : / / www . bc-[]robotics . 
-com / tutorials /
+\T1/cmr/m/n/12 duino.  URL []$\T1/pcr/m/n/12 https : / / www . bc-[]robotics . com / tutorials /
  []
 
 
@@ -1311,8 +854,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--48
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 44--48
-\T1/cmr/m/n/12 and xaviex.  Ob-server de-sign pat-tern.  URL []$\T1/pcr/m/n/12 
-https : / /
+\T1/cmr/m/n/12 and xaviex.  Ob-server de-sign pat-tern.  URL []$\T1/pcr/m/n/12 https : / /
  []
 
 
@@ -1321,52 +863,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--48
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1137.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1133.
  [47
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1137.
- ("KT Verkætlan.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1137.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1137.
-
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1133.
+ (./KT Verkætlan.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1133.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1133.
 Package rerunfilecheck Info: File `"KT Verkætlan".out' has not changed.
-(rerunfilecheck)             Checksum: 58F46E51C8AA93772A605470310F6613;2961.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 7A8175B7D8108CBBCB4027E0FBA9026A;2912.
  ) 
 Here is how much of TeX's memory you used:
- 12203 strings out of 493334
- 171795 string characters out of 3139251
- 510116 words of memory out of 3000000
- 14674 multiletter control sequences out of 15000+200000
- 24292 words of font info for 72 fonts, out of 3000000 for 9000
+ 11814 strings out of 492639
+ 164276 string characters out of 6135496
+ 512683 words of memory out of 5000000
+ 14657 multiletter control sequences out of 15000+600000
+ 24292 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,8n,69p,1599b,2224s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
-} <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-cbx1440.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
-c\dpi600\ecti1200.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
-jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\
-pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk> <C:\Users\Krist\AppData\Local\MiKTeX\
-2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1200.pk> <C:\Users\Krist\AppData\Loc
-al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\Krist\A
-ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Use
-rs\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.p
-k> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecrm1440.pk> <C:\Users\Krist\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecrm2074.pk><C:/Users/Krist/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb><C:/Users/Krist/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Krist/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/Krist/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Krist/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on "KT Verkætlan.pdf" (55 pages, 1391537 bytes).
+ 40i,8n,69p,1635b,2217s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb>
+Output written on "KT Verkætlan.pdf" (55 pages, 1212907 bytes).
 PDF statistics:
- 1894 PDF objects out of 2073 (max. 8388607)
- 860 named destinations out of 1000 (max. 500000)
+ 1561 PDF objects out of 1728 (max. 8388607)
+ 1453 compressed objects within 15 object streams
+ 862 named destinations out of 1000 (max. 500000)
  458 words of extra memory for PDF output out of 10000 (max. 10000000)
 
