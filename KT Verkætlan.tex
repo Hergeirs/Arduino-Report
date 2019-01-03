@@ -15,7 +15,7 @@
 \usepackage{etoolbox}    
 \usepackage{listings}
 \usepackage[pdftex]{hyperref}
-\usepackage{url}
+\usepackage{url} 
 \usepackage[numbers]{natbib} 
 
 \input{arduinoLanguage.tex}
@@ -139,9 +139,9 @@ This method reads the output from the capacitive sensor. digitalWrite(dPin, HIGH
 \end{center}
 
 
-We used the TMP36 temperature sensor, as it was supplied to use by the course administrators and that it suits our purpose. The TMP36 is fairly simple. It can measure degrees from -40\textdegree{}C to \textdegree{125}C, where it has a precision\cite{tmpTutorial} of $\pm2$\textdegree{}C. It works as a diode so when it changes temperature, it then its voltage changes accordingly. The sensor measures the small change and outputs an analog output based on it, so its possible to calculate the temperature according to that output. 
-The sensor's collector pin is attached to the 8 digital pin, the gate to the analog input A1 and the third leg is the ground.
-We use a readCelcius() method from the Temperature Class, and it can be seen below.
+We used the TMP36 temperature sensor, as it was supplied to use by the course administrators and it suits our purpose. The TMP36 is fairly simple. It can measure degrees from -40\textdegree{}C to \textdegree{125}C, where it has a precision\cite{tmpTutorial} of $\pm2$\textdegree{C}. But about $\pm1$\textdegree{C} in room temperature. The sensor outputs a voltage proportional to the vcc input voltage with an offset per degrees celsius. The output is linear to the temperature. Thus it is easy to calculate the temperature from the output voltage in an analog pin on the arduino.
+We connected digital pin 8 to the vcc on the sensor, the ground pin to ground and the analog output pin to the A1 on the Arduino.
+We created a readCelcius() method in the Temperature Class, and it can be seen below.
 \begin{lstlisting}[language=Arduino]
 const int8_t TemperatureSensor::readCelsius()
 {
@@ -155,7 +155,7 @@ const int8_t TemperatureSensor::readCelsius()
     return round((voltage - 0.5) * 100);
 }
 \end{lstlisting}
-digitalWrite(triggerPin, HIGH) sends a pulse to the sensor which starts it, then delayMicroseconds() delays the program, so that the sensor waits while the sensor is activated. Then reading = analogRead(readPind) reads the output from the sensor. The output from it, is converted to voltage by multiplying it with five. That is then divided by 1024 to find the percentage of the analog read, because the Arduino outputs between 0 and 1023, where 0 is not voltage and 1023 is 5V. Five is then subtracted from that, and then that result is multiplied with 100 to convert it from mV to degrees. Five is subtracted from the reading because we want it so that 0V corresponds to -50\textdegree{}C. 
+digitalWrite(triggerPin, HIGH) sends a pulse to the sensor which supplies the sensor with 5v. Then delayMicroseconds() delays the program to make sure that the current has had enough time to settle. Then reading = analogRead(readPind) reads the output from the sensor. The output from it, is converted to voltage by multiplying it with five. That is then divided by 1024 to find the percentage of the analog read, because the Arduino outputs between 0 and 1023, where 0 is not voltage and 1023 is 5V. Five is then subtracted from that, and then that result is multiplied with 100 to convert it from mV to degrees. Five is subtracted from the reading because we want it so that 0V corresponds to -50\textdegree{}C. 
 
 \section{Light Sensor}
 \subsection{LDR Resistor}
