@@ -225,7 +225,7 @@ One part of the repository library is a folder that contains the skeleton i.e. i
     services.AddScoped<IArduinoDataRepository, EFArduinoDataRepository>();
 \end{lstlisting}
 
-This initializes at run time all instances of those three interfaces as the specified implementation. AddScoped establishes the lifetime of the services, and scoped means that it is created once per request. The code for the interfaces can be seen in \ref{list:Interfaces}. The implementations and the explanations for the interfaces can be seen below.
+This initializes at run time all instances of those three interfaces as the specified implementation. AddScoped establishes the lifetime of the services, and scoped means that it is created once per HTTP request. The code for the interfaces can be seen in \ref{list:Interfaces}. The implementations and the explanations for the interfaces can be seen below.
 
 \begin{lstlisting}[caption={EFArduinoDataRepository Class}\label{list:Concrete EFArduinoDataRepository}, language=CSharp]
 public class EFArduinoDataRepository : IArduinoDataRepository
@@ -299,7 +299,7 @@ SavePlant(Plant plant) is an asynchronous method that stores a plant in the data
 \subsection{Observer Pattern}
 We decided to use Gang Of Four's observer pattern\cite{GoF}. We think that it fit well in our implementation of the communication between the Arduino and our Webserver. Microsoft have their own implementation of the pattern\cite{MicrosoftObserver} which we took inspiration from.
  
-In short, the pattern is about having one class that has a list of dependencies which it notifies when there's a change.
+In short, the pattern is about having one class that has a list of subscribers which get notified when there are news.
 
 \subsection{Observer}
 Our provider is called Observer and implements the IObserver with ArduinoData in the template brackets. It can be seen in \ref{list:Observer}. That it implements the interface means that the class implements its own version of the methods
@@ -329,12 +329,15 @@ StartAsync and StopAsync are the two methods that are inherited from the IHosted
 
 \subsection{DataPusherObserver}
 
-DataPusherObserver is the class that connect the Arduino to the Webserver. It implements the IObserver<ArduinoData> interface. It has one field called connection which is of type HubConnection. This connection is initialized in the DataPusherObserver constructor, and it is the localhost/datahub. This class implements the IObserver interface similarly as the Observer where it subscribes and notifies error the same.
+DataPusherObserver is the class responsible for notifying the web clients as soon as updates arive. It does this by opening a websocket to the server(itself) and tels the server to notify the browsers of the change. It implements the IObserver<ArduinoData> interface. It has one field called connection which is of type HubConnection. This connection is initialized in the DataPusherObserver constructor, and it is the localhost/datahub. This class implements the IObserver interface just as as the Observer.
 
 OnNext takes an object of ArduinoData as a parameter. Then it asynchronously starts the connection to the server, and invokes the method "UpdateData" on the server with value as the method parameter. It's cancellationToken is set to none as well. At last it stops the connection to the server. 
 
+
+
+
 \subsection{DataHub}
-DataHub is the class that gets triggered after the InvokeUpdateData call above. This is due to something called SignalR. This DataHub gets triggered because its name was mentioned in the url in the DataPusherClass's connection. When UpdateData gets called, it assigns a list of client to the clients assigned to the Hub. If there are no clients then the empty return statement breaks out of the method. Then it awaits for a SendAsync call for UpdateData to all clients where an ArduinoData object is the paramenter.
+DataHub is the class that gets triggered after the InvokeUpdateData call above. This is due to something called SignalR. This DataHub gets triggered because its name was mentioned in the url in the DataPusherClass's connection. When UpdateData gets called it checks if any users are connected to the server. If there are no clients then the empty return statement breaks out of the method. Then it awaits for a SendAsync call for UpdateData to all connected clients(webBrowsers) with an ArduinoData object is the paramenter.
 
 \subsection{DataPusher}
 DataPusher.js is our javascript file that manages our plant updates on the server. It can be seen in listing \ref{list:DatapusherJs}.
